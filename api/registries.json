@@ -1,0 +1,214 @@
+{
+  "title": "The Next Ten Registries",
+  "version": 1,
+  "checked": "2026-10-26",
+  "method": {
+    "market": "log scale of 2026-27 BE stamps & registration, Rs 500 Cr=0 to Rs 50,000 Cr=40",
+    "access": {
+      "deed_search": 12,
+      "encumbrance": 12,
+      "certified_copy": 8,
+      "auto_mutation": 8
+    },
+    "white_space": "20 if outside Square Yards' published registration-data coverage"
+  },
+  "status_values": {
+    "1": "available",
+    "0.5": "partial",
+    "0": "not confirmed"
+  },
+  "states": [
+    {
+      "rank": 1,
+      "code": "RJ",
+      "name": "Rajasthan",
+      "score": 83.5,
+      "market": 31.5,
+      "access": 32.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 10542,
+        "be_2026_27": 18750
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 1.0,
+        "cc": 1.0,
+        "am": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "code": "BR",
+      "name": "Bihar",
+      "score": 82.0,
+      "market": 26.0,
+      "access": 36.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 7976,
+        "be_2026_27": 10000
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 1.0,
+        "cc": 0.5,
+        "am": 1.0
+      }
+    },
+    {
+      "rank": 3,
+      "code": "MP",
+      "name": "Madhya Pradesh",
+      "score": 79.6,
+      "market": 31.6,
+      "access": 28.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 11357,
+        "be_2026_27": 19112
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 0.0,
+        "cc": 1.0,
+        "am": 1.0
+      }
+    },
+    {
+      "rank": 4,
+      "code": "CG",
+      "name": "Chhattisgarh",
+      "score": 79.1,
+      "market": 19.1,
+      "access": 40.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 2969,
+        "be_2026_27": 4500
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 1.0,
+        "cc": 1.0,
+        "am": 1.0
+      }
+    },
+    {
+      "rank": 5,
+      "code": "OD",
+      "name": "Odisha",
+      "score": 68.7,
+      "market": 16.7,
+      "access": 32.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 1987,
+        "be_2026_27": 3400
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 1.0,
+        "cc": 0.0,
+        "am": 1.0
+      }
+    },
+    {
+      "rank": 6,
+      "code": "UP",
+      "name": "Uttar Pradesh",
+      "score": 66.9,
+      "market": 38.9,
+      "access": 28.0,
+      "white_space": 0,
+      "stamps_registration_cr": {
+        "actual_2024_25": 30198,
+        "be_2026_27": 43802
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 1.0,
+        "cc": 0.5,
+        "am": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "code": "PB",
+      "name": "Punjab",
+      "score": 61.1,
+      "market": 25.1,
+      "access": 16.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 5781,
+        "be_2026_27": 9000
+      },
+      "features": {
+        "search": 0.5,
+        "ec": 0.5,
+        "cc": 0.5,
+        "am": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "code": "UK",
+      "name": "Uttarakhand",
+      "score": 57.8,
+      "market": 15.8,
+      "access": 22.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 2602,
+        "be_2026_27": 3092
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 0.5,
+        "cc": 0.5,
+        "am": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "code": "JH",
+      "name": "Jharkhand",
+      "score": 57.1,
+      "market": 11.1,
+      "access": 26.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 1258,
+        "be_2026_27": 1800
+      },
+      "features": {
+        "search": 1.0,
+        "ec": 0.5,
+        "cc": 1.0,
+        "am": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "code": "HP",
+      "name": "Himachal Pradesh",
+      "score": 26.3,
+      "market": 2.3,
+      "access": 4.0,
+      "white_space": 20,
+      "stamps_registration_cr": {
+        "actual_2024_25": 491,
+        "be_2026_27": 650
+      },
+      "features": {
+        "search": 0.0,
+        "ec": 0.0,
+        "cc": 0.0,
+        "am": 0.5
+      }
+    }
+  ],
+  "source_revenue": "PRS Legislative Research, State Budget Analyses 2026-27",
+  "html": "https://ayushwho18.github.io/registries/"
+}

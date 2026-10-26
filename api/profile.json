@@ -1,0 +1,94 @@
+{
+  "name": "Ayush Dewangan",
+  "name_hi": "आयुष देवांगन",
+  "location": "Raipur, Chhattisgarh, India",
+  "available_from": "2027-05",
+  "role": {
+    "title": "Chief Minister's Good Governance Fellow",
+    "org": "Government of Chhattisgarh",
+    "since": "2025-08",
+    "departments": [
+      "Commercial Tax (Registration)",
+      "Housing & Environment",
+      "Good Governance (CM Helpline 1076)"
+    ]
+  },
+  "education": [
+    {
+      "degree": "MBA, Public Policy & Governance",
+      "school": "IIM Raipur",
+      "years": "2025-2027"
+    },
+    {
+      "degree": "B.Com (Hons)",
+      "school": "Prestige Institute of Management & Research, Indore",
+      "year": 2023
+    }
+  ],
+  "work": [
+    {
+      "dept": "Commercial Tax (Registration)",
+      "item": "Registration & stamps reform",
+      "facts": {
+        "reforms_catalogued": 30,
+        "states_benchmarked": 10,
+        "directed_for_implementation": [
+          "Sub-Registrar performance analytics",
+          "Dedicated counters for women and senior citizens"
+        ]
+      }
+    },
+    {
+      "dept": "Commercial Tax (Registration)",
+      "item": "Property-registration DPR",
+      "facts": {
+        "programme_cr": 3.24,
+        "sub_registrar_offices": 107,
+        "recommendation": "sequenced roadmap before an immediate blockchain ledger"
+      }
+    },
+    {
+      "dept": "Housing & Environment",
+      "item": "Cool Roof policy pitch",
+      "status": "pitched",
+      "facts": {
+        "min_sri": 78,
+        "cost_per_sqft_inr": [
+          2,
+          4
+        ],
+        "paid_by": "developer",
+        "checkpoints": 4,
+        "final_gate": "occupancy certificate",
+        "benchmark": "Telangana 2023"
+      }
+    },
+    {
+      "dept": "Good Governance",
+      "item": "CM Helpline 1076",
+      "facts": {
+        "escalation_levels": [
+          "L1 Block",
+          "L2 District",
+          "L3 Division/Directorate",
+          "L4 Secretary/HoD"
+        ],
+        "departments_mapped_by_me": 2,
+        "role": "departmental point of contact for portal operations"
+      }
+    },
+    {
+      "dept": "Private",
+      "item": "Accountant & site supervisor, AJ Constructions",
+      "years": "2024-2025"
+    }
+  ],
+  "links": {
+    "site": "https://ayushwho18.github.io/",
+    "linkedin": "https://www.linkedin.com/in/ayush-dewangann/",
+    "cv": "https://ayushwho18.github.io/files/Ayush_Dewangan_CV.pdf",
+    "registries": "https://ayushwho18.github.io/api/registries.json"
+  },
+  "email": "addy.dewangan278@gmail.com",
+  "note": "Public sources and synthetic data only. Views are my own."
+}
