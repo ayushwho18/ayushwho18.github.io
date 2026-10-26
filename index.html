@@ -4,328 +4,249 @@ title: Ayush Dewangan
 body_class: home
 styles: [/assets/css/home.css]
 scripts: [/assets/js/home.js]
-three: true
+gsap: true
 ---
 <!-- ================= HERO ================= -->
-<section class="hx" id="top">
-  <canvas id="hx-canvas" aria-hidden="true"></canvas>
-  <div class="hx-fade" aria-hidden="true"></div>
-  <div class="wrap hx-inner">
-    <div class="hx-status" aria-live="off">
-      <span class="pulse" aria-hidden="true"></span>
-      <span>Raipur <b id="hx-clock">IST</b></span>
-      <span class="sep">/</span>
-      <span>Fellowship month <b id="hx-day">—</b></span>
-      <span class="sep">/</span>
-      <span>Open to roles from May 2027</span>
+<section class="hero2" id="top">
+  <canvas id="aurora" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="wrap hero2-inner">
+    <p class="status rv"><span class="pulse" aria-hidden="true"></span>Open to roles from May 2027<span class="clk"> <span class="sep">·</span> Raipur <b id="hx-clock">IST</b></span></p>
+    <h1 class="hero2-name rv">Ayush Dewangan<span class="deva" lang="hi">आयुष देवांगन</span></h1>
+    <p class="hero2-line rv">I make government records <span class="grad-text" id="hx-swap">verifiable</span>.</p>
+    <p class="hero2-sub rv">Chief Minister's Good Governance Fellow, Government of Chhattisgarh. Land registration, cool-roof policy and the CM Helpline 1076, built inside three departments. MBA in Public Policy, IIM Raipur.</p>
+    <div class="hero2-cta rv">
+      <a class="btn2 primary" href="#work">See my work</a>
+      <a class="btn2" href="{{ '/files/Ayush_Dewangan_CV.pdf' | relative_url }}">Download CV <span aria-hidden="true">↓</span></a>
     </div>
-    <p class="hx-hello" lang="hi">नमस्ते, मैं</p>
-    <h1 class="hx-name" aria-label="Ayush Dewangan"><span class="nm en" aria-hidden="true"><span>Ayush</span> <span>Dewangan</span></span><span class="nm hi" lang="hi" aria-hidden="true"><span>आयुष</span> <span>देवांगन</span></span></h1>
-    <p class="hx-role">I make government records <span class="swap" id="hx-swap">searchable</span><span class="caret" aria-hidden="true"></span></p>
-    <p class="hx-lead">Chief Minister's Good Governance Fellow inside three departments of the Government of Chhattisgarh: Commercial Tax (Registration), Housing &amp; Environment, and Good Governance on CM Helpline 1076. MBA in Public Policy &amp; Governance, IIM Raipur.</p>
-    <div class="hx-cta">
-      <a class="btn mag" href="#work">See the work</a>
-      <a class="btn ghost mag" href="{{ '/files/Ayush_Dewangan_CV.pdf' | relative_url }}">Download CV</a>
-      <button type="button" class="btn ghost mag" onclick="openPalette()">Press <kbd class="kbd">Ctrl K</kbd> to explore</button>
-    </div>
-    <p class="hx-note">The map behind this text is generated live: each parcel is a land record, each moving dot a registration on its way to the record of rights. Move your cursor over it.</p>
   </div>
+  <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span></a>
 </section>
 
 <!-- ================= NUMBERS ================= -->
-<section class="nums" aria-label="Work in numbers">
-  <div class="wrap nums-grid">
-    <div class="num"><b data-count="30">30</b><span>registration reforms catalogued from 10 states</span></div>
-    <div class="num"><b data-count="2">2</b><span>reforms the Secretary directed officers to implement</span></div>
-    <div class="num"><b data-count="107">107</b><span>Sub-Registrar offices in the DPR I wrote</span></div>
-    <div class="num"><b data-count="3.24" data-dec="2" data-pre="₹" data-suf=" Cr">₹3.24 Cr</b><span>registration modernisation programme</span></div>
-    <div class="num"><b data-count="4" data-pre="L1–L">L1–L4</b><span>escalation map I built for two departments on CM Helpline 1076</span></div>
-    <div class="num"><b data-count="78" data-pre="SRI " data-suf="+">SRI 78+</b><span>roof reflectance in my zero-budget Cool Roof policy</span></div>
-  </div>
-  <div class="marquee" aria-hidden="true"><div class="marquee-track">
-    <span>Registration Act 1908</span><span>NGDRS</span><span>e-Panjeeyan</span><span>Bhuiyan</span><span>Auto-mutation</span><span>Encumbrance</span><span>Khasra</span><span>DILRMP 3.0</span><span>Bhu-Aadhaar</span><span>ULI</span><span>CM Helpline 1076</span><span>L1 → L4</span><span>Occupancy certificate</span><span>SRI 78+</span><span>Heat Action Plan</span>
-    <span>Registration Act 1908</span><span>NGDRS</span><span>e-Panjeeyan</span><span>Bhuiyan</span><span>Auto-mutation</span><span>Encumbrance</span><span>Khasra</span><span>DILRMP 3.0</span><span>Bhu-Aadhaar</span><span>ULI</span><span>CM Helpline 1076</span><span>L1 → L4</span><span>Occupancy certificate</span><span>SRI 78+</span><span>Heat Action Plan</span>
-  </div></div>
-</section>
-
-<!-- ================= DEED JOURNEY ================= -->
-<section class="dj" id="journey">
-  <div class="dj-sticky">
-    <div class="wrap dj-grid">
-      <div class="dj-copy">
-        <span class="kicker">Scroll · A deed's journey</span>
-        <h2>Follow one sale deed through the system</h2>
-        <ol class="dj-steps" id="dj-steps">
-          <li data-i="0"><b>Book a slot</b><span>Online e-appointment at the Sub-Registrar office.</span></li>
-          <li data-i="1"><b>Pay stamp duty</b><span>Stamp duty and registration fee paid digitally.</span></li>
-          <li data-i="2" class="mine"><b>Sub-Registrar office</b><span>Execution and identity check. <em>My reforms: office performance analytics, and counters for women and senior citizens.</em></span></li>
-          <li data-i="3"><b>Certified copy</b><span>A digitally signed copy of the registered deed.</span></li>
-          <li data-i="4"><b>Auto-mutation</b><span>The buyer's name flows into the land record (Bhuiyan in Chhattisgarh).</span></li>
-          <li data-i="5" class="mine"><b>Lender checks title</b><span>Banks verify the record. <em>Where property-data platforms work, and what my ten-state scorecard ranks.</em></span></li>
-          <li data-i="6" class="mine"><b>Something goes wrong?</b><span>The citizen calls 1076. <em>My work: the L1–L4 escalation map for two departments.</em></span></li>
-        </ol>
-      </div>
-      <div class="dj-art" aria-hidden="true"><svg id="dj-svg" viewBox="0 0 520 560"></svg></div>
-    </div>
+<section class="stats" aria-label="Work in numbers">
+  <div class="wrap stats-grid">
+    <div class="stat rv"><b data-count="30">30</b><span>registration reforms benchmarked across 10 states</span></div>
+    <div class="stat rv"><b data-count="2">2</b><span>directed by the Secretary for implementation</span></div>
+    <div class="stat rv"><b data-count="3.24" data-dec="2" data-pre="₹" data-suf=" Cr">₹3.24 Cr</b><span>DPR for 107 Sub-Registrar offices</span></div>
+    <div class="stat rv"><b>L1–L4</b><span>CM Helpline escalation map for two departments</span></div>
   </div>
 </section>
 
-<!-- ================= THREE DEPARTMENTS ================= -->
-<section class="sx" id="work">
+<!-- ================= WORK ================= -->
+<section class="sec" id="work">
   <div class="wrap">
-    <header class="sx-head">
-      <span class="kicker">The fellowship · Aug 2025 – present</span>
-      <h2>One fellow, three departments</h2>
-      <p class="lead">I work with the department Secretary's office on reforms that have to survive real files, real counters and real citizens. Pick a department.</p>
+    <header class="sec-h rv">
+      <p class="kicker">Work</p>
+      <h2>Three departments. One habit: make the system measurable.</h2>
     </header>
-    <div class="dept" role="tablist" aria-label="Departments">
-      <button role="tab" id="t-reg" aria-controls="p-reg" aria-selected="true" class="dtab"><span class="dot reg"></span>Commercial Tax (Registration)</button>
-      <button role="tab" id="t-he" aria-controls="p-he" aria-selected="false" class="dtab" tabindex="-1"><span class="dot he"></span>Housing &amp; Environment</button>
-      <button role="tab" id="t-gg" aria-controls="p-gg" aria-selected="false" class="dtab" tabindex="-1"><span class="dot gg"></span>Good Governance · CM Helpline</button>
-    </div>
-    <div class="dpanels">
-      <article class="dpanel" role="tabpanel" id="p-reg" aria-labelledby="t-reg">
-        <div class="dp-main">
-          <h3>Registration &amp; stamps reform</h3>
-          <p>I catalogued 30 reforms from 10 states (13 policy, 17 technical) and benchmarked Chhattisgarh against Karnataka, Telangana, Maharashtra and Gujarat. The Secretary directed officers to implement two: <b>Sub-Registrar performance analytics</b> and <b>dedicated counters for women and senior citizens</b>.</p>
-          <h3>A DPR for 107 offices</h3>
-          <p>A feasibility study recommended a sequenced roadmap over an immediate blockchain ledger. I then wrote the Detailed Project Report: architecture, legal framework, risk register and a ₹3.24 crore programme across 107 Sub-Registrar offices, with an interactive proposal dashboard.</p>
-          <div class="dp-links"><a class="btn sm" href="{{ '/registries/' | relative_url }}">Open the ten-state scorecard</a><a class="btn sm ghost" href="{{ '/sro-scorecard/' | relative_url }}">Open the SRO prototype</a></div>
+
+    <div class="bento">
+      <article class="card2 wide rv">
+        <div class="card2-top"><span class="dept-tag reg">Commercial Tax · Registration</span><span class="state ok">Directed for implementation</span></div>
+        <h3>Registration and stamps reform</h3>
+        <p>Benchmarked 30 reforms from 10 states against Chhattisgarh. The Secretary directed officers to implement two: Sub-Registrar performance analytics, and dedicated counters for women and senior citizens. Then wrote the DPR: a ₹3.24 crore programme across 107 offices.</p>
+        <div class="card2-links">
+          <a href="{{ '/registries/' | relative_url }}">The Next Ten Registries <span aria-hidden="true">→</span></a>
+          <a href="{{ '/sro-scorecard/' | relative_url }}">SRO scorecard prototype <span aria-hidden="true">→</span></a>
+          <button type="button" class="demo-link" data-demo="states">Try the 3D demo</button>
         </div>
-        <aside class="dp-side">
-          <div class="ledger" id="ledger" aria-label="Animated illustration: why records are cleaned before a ledger">
-            <div class="lg-row"><span>Scan &amp; clean records</span><i style="--w:100%"></i></div>
-            <div class="lg-row"><span>Link deed → RoR (auto-mutation)</span><i style="--w:82%"></i></div>
-            <div class="lg-row"><span>Tamper-evident hashes</span><i style="--w:58%"></i></div>
-            <div class="lg-row"><span>Distributed ledger</span><i style="--w:30%"></i></div>
+      </article>
+
+      <article class="card2 rv">
+        <div class="card2-top"><span class="dept-tag he">Housing &amp; Environment</span><span class="state pitch">Pitched</span></div>
+        <h3>Cool Roof, at zero budget</h3>
+        <p>A rule, not a subsidy: an SRI 78+ reflective roof becomes a condition of the occupancy certificate, checked at four points. The developer pays ₹2–4 per sq ft; the state pays nothing.</p>
+        <div class="card2-links"><button type="button" class="demo-link" data-demo="roof">Open the 3D simulator</button></div>
+      </article>
+
+      <article class="card2 rv">
+        <div class="card2-top"><span class="dept-tag gg">Good Governance</span><span class="state live">Live since Jun 2026</span></div>
+        <h3>CM Helpline 1076</h3>
+        <p>Mapped grievance categories and the L1–L4 officer escalation for Commercial Tax and Housing &amp; Environment. Departmental point of contact for the portal.</p>
+        <div class="card2-links"><button type="button" class="demo-link" data-demo="helpline">Watch a complaint escalate</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMOS ================= -->
+<section class="sec demos-sec" id="demos">
+  <div class="wrap">
+    <header class="sec-h rv">
+      <p class="kicker">Live demos</p>
+      <h2>Don't read about it. Use it.</h2>
+      <p class="sec-lead">Built from public sources and synthetic data. No government data appears on this site.</p>
+    </header>
+
+    <div class="seg rv" role="tablist" aria-label="Demos">
+      <button role="tab" class="seg-b" id="d-states" aria-controls="dp-states" aria-selected="true">States in 3D</button>
+      <button role="tab" class="seg-b" id="d-race" aria-controls="dp-race" aria-selected="false" tabindex="-1">Office race</button>
+      <button role="tab" class="seg-b" id="d-helpline" aria-controls="dp-helpline" aria-selected="false" tabindex="-1">CM Helpline</button>
+      <button role="tab" class="seg-b" id="d-roof" aria-controls="dp-roof" aria-selected="false" tabindex="-1">Cool Roof</button>
+      <button role="tab" class="seg-b" id="d-term" aria-controls="dp-term" aria-selected="false" tabindex="-1">Terminal</button>
+    </div>
+
+    <div class="stage rv">
+      <!-- 3D states -->
+      <div class="dpane" role="tabpanel" id="dp-states" aria-labelledby="d-states">
+        <div class="dpane-grid">
+          <div class="dpane-copy">
+            <h3>Ten states, ranked</h3>
+            <p>Bar height is each state's readiness score from my scorecard; colour is its 2026–27 stamp-duty budget. Drag to rotate. Data is served from <a href="{{ '/api/registries.json' | relative_url }}"><code>/api/registries.json</code></a>.</p>
+            <p class="pick" id="bar-pick">Hover a bar.</p>
+            <div class="legend"><span>Budget</span><i></i><span id="lg-lo">₹650 Cr</span><span id="lg-hi">₹43,802 Cr</span></div>
           </div>
-          <p class="cap">The principle behind sequencing: a ledger is only as good as the records written into it. Illustration, not the DPR's schedule.</p>
-        </aside>
-      </article>
-      <article class="dpanel" role="tabpanel" id="p-he" aria-labelledby="t-he" hidden>
-        <div class="dp-main">
-          <h3>Cool Roof, at zero budget <span class="pill">Pitched</span></h3>
-          <p>Instead of a subsidy, I pitched a rule: heat-reflective roofing of <b>SRI 78 or more</b> becomes a condition of the occupancy certificate. Enforcement sits inside <b>four building-permission checkpoints</b>, and the ₹2–4 per sq ft cost is borne by the developer. I benchmarked it against Telangana's 2023 order.</p>
-          <h3>Course work on the same department</h3>
-          <p>An IIM Raipur budget analysis of the Housing &amp; Environment Department using zero-based and flexible budgeting, and the environment and Nava Raipur command-centre module of C-Drishti, a group prototype for an enforcement-intelligence dashboard.</p>
-          <div class="dp-links"><a class="btn sm" href="#coolroof">Try the Cool Roof simulator</a></div>
-        </div>
-        <aside class="dp-side">
-          <div class="fact-card"><b>2.1–4.3 °C</b><span>cooler indoor air under cool roofs than conventional roofs, depending on location and material, as cited for Telangana's policy</span><a href="https://www.nrdc.org/bio/prima-madan/telangana-announces-groundbreaking-cool-roof-policy" target="_blank" rel="noopener">NRDC</a></div>
-          <div class="fact-card"><b>300 sq km</b><span>of cool roofs Telangana targets by 2028 under its 2023–28 policy</span><a href="https://www.nrdc.org/bio/prima-madan/telangana-announces-groundbreaking-cool-roof-policy" target="_blank" rel="noopener">NRDC</a></div>
-        </aside>
-      </article>
-      <article class="dpanel" role="tabpanel" id="p-gg" aria-labelledby="t-gg" hidden>
-        <div class="dp-main">
-          <h3>CM Helpline 1076</h3>
-          <p>Chhattisgarh launched CM Helpline 1076 on 9 June 2026: a 24×7 line, portal, app and WhatsApp channel for citizen grievances. For Commercial Tax and Housing &amp; Environment, I categorised and mapped the grievance services, built the <b>L1–L4 officer escalation map</b>, and remain the departmental point of contact for portal operations.</p>
-          <p>I was also asked by the Secretary's office to prepare guidance for operating the helpline dashboard at L4, in English and simple Hindi.</p>
-          <div class="dp-links"><a class="btn sm" href="#helpline">Watch a grievance climb</a></div>
-        </div>
-        <aside class="dp-side">
-          <div class="fact-card"><b>42</b><span>state departments on the helpline at launch</span><a href="https://www.thehitavada.com//Encyc/2026/6/10/sai-inaugurates-cm-helpline-1076.html" target="_blank" rel="noopener">The Hitavada</a></div>
-          <div class="fact-card"><b>1,195</b><span>complaint categories with prescribed resolution timelines</span><a href="https://www.thehitavada.com//Encyc/2026/6/10/sai-inaugurates-cm-helpline-1076.html" target="_blank" rel="noopener">The Hitavada</a></div>
-          <div class="fact-card"><b>~8,000</b><span>officials working on the system</span><a href="https://www.thehitavada.com//Encyc/2026/6/10/sai-inaugurates-cm-helpline-1076.html" target="_blank" rel="noopener">The Hitavada</a></div>
-        </aside>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= REGISTRATION LAB ================= -->
-<section class="sx" id="lab">
-  <div class="wrap">
-    <header class="sx-head">
-      <span class="kicker">Live demo · Commercial Tax (Registration)</span>
-      <h2>Ten states in 3D, and a race between offices</h2>
-      <p class="lead">Drag to rotate. Bar height is each state's readiness score from <a href="{{ '/registries/' | relative_url }}">The Next Ten Registries</a>; colour shows its 2026–27 stamp-duty budget. Data is served from <code>/api/registries.json</code>.</p>
-    </header>
-    <div class="lab">
-      <div class="lab-3d"><div id="bars3d" class="three-box" role="img" aria-label="3D bar chart of ten states' readiness scores"></div>
-        <div class="lab-legend"><span>Budget, ₹ Cr</span><i></i><span id="lg-lo">650</span><span id="lg-hi">43,802</span></div>
-        <p class="lab-pick" id="bar-pick">Hover a bar.</p>
-      </div>
-      <div class="race">
-        <div class="race-head"><h3>The office race</h3><button type="button" class="btn sm" id="race-go">Run the race</button></div>
-        <p class="race-sub">Ten synthetic Sub-Registrar offices handle the same certified-copy request. One state-wide promise of <b>5 working days</b> hides the slow ones.</p>
-        <div class="race-track" id="race"></div>
-        <p class="race-out" id="race-out">Press run.</p>
-        <p class="cap">Synthetic offices and times. The point mirrors my reform: measure turnaround per office, not per state.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= HELPLINE SIMULATOR ================= -->
-<section class="sx alt" id="helpline">
-  <div class="wrap">
-    <header class="sx-head">
-      <span class="kicker">Live demo · CM Helpline 1076</span>
-      <h2>Watch a grievance climb the ladder</h2>
-      <p class="lead">If a complaint is not resolved in time, or the citizen is not satisfied, it moves up automatically. Choose what happens and press play. The ladder follows the published structure; the complaint and timings are illustrative.</p>
-    </header>
-    <div class="esc">
-      <div class="esc-ctrl">
-        <label for="esc-case">Complaint</label>
-        <select id="esc-case">
-          <option value="0">Certified copy of a sale deed not issued</option>
-          <option value="1">Occupancy certificate application stuck</option>
-          <option value="2">Wrong name after registration not corrected</option>
-        </select>
-        <label for="esc-end">Resolved at</label>
-        <select id="esc-end">
-          <option value="1">L1 · Block</option>
-          <option value="2">L2 · District</option>
-          <option value="3" selected>L3 · Division / Directorate</option>
-          <option value="4">L4 · Secretary / HoD</option>
-        </select>
-        <div class="esc-btns"><button type="button" class="btn sm" id="esc-play">Play</button><button type="button" class="btn sm ghost" id="esc-reset">Reset</button></div>
-        <ol class="esc-log" id="esc-log" aria-live="polite"><li>Token created. Waiting at L1.</li></ol>
-      </div>
-      <div class="esc-stage" aria-hidden="true">
-        <svg id="esc-svg" viewBox="0 0 520 420"></svg>
-      </div>
-    </div>
-    <p class="src">Levels: Block (L1), District (L2), Divisional or Directorate (L3), Secretary or Head of Department (L4), per <a href="https://develop.patrika.com/en/raipur-news/chhattisgarh-fast-tracks-cm-helpline-1076-rollout-direct-line-to-chief-minister-20590091" target="_blank" rel="noopener">Patrika</a>. Launch and scale: <a href="https://www.thehitavada.com//Encyc/2026/6/10/sai-inaugurates-cm-helpline-1076.html" target="_blank" rel="noopener">The Hitavada</a>. No real complaint data is shown.</p>
-  </div>
-</section>
-
-<!-- ================= COOL ROOF SIMULATOR ================= -->
-<section class="sx" id="coolroof">
-  <div class="wrap">
-    <header class="sx-head">
-      <span class="kicker">Live demo · Housing &amp; Environment</span>
-      <h2>Turn heat into a building rule</h2>
-      <p class="lead">My latest pitch to the department. Drag the city to rotate, flip the roofs, and size a roof. The cost uses my policy's ₹2–4 per sq ft range, paid by the developer, so the state spends nothing.</p>
-    </header>
-    <div class="cr">
-      <div class="cr-scene">
-        <div id="cr-3d" class="three-box" role="img" aria-label="3D model: sunlight on conventional roofs versus SRI 78+ cool roofs"></div>
-        <canvas id="cr-canvas" hidden aria-hidden="true"></canvas>
-        <div class="cr-toggle" role="group" aria-label="Roof type">
-          <button type="button" id="cr-dark" aria-pressed="false">Conventional roof</button>
-          <button type="button" id="cr-cool" aria-pressed="true">SRI 78+ cool roof</button>
+          <div id="bars3d" class="three-box" role="img" aria-label="3D bar chart of ten states' readiness scores"></div>
         </div>
       </div>
-      <div class="cr-panel">
-        <label for="cr-area">Roof area <output id="cr-area-out">2,000 sq ft</output></label>
-        <input type="range" id="cr-area" min="500" max="20000" step="100" value="2000">
-        <div class="cr-cost">
-          <span>Developer cost</span>
-          <b id="cr-cost">₹4,000 – ₹8,000</b>
-          <small>One-time, built into construction. State budget: ₹0.</small>
+
+      <!-- Race -->
+      <div class="dpane" role="tabpanel" id="dp-race" aria-labelledby="d-race" hidden>
+        <div class="dpane-grid">
+          <div class="dpane-copy">
+            <h3>One average hides ten offices</h3>
+            <p>Ten synthetic Sub-Registrar offices handle the same certified-copy request against a 5-day promise. This is why my reform measures turnaround per office, not per state.</p>
+            <button type="button" class="btn2 primary sm" id="race-go">Run again</button>
+            <p class="out" id="race-out"></p>
+          </div>
+          <div class="race-track" id="race"></div>
         </div>
-        <ol class="gates" id="gates">
-          <li><span>1</span>Building permission</li>
-          <li><span>2</span>Checkpoint during approval</li>
-          <li><span>3</span>Checkpoint during construction</li>
-          <li class="oc"><span>4</span>Occupancy certificate: no SRI 78+, no OC</li>
-        </ol>
-        <p class="cap">Four checkpoints as in my pitch; the middle two are shown generically. Indoor cooling of 2.1–4.3 °C is the range cited for Telangana's policy by <a href="https://www.nrdc.org/bio/prima-madan/telangana-announces-groundbreaking-cool-roof-policy" target="_blank" rel="noopener">NRDC</a>.</p>
+      </div>
+
+      <!-- Helpline -->
+      <div class="dpane" role="tabpanel" id="dp-helpline" aria-labelledby="d-helpline" hidden>
+        <div class="dpane-grid">
+          <div class="dpane-copy esc-ctrl">
+            <h3>A complaint climbs L1 to L4</h3>
+            <p>If a complaint is not resolved in time, or the citizen is not satisfied, it escalates automatically. The ladder follows the published structure; the complaint is illustrative.</p>
+            <label for="esc-case">Complaint</label>
+            <select id="esc-case">
+              <option value="0">Certified copy of a sale deed not issued</option>
+              <option value="1">Occupancy certificate application stuck</option>
+              <option value="2">Wrong name after registration not corrected</option>
+            </select>
+            <label for="esc-end">Resolved at</label>
+            <select id="esc-end">
+              <option value="1">L1 · Block</option>
+              <option value="2">L2 · District</option>
+              <option value="3" selected>L3 · Division / Directorate</option>
+              <option value="4">L4 · Secretary / HoD</option>
+            </select>
+            <div class="row-btns"><button type="button" class="btn2 primary sm" id="esc-play">Play</button><button type="button" class="btn2 sm" id="esc-reset">Reset</button></div>
+          </div>
+          <div class="esc-right">
+            <div class="esc-stage" aria-hidden="true"><svg id="esc-svg" viewBox="0 0 520 420"></svg></div>
+            <ol class="esc-log" id="esc-log" aria-live="polite"></ol>
+          </div>
+        </div>
+        <p class="src">Levels per <a href="https://develop.patrika.com/en/raipur-news/chhattisgarh-fast-tracks-cm-helpline-1076-rollout-direct-line-to-chief-minister-20590091" target="_blank" rel="noopener">Patrika</a>. Launched 9 June 2026 with 42 departments and 1,195 complaint categories, per <a href="https://www.thehitavada.com//Encyc/2026/6/10/sai-inaugurates-cm-helpline-1076.html" target="_blank" rel="noopener">The Hitavada</a>.</p>
+      </div>
+
+      <!-- Cool roof -->
+      <div class="dpane" role="tabpanel" id="dp-roof" aria-labelledby="d-roof" hidden>
+        <div class="dpane-grid">
+          <div class="dpane-copy">
+            <h3>Turn heat into a building rule</h3>
+            <div class="cr-toggle" role="group" aria-label="Roof type">
+              <button type="button" id="cr-dark" aria-pressed="false">Conventional</button>
+              <button type="button" id="cr-cool" aria-pressed="true">SRI 78+ cool roof</button>
+            </div>
+            <label class="area-l" for="cr-area">Roof area <output id="cr-area-out">2,000 sq ft</output></label>
+            <input type="range" id="cr-area" min="500" max="20000" step="100" value="2000">
+            <div class="cr-cost"><span>Developer pays, once</span><b id="cr-cost">₹4,000 – ₹8,000</b><small>State budget: ₹0</small></div>
+            <ol class="gates" id="gates">
+              <li><span>1</span>Building permission</li>
+              <li><span>2</span>Approval check</li>
+              <li><span>3</span>Construction check</li>
+              <li class="oc"><span>4</span>Occupancy certificate</li>
+            </ol>
+          </div>
+          <div class="cr-scene"><div id="cr-3d" class="three-box" role="img" aria-label="3D model: sunlight on conventional roofs versus cool roofs"></div></div>
+        </div>
+        <p class="src">Indoor cooling of 2.1–4.3 °C is the range cited for Telangana's 2023 policy by <a href="https://www.nrdc.org/bio/prima-madan/telangana-announces-groundbreaking-cool-roof-policy" target="_blank" rel="noopener">NRDC</a>. Pitched to the department; not yet adopted.</p>
+      </div>
+
+      <!-- Terminal -->
+      <div class="dpane" role="tabpanel" id="dp-term" aria-labelledby="d-term" hidden>
+        <div class="dpane-grid">
+          <div class="dpane-copy">
+            <h3>For the engineers</h3>
+            <p>Type <code>help</code>. Or <code>curl api</code> to read this site's JSON. No framework, no cookies, no trackers.</p>
+            <dl class="perf" id="perf">
+              <div><dt>Loaded in</dt><dd id="pf-load">—</dd></div>
+              <div><dt>Transferred</dt><dd id="pf-kb">—</dd></div>
+              <div><dt>Requests</dt><dd id="pf-req">—</dd></div>
+              <div><dt>Frame rate</dt><dd id="pf-fps">—</dd></div>
+            </dl>
+            <p class="small"><a href="https://github.com/ayushwho18/ayushwho18.github.io" target="_blank" rel="noopener">View source on GitHub →</a></p>
+          </div>
+          <div class="term" id="term">
+            <div class="term-bar"><i></i><i></i><i></i><span>ayush@raipur: ~</span></div>
+            <div class="term-out" id="term-out" role="log" aria-live="polite"></div>
+            <form class="term-in" id="term-form" autocomplete="off">
+              <label for="term-q"><span class="pr">$</span></label>
+              <input id="term-q" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command" placeholder="help">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= EVIDENCE LOCKER ================= -->
-<section class="sx alt" id="evidence">
+<!-- ================= PROOF ================= -->
+<section class="sec" id="proof">
   <div class="wrap">
-    <header class="sx-head">
-      <span class="kicker">Proof of work</span>
-      <h2>Evidence locker</h2>
-      <p class="lead">Public work opens here. Government documents stay inside government; I walk through them in interviews where permitted, and can show proof of my departmental role on request.</p>
+    <header class="sec-h rv">
+      <p class="kicker">Proof of work</p>
+      <h2>What you can open, and what I can walk you through.</h2>
     </header>
-    <div class="locker" id="locker">
-      <div class="lk-filter" role="group" aria-label="Filter evidence">
-        <button type="button" data-f="all" aria-pressed="true">All</button>
-        <button type="button" data-f="public" aria-pressed="false">Public</button>
-        <button type="button" data-f="internal" aria-pressed="false">Internal</button>
+    <div class="proof">
+      <div class="proof-col rv">
+        <h3>Open now</h3>
+        <ul class="plist">
+          <li><a href="{{ '/registries/' | relative_url }}"><b>The Next Ten Registries</b><span>Ten-state registration-data scorecard · Oct 2026</span></a></li>
+          <li><a href="{{ '/sro-scorecard/' | relative_url }}"><b>Sub-Registrar Performance Scorecard</b><span>Working prototype on synthetic data</span></a></li>
+          <li><a href="{{ '/files/Ayush_Dewangan_Next_Ten_Registries.pdf' | relative_url }}"><b>Registries report (PDF)</b><span>7 pages, 21 sources</span></a></li>
+          <li><div><b>“Fifteen Passengers”</b><span>Nava Raipur transport and land value capture · ArthVichar, IIM Raipur</span></div></li>
+        </ul>
       </div>
-      <ul class="lk-grid">
-        <li data-k="public" class="lk"><span class="lk-tag pub">Public</span><h3><a href="{{ '/registries/' | relative_url }}">The Next Ten Registries</a></h3><p>Ten-state registration-data scorecard, 21 sources, 60-day launch playbook.</p><span class="lk-meta">Analysis · Oct 2026 · <a href="{{ '/files/Ayush_Dewangan_Next_Ten_Registries.pdf' | relative_url }}">PDF</a></span></li>
-        <li data-k="public" class="lk"><span class="lk-tag pub">Public</span><h3><a href="{{ '/sro-scorecard/' | relative_url }}">Sub-Registrar Performance Scorecard</a></h3><p>Working prototype for 107 offices on synthetic data.</p><span class="lk-meta">Prototype · 2026</span></li>
-        <li data-k="public" class="lk"><span class="lk-tag pub">Published</span><h3>“Fifteen Passengers”</h3><p>Nava Raipur transport economics and land value capture, in ArthVichar Issue 01, IIM Raipur.</p><span class="lk-meta">Article · Aug 2026</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>Registration &amp; stamps reform catalogue</h3><p>30 reforms from 10 states, benchmarked; two directed for implementation.</p><span class="lk-meta">Commercial Tax (Registration)</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>Property-registration DPR</h3><p>Feasibility study, architecture, legal framework, risk register, ₹3.24 Cr across 107 SROs.</p><span class="lk-meta">Commercial Tax (Registration)</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>Aadhaar e-KYC and cashless payment reform notes</h3><p>Reform documents for registration services.</p><span class="lk-meta">Commercial Tax (Registration)</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>Cool Roof policy pitch</h3><p>Pitched to the department. SRI 78+ as an occupancy-certificate condition, four checkpoints, developer-borne cost.</p><span class="lk-meta">Housing &amp; Environment</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>CM Helpline 1076 escalation map</h3><p>Grievance categories and L1–L4 officer mapping for Commercial Tax and Housing &amp; Environment.</p><span class="lk-meta">Good Governance · Commercial Tax · H&amp;E</span></li>
-        <li data-k="internal" class="lk"><span class="lk-tag int">Internal</span><h3>Eight-month phase review</h3><p>A ten-slide review of the fellowship's work across three departments, prepared for senior IAS officers.</p><span class="lk-meta">All three departments</span></li>
-      </ul>
+      <div class="proof-col rv">
+        <h3>On request, in interview</h3>
+        <ul class="plist int">
+          <li><div><b>Registration reform catalogue</b><span>30 reforms, 10 states · Commercial Tax</span></div></li>
+          <li><div><b>Property-registration DPR</b><span>₹3.24 Cr, 107 offices · Commercial Tax</span></div></li>
+          <li><div><b>Cool Roof policy pitch</b><span>Housing &amp; Environment</span></div></li>
+          <li><div><b>CM Helpline 1076 escalation map</b><span>Two departments · Good Governance</span></div></li>
+          <li><div><b>Eight-month fellowship review</b><span>Presented to senior IAS officers</span></div></li>
+        </ul>
+        <p class="note">Government documents stay inside government. I walk through them where permitted.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= TIMELINE ================= -->
-<section class="sx" id="timeline">
+<!-- ================= WRITING ================= -->
+<section class="sec" id="writing">
   <div class="wrap">
-    <header class="sx-head"><span class="kicker">Timeline</span><h2>How I got here</h2></header>
-    <ol class="tl">
-      <li><time>2023</time><div><b>B.Com (Hons)</b>, Prestige Institute of Management &amp; Research, Indore</div></li>
-      <li><time>Jun 2024</time><div><b>Accountant &amp; site supervisor</b>, AJ Constructions. Invoices, reconciliation, vendor ledgers, material drawdown.</div></li>
-      <li><time>2025</time><div><b>MBA, Public Policy &amp; Governance</b> begins at IIM Raipur</div></li>
-      <li><time>Aug 2025</time><div><b>CM Good Governance Fellow</b>, Government of Chhattisgarh</div></li>
-      <li><time>Jun 2026</time><div><b>CM Helpline 1076 goes live</b> statewide; departmental point of contact for two departments</div></li>
-      <li><time>Aug 2026</time><div><b>“Fifteen Passengers”</b> published in ArthVichar Issue 01</div></li>
-      <li><time>Oct 2026</time><div><b>The Next Ten Registries</b> published on this site</div></li>
-      <li class="future"><time>Apr 2027</time><div><b>Convocation.</b> Available from May 2027</div></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ================= TERMINAL ================= -->
-<section class="sx alt" id="terminal">
-  <div class="wrap term-wrap">
-    <header class="sx-head">
-      <span class="kicker">For the engineers</span>
-      <h2>Or just ask the terminal</h2>
-      <p class="lead">Type <code>help</code>. Everything it says is on this page; it simply finds it faster.</p>
-    </header>
-    <div class="term-grid">
-    <div class="term" id="term">
-      <div class="term-bar"><i></i><i></i><i></i><span>ayush@raipur: ~</span></div>
-      <div class="term-out" id="term-out" role="log" aria-live="polite"></div>
-      <form class="term-in" id="term-form" autocomplete="off">
-        <label for="term-q"><span class="pr">ayush@raipur:~$</span></label>
-        <input id="term-q" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command">
-      </form>
-    </div>
-    <aside class="perf" id="perf" aria-label="How this page is built">
-      <h3>This page, measured in your browser</h3>
-      <dl>
-        <div><dt>Loaded in</dt><dd id="pf-load">—</dd></div>
-        <div><dt>Transferred</dt><dd id="pf-kb">—</dd></div>
-        <div><dt>Requests</dt><dd id="pf-req">—</dd></div>
-        <div><dt>DOM nodes</dt><dd id="pf-dom">—</dd></div>
-        <div><dt>Frame rate</dt><dd id="pf-fps">—</dd></div>
-        <div><dt>Cookies · trackers</dt><dd>0 · 0</dd></div>
-      </dl>
-      <p>Static HTML from Jekyll on GitHub Pages. No framework; WebGL via three.js, Voronoi via d3-delaunay. <a href="https://github.com/ayushwho18/ayushwho18.github.io" target="_blank" rel="noopener">View source</a> · <a href="{{ '/api/profile.json' | relative_url }}">/api/profile.json</a></p>
-    </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ================= POSTS ================= -->
-<section class="sx">
-  <div class="wrap">
-    <div class="sec-head"><h2>Latest posts</h2><a class="more" href="{{ '/posts/' | relative_url }}">All posts</a></div>
+    <div class="sec-row rv"><h2 class="h-sm">Latest writing</h2><a class="more" href="{{ '/posts/' | relative_url }}">All posts →</a></div>
     {% if site.posts.size > 0 %}
-    <ul class="post-list">{% for post in site.posts limit:4 %}{% include post-row.html post=post %}{% endfor %}</ul>
+    <ul class="post-list rv">{% for post in site.posts limit:3 %}{% include post-row.html post=post %}{% endfor %}</ul>
     {% else %}<p class="empty">No posts yet.</p>{% endif %}
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="band contact-band">
-  <div class="wrap contact">
-    <div>
-      <h2>Building something with property data, lending or government?</h2>
-      <p>I reply to every message. Available from May 2027.</p>
+<section class="contact2" id="contact">
+  <div class="wrap contact2-inner rv">
+    <h2>Building with property data, lending or government?</h2>
+    <p>Let's talk. I reply to every message, and I am available from May 2027.</p>
+    <div class="hero2-cta">
+      <button type="button" class="btn2 primary copy-email" data-email="{{ site.author.email }}">Copy email</button>
+      <a class="btn2" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn2" href="{{ '/files/Ayush_Dewangan_CV.pdf' | relative_url }}">CV</a>
     </div>
-    <div class="contact-actions">
-      <button type="button" class="btn copy-email" data-email="{{ site.author.email }}"><span>{{ site.author.email }}</span><small>Copy</small></button>
-      <a class="btn ghost" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+    <p class="mail">{{ site.author.email }}</p>
   </div>
 </section>
