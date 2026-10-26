@@ -1,4 +1,4 @@
-# ayushwho18.github.io
+# theayushdewangan.me
 
 Personal website of Ayush Dewangan, built with Jekyll and hosted free on GitHub Pages.
 GitHub builds the site automatically every time you change a file. Nothing to install.
@@ -39,7 +39,7 @@ are standalone pages and are copied as they are.
 1. Claim a free `.me` (Namecheap) or `.tech` domain from the GitHub Student Developer Pack.
 2. At the domain provider, add these DNS records:
    - four `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - one `CNAME` record for `www` pointing to `ayushwho18.github.io`
+   - one `CNAME` record for `www` pointing to `theayushdewangan.me`
 3. In this repo: **Settings → Pages → Custom domain**, type your domain, save, then tick **Enforce HTTPS** once it appears.
 4. Change `url:` in `_config.yml` to your domain.
 

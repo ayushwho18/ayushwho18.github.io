@@ -19,6 +19,6 @@ Before the MBA I was the site accountant and supervisor on a construction projec
 
 - [LinkedIn](https://www.linkedin.com/in/ayush-dewangann/)
 - [CV, IIM Raipur format](/cv/) ([PDF](/files/Ayush_Dewangan_CV.pdf))
-- Email: addy.dewangan278@gmail.com
+- Email: hello@theayushdewangan.me
 
 <p class="note">Views on this site are my own and do not represent the Government of Chhattisgarh. Analysis uses public sources or synthetic data only.</p>

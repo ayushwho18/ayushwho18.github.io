@@ -9,7 +9,7 @@ description: >-
   completing an MBA in Public Policy & Governance at IIM Raipur.
 author:
   name: Ayush Dewangan
-  email: addy.dewangan278@gmail.com
+  email: hello@theayushdewangan.me
   linkedin: ayush-dewangann
   location: Raipur, Chhattisgarh
 lang: en-IN
@@ -17,7 +17,7 @@ timezone: Asia/Kolkata
 
 # Your address on the web. When you connect your own domain,
 # change url to it (for example https://ayushdewangan.me) and add a CNAME file.
-url: "https://ayushwho18.github.io"
+url: "https://theayushdewangan.me"
 baseurl: ""
 
 # Post categories shown as filters on the Posts page.
