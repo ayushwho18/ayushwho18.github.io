@@ -1,0 +1,23 @@
+---
+layout: default
+title: Work
+description: Analysis, prototypes and publications by Ayush Dewangan.
+---
+<section class="wrap page">
+  <header class="page-head">
+    <h1>Work</h1>
+    <p class="lead">Things I have built or published. Everything here uses public sources or synthetic data; nothing comes from departmental files.</p>
+  </header>
+  <ul class="work-list">
+    {% for p in site.data.projects %}
+    <li>
+      <span class="kind">{{ p.kind }} · {{ p.year }}</span>
+      <div>
+        <h2>{% if p.url %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h2>
+        <p>{{ p.summary }}</p>
+        {% if p.links %}<div class="card-links">{% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

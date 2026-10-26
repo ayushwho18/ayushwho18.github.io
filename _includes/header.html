@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}, home">
+      <span class="mark" aria-hidden="true">AD</span>
+      <span class="brand-name">{{ site.title }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {% assign here = page.url %}
+      <a href="{{ '/posts/' | relative_url }}" {% if here contains '/posts/' %}aria-current="page"{% endif %}>Posts</a>
+      <a href="{{ '/work/' | relative_url }}" {% if here contains '/work/' %}aria-current="page"{% endif %}>Work</a>
+      <a href="{{ '/about/' | relative_url }}" {% if here contains '/about/' %}aria-current="page"{% endif %}>About</a>
+      <button type="button" class="theme" id="theme-toggle" aria-label="Switch colour theme">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 1.8v2.4M10 15.8v2.4M1.8 10h2.4M15.8 10h2.4M4.2 4.2l1.7 1.7M14.1 14.1l1.7 1.7M4.2 15.8l1.7-1.7M14.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Posts
+description: News, analysis and notes by Ayush Dewangan.
+---
+<section class="wrap page">
+  <header class="page-head">
+    <h1>Posts</h1>
+    <p class="lead">News I am following, analysis I have done and shorter notes. Subscribe through <a href="{{ '/feed.xml' | relative_url }}">RSS</a>.</p>
+  </header>
+  <div class="filters" role="group" aria-label="Filter posts by category">
+    <button type="button" data-filter="all" aria-pressed="true">All <span>{{ site.posts.size }}</span></button>
+    {% for c in site.categories_list %}
+      {% assign n = site.posts | where: 'category', c.key | size %}
+      <button type="button" data-filter="{{ c.key }}" aria-pressed="false">{{ c.label }} <span>{{ n }}</span></button>
+    {% endfor %}
+  </div>
+  {% assign byyear = site.posts | group_by_exp: 'p', "p.date | date: '%Y'" %}
+  {% for y in byyear %}
+  <section class="year" data-year>
+    <h2 class="year-h">{{ y.name }}</h2>
+    <ul class="post-list">{% for post in y.items %}{% include post-row.html post=post %}{% endfor %}</ul>
+  </section>
+  {% endfor %}
+  <p class="empty" id="no-match" hidden>No posts in this category yet.</p>
+</section>

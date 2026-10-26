@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>[hidden]{display:none!important}</style>
+<title>Next Ten Registries</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A registration-data readiness scorecard for ten Indian states, built from public sources by Ayush Dewangan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="gfonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Latin:wdth,wght@75..125,400..800&family=Anek+Devanagari:wght@500;700&family=Hind:wght@400;500;600&display=swap">
+<style>
+/* Layout: survey-sheet page. Left-aligned editorial column, one wide ranked register in the middle, cadastral linework only in the hero. */
+:root{
+  --paper:#F3F6F5; --surface:#FFFFFF; --sunk:#E9EFED;
+  --ink:#122128; --ink-2:#3F5157; --muted:#66777C; --rule:#D3DDDA; --rule-2:#BCCAC6;
+  --teal:#0A7564; --teal-deep:#064A40; --teal-soft:#D6ECE7; --teal-wash:#EAF5F2;
+  --stamp:#6B3A93; --stamp-soft:#EEE6F5;
+  --ok:#0A7564; --part:#A8670F; --part-soft:#F6EAD6; --none:#8A989C;
+  --g1:#D6ECE7; --g2:#8FCDBF; --g3:#3FA48F; --g4:#0A7564; --g5:#064A40;
+  --line:rgba(10,117,100,.22);
+  --display:"Anek Latin","Segoe UI",system-ui,sans-serif;
+  --deva:"Anek Devanagari","Hind","Nirmala UI",sans-serif;
+  --body:"Hind","Segoe UI",system-ui,sans-serif;
+  --r-s:4px; --r-m:8px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D1517; --surface:#142024; --sunk:#0A1113;
+  --ink:#E3ECEA; --ink-2:#A7B8B5; --muted:#839499; --rule:#22343A; --rule-2:#30464C;
+  --teal:#45BBA4; --teal-deep:#8FDCCB; --teal-soft:#16362F; --teal-wash:#112A25;
+  --stamp:#B993DB; --stamp-soft:#2A2036;
+  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#6F8186;
+  --g1:#17332E; --g2:#1E5A4E; --g3:#2C8A77; --g4:#45BBA4; --g5:#9BE3D3;
+  --line:rgba(69,187,164,.20); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D1517; --surface:#142024; --sunk:#0A1113;
+  --ink:#E3ECEA; --ink-2:#A7B8B5; --muted:#839499; --rule:#22343A; --rule-2:#30464C;
+  --teal:#45BBA4; --teal-deep:#8FDCCB; --teal-soft:#16362F; --teal-wash:#112A25;
+  --stamp:#B993DB; --stamp-soft:#2A2036;
+  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#6F8186;
+  --g1:#17332E; --g2:#1E5A4E; --g3:#2C8A77; --g4:#45BBA4; --g5:#9BE3D3;
+  --line:rgba(69,187,164,.20); color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--teal-deep)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto}
+.col{max-width:700px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(26px,3.2vw,34px);font-weight:700;font-stretch:88%;line-height:1.1}
+h3{font-size:19px;font-weight:650}
+p{margin:0}
+.sec{padding-block:56px;border-top:1px solid var(--rule)}
+.sec-head{display:grid;gap:10px;margin-bottom:28px}
+.kicker{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--teal)}
+.lead{color:var(--ink-2);font-size:18px;max-width:64ch}
+.src{font-size:12.5px;color:var(--muted)}
+.src a{color:var(--muted)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding-block:64px 52px;overflow:hidden}
+#parcels{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero>.wrap{position:relative;z-index:1}
+.byline{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px;color:var(--ink-2);margin-bottom:26px}
+.byline strong{color:var(--ink);font-weight:600}
+.seal{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 6px;border:1.5px solid var(--stamp);border-radius:99px;color:var(--stamp);font-size:12.5px;font-weight:600;background:var(--stamp-soft)}
+.seal svg{width:16px;height:16px}
+.hero h1{font-size:clamp(40px,6.6vw,78px);font-weight:780;font-stretch:80%;line-height:.98;max-width:13ch}
+.hero h1 .deva{display:block;font-family:var(--deva);font-weight:500;font-size:.34em;letter-spacing:0;color:var(--teal);margin-bottom:12px}
+.hero .lead{margin-top:22px;font-size:19px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
+.fact{background:color-mix(in srgb,var(--surface) 88%,transparent);border:1px solid var(--rule);border-radius:var(--r-m);padding:16px 18px;backdrop-filter:blur(2px)}
+.fact b{display:block;font-family:var(--display);font-size:30px;font-weight:750;font-stretch:85%;line-height:1;color:var(--teal-deep)}
+.fact span{display:block;margin-top:8px;font-size:14.5px;color:var(--ink-2);line-height:1.45}
+
+/* ---------- Signals ---------- */
+.signals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:2px solid var(--ink)}
+.signal{padding:22px 24px 22px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:96px 1fr;gap:16px}
+.signal:nth-child(odd){border-right:1px solid var(--rule)}
+.signal:nth-child(even){padding-left:24px}
+.signal time{font-family:var(--display);font-weight:650;font-stretch:85%;font-size:15px;color:var(--teal)}
+.signal h3{font-size:18px;margin-bottom:6px}
+.signal p{font-size:15px;color:var(--ink-2)}
+
+/* ---------- Register (ranked table) ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;color:var(--ink-2);margin-bottom:14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.reg-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--r-m);background:var(--surface)}
+table.reg{width:100%;border-collapse:collapse;min-width:760px}
+.reg th{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:left;padding:12px 10px;border-bottom:1px solid var(--rule-2);background:var(--sunk);white-space:nowrap}
+.reg th button{all:unset;cursor:pointer}
+.reg th button:focus-visible{outline:2px solid var(--teal)}
+.reg th[aria-sort="descending"] button::after{content:" ↓"}
+.reg th[aria-sort="ascending"] button::after{content:" ↑"}
+.reg td{padding:11px 10px;border-bottom:1px solid var(--rule);vertical-align:middle;font-size:15px}
+.reg tbody tr.row{cursor:pointer}
+.reg tbody tr.row:hover td{background:var(--teal-wash)}
+.reg tbody tr.row[aria-expanded="true"] td{background:var(--teal-wash)}
+.rank{font-family:var(--display);font-weight:750;font-size:22px;font-stretch:80%;color:var(--muted);width:44px}
+.st b{font-family:var(--display);font-size:18px;font-weight:650;display:block;line-height:1.15}
+.st small{color:var(--muted);font-size:12.5px}
+.score{min-width:150px}
+.bar{display:flex;height:12px;border-radius:3px;overflow:hidden;background:var(--sunk);gap:2px}
+.bar i{display:block;height:100%}
+.bar .m{background:var(--g5)} .bar .a{background:var(--g3)} .bar .w{background:var(--g2)}
+.score-n{font-family:var(--display);font-weight:750;font-size:20px;font-stretch:85%;display:flex;align-items:baseline;gap:6px;margin-bottom:5px}
+.score-n em{font-style:normal;font-size:12px;font-weight:500;color:var(--muted)}
+.money b{font-weight:600}
+.money small{display:block;color:var(--muted);font-size:12.5px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:3px 8px 3px 6px;border-radius:99px;white-space:nowrap;border:1px solid transparent}
+.chip svg{width:13px;height:13px;flex:none}
+.chip.ok{color:var(--ok);background:var(--teal-soft)}
+.chip.part{color:var(--part);background:var(--part-soft)}
+.chip.none{color:var(--none);border-color:var(--rule-2);background:transparent}
+.ws{font-size:13px;font-weight:600}
+.ws.open{color:var(--stamp)}
+.ws.taken{color:var(--muted);font-weight:500}
+tr.detail td{background:var(--teal-wash);padding:0 12px 18px}
+.detail-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-top:4px}
+.dcell{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-s);padding:10px 12px;font-size:13.5px}
+.dcell h4{margin:0 0 4px;font-family:var(--display);font-size:13px;font-weight:600;color:var(--ink-2)}
+.dcell p{color:var(--ink-2)}
+.dnote{grid-column:1/-1;font-size:14px;color:var(--ink-2)}
+.tier{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.03em;padding:1px 6px;border-radius:3px;margin-left:4px;vertical-align:1px}
+.tier.o{background:var(--teal-soft);color:var(--teal-deep)}
+.tier.s{background:var(--sunk);color:var(--muted)}
+
+/* ---------- Quadrant ---------- */
+.quad{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:36px;align-items:start}
+.chart{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-m);padding:14px 10px 6px}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{font-family:var(--body);fill:var(--muted);font-size:12px}
+.chart .lab{fill:var(--ink);font-family:var(--display);font-weight:600;font-size:13px}
+.chart .zone{font-family:var(--display);font-weight:650;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+.zones{display:grid;gap:18px}
+.zone-card{border-left:3px solid var(--g4);padding:2px 0 2px 16px}
+.zone-card.g{border-color:var(--stamp)}
+.zone-card.w{border-color:var(--rule-2)}
+.zone-card h3{margin-bottom:4px}
+.zone-card p{font-size:15px;color:var(--ink-2)}
+.tip{position:fixed;z-index:30;pointer-events:none;background:var(--ink);color:var(--paper);font-size:13px;padding:8px 10px;border-radius:var(--r-s);max-width:240px;line-height:1.4}
+.tip b{display:block}
+
+/* ---------- Turnaround ---------- */
+.ta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}
+.ta-rows{display:grid;gap:16px}
+.ta-row{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:center}
+.ta-row b{font-family:var(--display);font-weight:650}
+.ta-track{position:relative;height:30px;background:var(--sunk);border-radius:var(--r-s)}
+.ta-track i{position:absolute;top:0;bottom:0;border-radius:var(--r-s);background:linear-gradient(90deg,var(--g3),var(--g4))}
+.ta-track span{position:absolute;top:50%;transform:translateY(-50%);font-size:13px;font-weight:600;white-space:nowrap}
+.ta-scale{display:grid;grid-template-columns:130px 1fr;gap:12px;font-size:12px;color:var(--muted)}
+.ta-scale div{display:flex;justify-content:space-between}
+.callout{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-m);padding:22px 24px}
+.callout h3{margin-bottom:8px}
+.callout p+p{margin-top:10px}
+.callout p{color:var(--ink-2);font-size:15.5px}
+
+/* ---------- Playbook ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.step{padding:22px 22px 24px 0;border-bottom:1px solid var(--rule)}
+.step:not(:nth-child(3n)){border-right:1px solid var(--rule)}
+.step:not(:nth-child(3n+1)){padding-left:22px}
+.step .num{font-family:var(--display);font-weight:780;font-stretch:78%;font-size:38px;line-height:1;color:var(--g3)}
+.step .wk{font-size:12.5px;font-weight:600;color:var(--teal);margin:8px 0 4px}
+.step h3{margin-bottom:6px}
+.step p{font-size:15px;color:var(--ink-2)}
+.secy{margin-top:30px;display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:start;background:var(--stamp-soft);border-radius:var(--r-m);padding:22px 24px}
+.secy h3{color:var(--stamp)}
+.secy ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink);font-size:15.5px}
+
+/* ---------- About ---------- */
+.about{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px}
+.proof{display:grid;gap:0;border-top:2px solid var(--ink)}
+.proof div{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.proof dt{font-family:var(--display);font-weight:650;font-size:15px}
+.proof dd{margin:0;color:var(--ink-2);font-size:15px}
+.contact{align-self:start;background:var(--ink);color:var(--paper);border-radius:var(--r-m);padding:26px 26px 22px}
+.contact h3{color:var(--paper);font-size:22px;margin-bottom:6px}
+.contact p{color:color-mix(in srgb,var(--paper) 78%,transparent);font-size:15px}
+.links{display:grid;gap:10px;margin-top:18px}
+.links a,.links .copy{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 14px;border-radius:var(--r-s);background:color-mix(in srgb,var(--paper) 10%,transparent);color:var(--paper);text-decoration:none;font-weight:500;font-size:15px;border:1px solid color-mix(in srgb,var(--paper) 18%,transparent)}
+.links a:hover,.links .copy:hover{background:color-mix(in srgb,var(--paper) 18%,transparent)}
+.copy{cursor:pointer;font:inherit;width:100%;text-align:left}
+.links small{opacity:.7;font-size:12.5px}
+
+/* ---------- Method ---------- */
+.method{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.method p,.method li{font-size:15px;color:var(--ink-2)}
+.method ul{padding-left:18px;margin:8px 0 0;display:grid;gap:4px}
+.formula{font-family:var(--display);font-size:16px;font-weight:600;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-s);padding:12px 14px;margin:10px 0;color:var(--ink)}
+ol.sources{margin:0;padding-left:22px;display:grid;gap:5px;font-size:13.5px;color:var(--ink-2)}
+ol.sources a{word-break:break-word}
+footer{padding-block:28px 48px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media screen and (max-width:860px){
+  .facts,.signals,.quad,.ta,.about,.method{grid-template-columns:1fr}
+  .signal,.signal:nth-child(odd),.signal:nth-child(even){padding-left:0;border-right:0}
+  #parcels{display:none}
+  .steps{grid-template-columns:1fr}
+  .step,.step:not(:nth-child(3n)),.step:not(:nth-child(3n+1)){padding-left:0;border-right:0}
+  .secy{grid-template-columns:1fr}
+  .detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof div{grid-template-columns:1fr;gap:2px}
+}
+@media screen and (max-width:480px){.signal{grid-template-columns:1fr;gap:4px}.ta-row,.ta-scale{grid-template-columns:96px 1fr}.detail-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- Print / PDF ---------- */
+@media print{
+  @page{size:A4;margin:14mm 13mm}
+  :root{--paper:#fff;--surface:#fff}
+  body{font-size:10.5pt;padding:0}
+  .quad{grid-template-columns:1fr;gap:16px}
+  .ta{grid-template-columns:1fr 1fr;gap:18px}
+  .method{grid-template-columns:1fr;gap:18px}
+  ol.sources{columns:2;column-gap:22px;display:block}
+  ol.sources li{break-inside:avoid;margin-bottom:4px}
+  .print-break{break-before:auto}
+  .hero h1{font-size:54px}
+  .sec-head{margin-bottom:16px}
+  .chart{max-width:560px}
+  .sec{padding-block:20px;break-inside:auto}
+  .hero{padding-block:8px 18px}
+  #parcels{opacity:.55}
+  .reg-wrap{overflow:visible;border:0}
+  table.reg{min-width:0;font-size:10pt}
+  .reg td,.reg th{padding:7px 6px}
+  tr.detail{display:table-row!important}
+  tr.detail td{padding:0 6px 10px}
+  .no-print{display:none!important}
+  .callout,.step,.zone-card,.secy,.signal,.fact,.contact,.chart,tr{break-inside:avoid}
+  .sec-head{break-after:avoid}
+  .print-break{break-before:page}
+  a{color:inherit;text-decoration:none}
+  .contact{background:#122128!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+
+<header class="hero">
+  <canvas id="parcels" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="byline">
+      <span class="seal"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 8.2l2 2 4-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Public sources only · checked 26 Oct 2026</span>
+      <span>Prepared by <strong>Ayush Dewangan</strong>, CM Good Governance Fellow, Govt. of Chhattisgarh · MBA (Public Policy &amp; Governance), IIM Raipur</span>
+    </div>
+    <h1><span class="deva" lang="hi">पंजीयन · registration readiness</span>The next ten registries</h1>
+    <p class="lead">Lenders now want property data through RBI's lending rails, and most of it still sits in state registration offices that are hard to reach. This scorecard ranks ten north, central and eastern states on how much registration business they do, how much of the registration record is open online, and whether a large registration-data platform already works there.</p>
+    <div class="facts">
+      <div class="fact"><b>8</b><span>states whose land records feed RBI's Unified Lending Interface, which has 64 lenders on board <a href="#s-ml">[1]</a></span></div>
+      <div class="fact"><b>₹565.5 Cr</b><span>DILRMP 3.0 outlay for 2026–31, funding a national Land Stack and a Registration Repository <a href="#s-dilrmp">[2]</a></span></div>
+      <div class="fact"><b>₹1.14 lakh Cr</b><span>stamp duty and registration fees these ten states budgeted for 2026–27 <a href="#s-prs">[3]</a></span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Why now</span><h2>Four things changed in the last eighteen months</h2></div>
+    <div class="signals">
+      <article class="signal"><time>Sep 2026</time><div><h3>DILRMP 3.0 funds a Registration Repository</h3><p>The Centre's ₹565.5 crore programme builds state Land Stacks joined by APIs, a digital store of deeds and encumbrances, and 75 Registration Seva Kendras at high-footfall Sub-Registrar offices. <a href="#s-dilrmp">[2]</a></p></div></article>
+      <article class="signal"><time>Jul 2026</time><div><h3>Land records are ULI's bottleneck</h3><p>The Department of Land Resources and RBI Innovation Hub began work on linking land records to the Unified Lending Interface, after bankers said weak land records were holding back its scale-up. <a href="#s-rv">[4]</a> <a href="#s-bs">[5]</a></p></div></article>
+      <article class="signal"><time>Apr 2026</time><div><h3>Title search became lending infrastructure</h3><p>Square Yards signed on to offer title search and e-valuation through ULI, built on more than 100 million registration records from five states. <a href="#s-sy">[6]</a></p></div></article>
+      <article class="signal"><time>May 2025</time><div><h3>The Registration Bill widens what must be registered</h3><p>The draft bill to replace the 1908 Act makes agreements to sell, powers of attorney for property transfer and equitable-mortgage documents compulsorily registrable, and moves registration online. <a href="#s-rb">[7]</a></p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="register">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">The register</span>
+      <h2>Ten states, ranked for expansion</h2>
+      <p class="lead">Each score adds three parts: registration market size (40 points), how much of the registration record is reachable online (40), and whether a large registration-data platform already covers the state (20). Select a state to see the evidence behind each cell.</p>
+    </div>
+    <div class="legend">
+      <span><span class="chip ok"><svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="currentColor"/><path d="M4.2 7.2l1.9 1.9 3.7-3.9" stroke="var(--surface)" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Available</span> online, per public source</span>
+      <span><span class="chip part"><svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 1.4a5.6 5.6 0 0 1 0 11.2z" fill="currentColor"/></svg>Partial</span> limited span, pilot or unclear</span>
+      <span><span class="chip none"><svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2"/></svg>Not confirmed</span> not found in sources reviewed</span>
+      <span><span class="bar" style="width:60px;display:inline-flex"><i class="m" style="width:34%"></i><i class="a" style="width:40%"></i><i class="w" style="width:26%"></i></span> market · access · white space</span>
+    </div>
+    <div class="reg-wrap">
+      <table class="reg" id="reg">
+        <thead><tr>
+          <th scope="col">#</th>
+          <th scope="col" data-k="name"><button type="button">State</button></th>
+          <th scope="col" data-k="score" aria-sort="descending"><button type="button">Score</button></th>
+          <th scope="col" data-k="be"><button type="button">Stamps &amp; registration</button></th>
+          <th scope="col">Deed search</th>
+          <th scope="col">Encumbrance</th>
+          <th scope="col">Certified copy</th>
+          <th scope="col">Auto-mutation</th>
+          <th scope="col" data-k="space"><button type="button">Platform</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="src" style="margin-top:10px">Revenue: PRS Legislative Research state budget analyses 2026–27 (2024–25 actuals; 2026–27 budget estimates). Feature status: official releases and published guides listed under Sources. "Not confirmed" means not found, not absent.</p>
+  </div>
+</section>
+
+<section class="sec" id="map">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Two kinds of expansion</span><h2>Where software is enough, and where you need people at the counter</h2></div>
+    <div class="quad">
+      <div class="chart"><svg id="quad" viewBox="0 0 640 430" role="img" aria-label="Scatter of ten states by registration revenue and online access"></svg></div>
+      <div class="zones">
+        <div class="zone-card"><h3>Fast wins</h3><p>Large market and most of the record online. Coverage here is mostly engineering: parse the portal, automate certified-copy requests, monitor turnaround. Rajasthan, Madhya Pradesh and Bihar sit here. Uttar Pradesh does too, but a large platform already covers it.</p></div>
+        <div class="zone-card g"><h3>Ground-ops plays</h3><p>Big money, thinner online record. Coverage depends on field staff, Sub-Registrar relationships and a data-sharing route with the Inspector General of Registration. Punjab is the clearest case: NGDRS is live in every district, but older decades are still in office registers.</p></div>
+        <div class="zone-card w"><h3>Smaller markets</h3><p>Chhattisgarh and Odisha pair strong online access with smaller markets, which makes them good pilot states for a launch playbook. Jharkhand, Uttarakhand and Himachal Pradesh are smaller and less open.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="turnaround">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">The hidden cost</span><h2>Turnaround is decided office by office</h2></div>
+    <div class="ta">
+      <div>
+        <div class="ta-rows" id="ta"></div>
+        <div class="ta-scale" style="margin-top:8px"><span></span><div><span>0</span><span>5</span><span>10 working days</span></div></div>
+        <p class="src" style="margin-top:14px">Published turnaround for a certified sale-deed copy on a title-search platform's own product pages, Oct 2026. <a href="#s-ldmp">[8]</a> <a href="#s-ldrj">[9]</a></p>
+      </div>
+      <div class="callout">
+        <h3>Measure the office, not just the state</h3>
+        <p>The same document can take twice as long from one state to the next, and the published range within a state depends on the age of the document and the Sub-Registrar office. A state average hides the offices that set your delivery promise.</p>
+        <p>During my fellowship I pitched Sub-Registrar performance analytics to the Secretary of the Commercial Tax (Registration) Department, and it was taken up for implementation. The same lens works for a platform: track median and worst-case turnaround per office, then price and promise per office. <a href="#about">See the prototype below.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec print-break" id="playbook">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Playbook</span><h2>How I would open a new state in about sixty days</h2><p class="lead">A sequence, built from how registration departments actually work. Weeks are indicative.</p></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div class="wk">Weeks 1–2</div><h3>Map the registry</h3><p>Portal and software (NGDRS or the state's own), document types, fee schedule, digitised span, search and certified-copy rules under Section 57 of the Registration Act, and the RoR system it links to.</p></div>
+      <div class="step"><div class="num">2</div><div class="wk">Weeks 2–3</div><h3>Sample the offices</h3><p>Ten Sub-Registrar offices across urban, peri-urban and rural districts: turnaround, record gaps, counter practice. This sets the delivery promise and the field-staff plan.</p></div>
+      <div class="step"><div class="num">3</div><div class="wk">Weeks 3–5</div><h3>Open the access route</h3><p>Public portal first, certified-copy workflow second, then a formal data-sharing proposal to the Inspector General of Registration, written in the department's own format.</p></div>
+      <div class="step"><div class="num">4</div><div class="wk">Weeks 4–6</div><h3>Stand up field operations</h3><p>Local hires at priority offices, Hindi and regional-language forms, name transliteration for party search, escalation contacts at district level.</p></div>
+      <div class="step"><div class="num">5</div><div class="wk">Weeks 5–8</div><h3>Close the loop with land records</h3><p>Match registered deeds against the RoR to measure mutation lag. Unmutated sales are the title risk lenders pay to find.</p></div>
+      <div class="step"><div class="num">6</div><div class="wk">Week 8 on</div><h3>Launch and monitor</h3><p>Weeks to launch, documents indexed, search success rate, and median turnaround per office, reviewed weekly against the promise.</p></div>
+    </div>
+    <div class="secy">
+      <h3>What gets a Secretary to say yes</h3>
+      <ul>
+        <li>I pitched 30 registration reforms benchmarked across 10 states. The two taken up for implementation were Sub-Registrar performance analytics and dedicated counters for women and senior citizens.</li>
+        <li>Both cost the department little, both are visible to citizens, and both can be measured. A data-sharing proposal from a platform should pass the same three tests.</li>
+        <li>Lead with citizen benefit and alignment with DILRMP 3.0, show data security plainly, and ask for a pilot in a few offices before a statewide order.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div>
+      <div class="sec-head"><span class="kicker">About the author</span><h2>Ayush Dewangan</h2><p class="lead">Chief Minister's Good Governance Fellow with the Government of Chhattisgarh since August 2025, working in the Commercial Tax (Registration) and Housing &amp; Environment departments. MBA in Public Policy &amp; Governance at IIM Raipur, graduating April 2027.</p></div>
+      <dl class="proof">
+        <div><dt>Registration reform</dt><dd>Catalogued 30 reforms from 10 states and benchmarked Chhattisgarh against Karnataka, Telangana, Maharashtra and Gujarat. Two were taken up for implementation.</dd></div>
+        <div><dt>Detailed Project Report</dt><dd>Wrote the DPR for property-registration modernisation: architecture, legal framework, risk register and a ₹3.24 crore programme across 107 Sub-Registrar offices.</dd></div>
+        <div><dt>Citizen grievances</dt><dd>Mapped CM Helpline 1076 services for Commercial Tax and Housing &amp; Environment, built the L1–L4 officer escalation map, and serve as the departmental point of contact on the portal.</dd></div>
+        <div><dt>Finance</dt><dd>B.Com (Hons). Site accountant for a construction firm: invoices, reconciliation, vendor ledgers. Three-statement and DCF models.</dd></div>
+        <div><dt>Building</dt><dd>Builds working prototypes with AI tools, including a Sub-Registrar performance scorecard for 107 offices on synthetic data.</dd></div>
+      </dl>
+    </div>
+    <aside class="contact">
+      <h3>Talk to me</h3>
+      <p>Available from May 2027. Open to roles in state expansion, government partnerships and registry operations.</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/ayush-dewangann/" target="_blank" rel="noopener"><span>LinkedIn</span><small>ayush-dewangann ↗</small></a>
+        <a id="sro-link" href="/sro-scorecard/" target="_blank" rel="noopener"><span>Sub-Registrar scorecard prototype</span><small>live demo ↗</small></a>
+        <button type="button" class="copy" data-copy="addy.dewangan278@gmail.com"><span>addy.dewangan278@gmail.com</span><small class="cstate">Copy</small></button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec" id="method">
+  <div class="wrap method">
+    <div>
+      <div class="sec-head"><span class="kicker">Method</span><h2>How the score works</h2></div>
+      <div class="formula">Score = Market (40) + Online access (40) + White space (20)</div>
+      <ul>
+        <li><b>Market:</b> 2026–27 budget estimate for stamp duty and registration fees, on a log scale from ₹500 crore (0) to ₹50,000 crore (40).</li>
+        <li><b>Online access:</b> deed search 12, encumbrance search or certificate 12, certified copy 8, registration-to-RoR auto-mutation 8. Available counts in full, partial counts half, not confirmed counts zero.</li>
+        <li><b>White space:</b> 20 if the state is outside Square Yards' published registration-data coverage (Maharashtra, Karnataka, Telangana, Uttar Pradesh, Delhi), otherwise 0.</li>
+        <li><b>Robustness:</b> Rajasthan, Bihar, Madhya Pradesh and Chhattisgarh stay in the top five when market is weighted at 60% and when access is weighted at 60%.</li>
+      </ul>
+      <p style="margin-top:14px"><b>Limits.</b> Feature status comes from official releases where available and from published guides otherwise; each cell is marked with its source type. Portals change, so check each one before relying on it. Budget estimates are targets, not collections. No departmental or non-public data was used.</p>
+    </div>
+    <div>
+      <div class="sec-head"><span class="kicker">Sources</span><h2>Evidence</h2></div>
+      <ol class="sources" id="sources"></ol>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="wrap"><span><a href="/">ayushwho18.github.io</a> · © 2026 Ayush Dewangan. Independent analysis from public sources; not an official Government of Chhattisgarh document.</span><span>Version 1 · 26 Oct 2026</span></footer>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const SRC = {
+  ml:["MediaNama, “Unified Lending Interface: 64 lenders, 136 data services”, Jan 2026","https://www.medianama.com/2026/01/223-united-lending-interface-64-lenders-136-data-services/","o"],
+  dilrmp:["TechObserver, “DILRMP 3.0 launched with ₹565 crore”, Sep 2026","https://techobserver.in/news/egov/dilrmp-3-land-records-digitisation-bhu-aadhaar-328937/","o"],
+  prs:["PRS Legislative Research, State Budget Analyses 2026–27 (Table: major sources of own-tax revenue)","https://prsindia.org/budgets/states","o"],
+  rv:["Rural Voice, “DoLR, RBI Innovation Hub explore digital land records integration”, 18 Jul 2026","https://eng.ruralvoice.in/national/dolr-rbi-innovation-hub-explore-digital-land-records-integration-to-speed-up-farm-credit.html","o"],
+  bs:["Business Standard, “Big banks' slow adoption, weak land records stall ULI scale-up”, Aug 2025","https://www.business-standard.com/industry/news/big-banks-slow-adoption-weak-land-records-stall-uli-scale-up-bankers-125082700907_1.html","o"],
+  sy:["Realty n More, “Square Yards partners with RBI Innovation Hub”, 9 Apr 2026","https://realtynmore.com/square-yards-partners-with-rbi-innovation-hub/","o"],
+  rb:["Bar & Bench, “An overview of the Registration Bill, 2025”","https://www.barandbench.com/law-firms/view-point/modernising-indias-document-registration-an-overview-of-the-registration-bill-2025","o"],
+  ldmp:["Landeed, Certified Sale Deed – Madhya Pradesh (product page)","https://web.landeed.com/products/madhya-pradesh/certified-sale-deed","s"],
+  ldrj:["Landeed, Certified Sale Deed – Rajasthan (product page)","https://web.landeed.com/products/rajasthan/certified-sale-deed","s"],
+  nic_cg:["NIC, “CM launches ten transformative services under NGDRS in Chhattisgarh”, 3 May 2025","https://informaticsweb.nic.in/news/honorable-chief-minister-launches-ten-transformative-services-under-ngdrs-in-chhattisgarh","o"],
+  hf_cg:["Home First Finance, “Encumbrance certificate in Chhattisgarh” (guide)","https://homefirstindia.com/blog/article/encumbrance-certificate-in-chhattisgarh/","s"],
+  impri_mp:["IMPRI, “SAMPADA 2.0: Revolutionizing property registration in Madhya Pradesh”","https://www.impriindia.com/?p=66590","s"],
+  "1a_rj":["1acre, “e-Panjiyan EC, Rajasthan” (guide)","https://1acre.in/guides/rajasthan/epanjiyan-ec","s"],
+  "1a_up":["1acre, “IGRSUP EC, Uttar Pradesh” (guide)","https://1acre.in/guides/uttar-pradesh/igrsup-ec","s"],
+  kt_br:["Kotak Mahindra Bank, “Bihar Bhumi: land records, registration and EC” (guide)","https://www.kotak.bank.in/en/stories-in-focus/loans/home-loan/bihar-bhumi-land-records.html","s"],
+  ncaer21:["NCAER, N-LRSI 2021 findings on automatic RoR notes after registration (Bihar, Odisha), Apr 2021","https://www.ncaer.org/news/indian-states-taking-ownership-of-land-records-digitisation-up-to-govt-to-expand-it-now-study","o"],
+  bj_jh:["Bajaj Finserv, “A guide on e-Nibandhan Jharkhand”","https://www.bajajfinserv.in/e-nibandhan-guide","s"],
+  kt_od:["Kotak Mahindra Bank, “IGR Odisha: online EC and registration” (guide)","https://www.kotak.bank.in/en/stories-in-focus/loans/home-loan/igrs-odisha.html","s"],
+  "1a_pb":["1acre, “NGDRS EC, Punjab” (guide)","https://1acre.in/guides/punjab/ngdrs-punjab-ec","s"],
+  hf_uk:["Home First Finance, “Encumbrance certificate in Uttarakhand” (guide)","https://homefirstindia.com/blog/article/encumbrance-certificate-in-uttarakhand/","s"],
+  week_hp:["The Week (PTI), “HP launches My Deed NGDRS pilot in 10 tehsils”, 11 Jul 2025","https://www.theweek.in/wire-updates/national/2025/07/11/des81-hp-land-registration-cm.html","o"],
+};
+const ORDER=["ml","dilrmp","prs","rv","bs","sy","rb","ldmp","ldrj","nic_cg","hf_cg","impri_mp","1a_rj","1a_up","kt_br","ncaer21","bj_jh","kt_od","1a_pb","hf_uk","week_hp"];
+const NUM=Object.fromEntries(ORDER.map((k,i)=>[k,i+1]));
+const Y=1,P=.5,N=0;
+const D=[
+ {id:"RJ",name:"Rajasthan",sys:"e-Panjiyan",lang:"Hindi",act:10542,be:18750,f:{search:[Y,"1a_rj"],ec:[Y,"1a_rj"],cc:[Y,"ldrj"],am:[N,null]},sy:false,
+  note:"Largest market among states with no registration-data platform. Encumbrance and certified copies are issued through e-Panjiyan. Mutation (namantaran) is a separate step, so deed-to-RoR matching is where the risk sits."},
+ {id:"BR",name:"Bihar",sys:"Bihar e-Registration",lang:"Hindi",act:7976,be:10000,f:{search:[Y,"kt_br"],ec:[Y,"kt_br"],cc:[P,"kt_br"],am:[Y,"ncaer21"]},sy:false,
+  note:"Strong online access: deed search, on-screen EC and an automatic RoR note after registration (NCAER, 2021). Certified copies are less clearly online, which makes them a field-ops item."},
+ {id:"MP",name:"Madhya Pradesh",sys:"SAMPADA 2.0",lang:"Hindi",act:11357,be:19112,f:{search:[Y,"ldmp"],ec:[N,null],cc:[Y,"ldmp"],am:[Y,"impri_mp"]},sy:false,
+  note:"SAMPADA 2.0 (Oct 2024) supports party-name search in Hindi or English, certified copies at a ₹300 government fee, and Cyber Tehsil mutation. An online encumbrance route was not confirmed in the sources reviewed."},
+ {id:"CG",name:"Chhattisgarh",sys:"NGDRS + e-Panjeeyan",lang:"Hindi",act:2969,be:4500,f:{search:[Y,"nic_cg"],ec:[Y,"hf_cg"],cc:[Y,"nic_cg"],am:[Y,"nic_cg"]},sy:false,
+  note:"Every access feature available: deed search by party name or khasra number, digitally signed certified copies, and auto-mutation into Bhuiyan (NGDRS services launched May 2025). A smaller market makes it a clean pilot state."},
+ {id:"OD",name:"Odisha",sys:"IGR Odisha",lang:"Odia",act:1987,be:3400,f:{search:[Y,"kt_od"],ec:[Y,"kt_od"],cc:[N,null],am:[Y,"ncaer21"]},sy:false,
+  note:"Online EC in Forms 15 and 16 and a document status enquiry. An automatic RoR note after registration was reported by NCAER in 2021. Odia-language records need local staff."},
+ {id:"UP",name:"Uttar Pradesh",sys:"IGRSUP",lang:"Hindi",act:30198,be:43802,f:{search:[Y,"1a_up"],ec:[Y,"1a_up"],cc:[P,"1a_up"],am:[N,null]},sy:true,
+  note:"The biggest registration market in the country by this measure. Search fees are set under Section 57 (₹10 a year, capped at ₹100). Already in Square Yards' registration-data coverage, so the opening is depth and quality rather than first entry."},
+ {id:"PB",name:"Punjab",sys:"NGDRS",lang:"Punjabi",act:5781,be:9000,f:{search:[P,"1a_pb"],ec:[P,"1a_pb"],cc:[P,"1a_pb"],am:[N,null]},sy:false,
+  note:"NGDRS runs in all 22 districts, but older decades sit in office registers outside the digital span. A ground-ops state: value comes from retrieving what is not online."},
+ {id:"UK",name:"Uttarakhand",sys:"registration.uk.gov.in",lang:"Hindi",act:2602,be:3092,f:{search:[Y,"hf_uk"],ec:[P,"hf_uk"],cc:[P,"hf_uk"],am:[N,null]},sy:false,
+  note:"Online deed search is available. Guides differ on whether a certified EC can be downloaded or must be collected from the office."},
+ {id:"JH",name:"Jharkhand",sys:"e-Nibandhan",lang:"Hindi",act:1258,be:1800,f:{search:[Y,"bj_jh"],ec:[P,"bj_jh"],cc:[Y,"bj_jh"],am:[N,null]},sy:false,
+  note:"Document search by registration number and downloadable certified copies. Encumbrance checks are listed among services but the process is not described."},
+ {id:"HP",name:"Himachal Pradesh",sys:"NGDRS “My Deed” (pilot)",lang:"Hindi",act:491,be:650,f:{search:[N,null],ec:[N,null],cc:[N,null],am:[P,"week_hp"]},sy:false,
+  note:"My Deed NGDRS pilot launched in 10 tehsils in July 2025, with an online mutation module announced to follow. Small market; watch rather than enter."},
+];
+const W={search:12,ec:12,cc:8,am:8};
+const lo=Math.log10(500),hi=Math.log10(50000);
+D.forEach(s=>{
+  s.market=+(40*Math.max(0,Math.min(1,(Math.log10(s.be)-lo)/(hi-lo)))).toFixed(1);
+  s.access=Object.keys(W).reduce((t,k)=>t+W[k]*s.f[k][0],0);
+  s.space=s.sy?0:20; s.score=+(s.market+s.access+s.space).toFixed(1);
+});
+const fmt=n=>n.toLocaleString("en-IN");
+const ICON={1:'<svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="currentColor"/><path d="M4.2 7.2l1.9 1.9 3.7-3.9" stroke="var(--surface)" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>',
+  .5:'<svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 1.4a5.6 5.6 0 0 1 0 11.2z" fill="currentColor"/></svg>',
+  0:'<svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2"/></svg>'};
+const LBL={1:["ok","Available"],.5:["part","Partial"],0:["none","Not confirmed"]};
+const SHORT={1:"Yes",.5:"Partial",0:"No source"};
+const chip=(v,short)=>`<span class="chip ${LBL[v][0]}" title="${LBL[v][1]}">${ICON[v]}${short?SHORT[v]:LBL[v][1]}</span>`;
+const FN={search:"Deed search",ec:"Encumbrance",cc:"Certified copy",am:"Auto-mutation"};
+let sortK="score",dir=-1,open=null;
+function render(){
+  const tb=document.querySelector("#reg tbody");
+  const rows=[...D].sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):x-y)*dir});
+  const rankOf=Object.fromEntries([...D].sort((a,b)=>b.score-a.score).map((s,i)=>[s.id,i+1]));
+  tb.innerHTML=rows.map(s=>{
+    const cells=Object.keys(W).map(k=>`<td>${chip(s.f[k][0],true)}</td>`).join("");
+    const det=Object.keys(W).map(k=>{const [v,src]=s.f[k];const t=src?SRC[src][2]:null;
+      return `<div class="dcell"><h4>${FN[k]}</h4><p>${LBL[v][1]}${src?` · <a href="#s-${src}">[${NUM[src]}]</a><span class="tier ${t}">${t==="o"?"official / press":"published guide"}</span>`:" · no source found"}</p></div>`}).join("");
+    const isOpen=open===s.id;
+    return `<tr class="row" tabindex="0" data-id="${s.id}" aria-expanded="${isOpen}">
+      <td class="rank">${rankOf[s.id]}</td>
+      <td class="st"><b>${s.name}</b><small>${s.sys} · ${s.lang} records</small></td>
+      <td class="score"><div class="score-n">${s.score}<em>/ 100</em></div>
+        <div class="bar" title="Market ${s.market} · Access ${s.access} · White space ${s.space}"><i class="m" style="width:${s.market}%"></i><i class="a" style="width:${s.access}%"></i><i class="w" style="width:${s.space}%"></i></div></td>
+      <td class="money"><b>₹${fmt(s.be)} Cr</b><small>BE 2026–27</small><small>₹${fmt(s.act)} Cr in 2024–25</small></td>
+      ${cells}
+      <td>${s.sy?'<span class="ws taken">Square Yards</span>':'<span class="ws open">Open</span>'}</td>
+    </tr>
+    <tr class="detail" ${isOpen?"":"hidden"} data-for="${s.id}"><td colspan="9"><div class="detail-grid">${det}
+      <p class="dnote"><b>Reading:</b> ${s.note} <span class="src">Revenue: <a href="#s-prs">[${NUM.prs}]</a>. Points: market ${s.market}, access ${s.access}, white space ${s.space}.</span></p></div></td></tr>`;
+  }).join("");
+  tb.querySelectorAll("tr.row").forEach(tr=>{
+    const go=()=>{open=open===tr.dataset.id?null:tr.dataset.id;render();const r=document.querySelector(`tr.row[data-id="${tr.dataset.id}"]`);r&&r.focus()};
+    tr.addEventListener("click",e=>{if(e.target.closest("a"))return;go()});
+    tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
+  });
+  document.querySelectorAll("#reg th[data-k]").forEach(th=>th.setAttribute("aria-sort",th.dataset.k===sortK?(dir<0?"descending":"ascending"):"none"));
+}
+document.querySelectorAll("#reg th[data-k] button").forEach(b=>b.addEventListener("click",()=>{
+  const k=b.parentElement.dataset.k; if(sortK===k)dir*=-1; else{sortK=k;dir=k==="name"?1:-1} render();}));
+render();
+
+/* Sources list */
+document.getElementById("sources").innerHTML=ORDER.map(k=>`<li id="s-${k}"><a href="${SRC[k][1]}" target="_blank" rel="noopener">${SRC[k][0]}</a> <span class="tier ${SRC[k][2]}">${SRC[k][2]==="o"?"official / press":"published guide"}</span></li>`).join("");
+
+/* Quadrant */
+(function(){
+  const svg=document.getElementById("quad"),NS="http://www.w3.org/2000/svg";
+  const m={l:58,r:24,t:28,b:52},Wd=640,Ht=430,iw=Wd-m.l-m.r,ih=Ht-m.t-m.b;
+  const x=v=>m.l+(Math.log10(v)-Math.log10(400))/(Math.log10(90000)-Math.log10(400))*iw;
+  const y=v=>m.t+(1-v/44)*ih;
+  const el=(t,a,p=svg)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+  const midX=x(5000),midY=y(28);
+  el("rect",{x:midX,y:m.t,width:m.l+iw-midX,height:midY-m.t,fill:"var(--teal-soft)",opacity:.7});
+  el("rect",{x:midX,y:midY,width:m.l+iw-midX,height:m.t+ih-midY,fill:"var(--stamp-soft)",opacity:.8});
+  [[midX+10,m.t+18,"Fast wins","var(--teal-deep)"],[midX+10,m.t+ih-10,"Ground-ops plays","var(--stamp)"],[m.l+10,m.t+18,"Smaller markets","var(--muted)"]]
+    .forEach(([a,b,t,c])=>{const e=el("text",{x:a,y:b,class:"zone",fill:c});e.textContent=t;e.style.fill=c});
+  [1000,3000,10000,30000].forEach(v=>{el("line",{x1:x(v),x2:x(v),y1:m.t,y2:m.t+ih,stroke:"var(--rule)","stroke-dasharray":"3 4"});
+    const t=el("text",{x:x(v),y:m.t+ih+18,"text-anchor":"middle"});t.textContent="₹"+fmt(v)});
+  [0,10,20,30,40].forEach(v=>{el("line",{x1:m.l,x2:m.l+iw,y1:y(v),y2:y(v),stroke:"var(--rule)","stroke-dasharray":v?"3 4":"0"});
+    const t=el("text",{x:m.l-10,y:y(v)+4,"text-anchor":"end"});t.textContent=v});
+  const xt=el("text",{x:m.l+iw/2,y:Ht-10,"text-anchor":"middle"});xt.textContent="Stamps & registration, 2026–27 budget estimate (₹ crore, log scale)";
+  const yt=el("text",{x:14,y:m.t+ih/2,"text-anchor":"middle",transform:`rotate(-90 14 ${m.t+ih/2})`});yt.textContent="Online access points (of 40)";
+  const tip=document.getElementById("tip");
+  const off={CG:[12,5],BR:[-14,5],RJ:[13,-7],MP:[-12,20],OD:[12,5],UP:[0,-16],PB:[12,5],UK:[12,5],JH:[12,5],HP:[12,5]};
+  D.forEach(s=>{
+    const cx=x(s.be),cy=y(s.access),g=el("g",{tabindex:0,role:"img","aria-label":`${s.name}: ₹${fmt(s.be)} crore, access ${s.access} of 40, score ${s.score}`});
+    el("circle",{cx,cy,r:14,fill:"transparent"},g);
+    el("circle",{cx,cy,r:6+s.score/20,fill:s.sy?"var(--surface)":"var(--g4)",stroke:s.sy?"var(--g4)":"var(--surface)","stroke-width":s.sy?2.5:2},g);
+    const [dx,dy]=off[s.id]||[10,4];const t=el("text",{x:cx+dx,y:cy+dy,class:"lab","text-anchor":dx<0?"end":dx===0?"middle":"start"},g);t.textContent=s.name;
+    const show=e=>{tip.hidden=false;tip.innerHTML=`<b>${s.name}</b>₹${fmt(s.be)} Cr budgeted · access ${s.access}/40<br>Score ${s.score}${s.sy?" · covered by Square Yards":""}`;
+      const r=(e.touches?e.touches[0]:e);const px=(r.clientX??cx),py=(r.clientY??cy);tip.style.left=Math.min(innerWidth-250,px+14)+"px";tip.style.top=(py+14)+"px"};
+    g.addEventListener("mousemove",show);g.addEventListener("mouseleave",()=>tip.hidden=true);
+    g.addEventListener("focus",()=>{const b=g.getBoundingClientRect();show({clientX:b.right,clientY:b.bottom})});g.addEventListener("blur",()=>tip.hidden=true);
+  });
+})();
+
+/* Turnaround */
+(function(){
+  const T=[{n:"Madhya Pradesh",a:3,b:5,fee:"₹300 government fee, service fee extra"},{n:"Rajasthan",a:7,b:10,fee:"₹999 all-inclusive"}];
+  document.getElementById("ta").innerHTML=T.map(t=>`<div class="ta-row"><b>${t.n}</b><div class="ta-track" role="img" aria-label="${t.n}: ${t.a} to ${t.b} working days"><i style="left:${t.a*10}%;width:${(t.b-t.a)*10}%"></i><span style="${t.b>7?`left:calc(${t.a*10}% - 10px);transform:translate(-100%,-50%)`:`left:calc(${t.b*10}% + 8px)`}">${t.a}–${t.b} days</span></div></div><div class="ta-row" style="margin-top:-12px"><span></span><span class="src">${t.fee}</span></div>`).join("");
+})();
+
+/* Copy */
+document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
+  const s=b.querySelector(".cstate");const txt=b.dataset.copy;
+  const done=()=>{s.textContent="Copied";setTimeout(()=>s.textContent="Copy",1600)};
+  try{navigator.clipboard.writeText(txt).then(done,()=>{sel(b);s.textContent="Select and copy"})}catch(e){sel(b);s.textContent="Select and copy"}
+}));
+function sel(b){const r=document.createRange();r.selectNodeContents(b.querySelector("span"));const w=getSelection();w.removeAllRanges();w.addRange(r)}
+
+/* Cadastral linework */
+(function(){
+  const c=document.getElementById("parcels");if(!c)return;const x=c.getContext("2d");
+  function draw(){
+    const dpr=Math.min(2,devicePixelRatio||1),w=c.clientWidth,h=c.clientHeight;c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);x.clearRect(0,0,w,h);
+    const col=getComputedStyle(document.documentElement).getPropertyValue("--line").trim()||"rgba(10,117,100,.2)";
+    let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+    const x0=w*0.52, cols=9, rows=7, cw=(w-x0)/cols*1.15, rh=h/rows;
+    const pts=[];for(let i=0;i<=cols;i++){pts[i]=[];for(let j=0;j<=rows;j++)pts[i][j]=[x0+i*cw+(rnd()-.5)*cw*.55,j*rh+(rnd()-.5)*rh*.5]}
+    x.strokeStyle=col;x.lineWidth=1;
+    for(let i=0;i<cols;i++)for(let j=0;j<rows;j++){
+      const a=pts[i][j],b=pts[i+1][j],d=pts[i][j+1],e=pts[i+1][j+1];
+      x.beginPath();x.moveTo(a[0],a[1]);x.lineTo(b[0],b[1]);x.lineTo(e[0],e[1]);x.lineTo(d[0],d[1]);x.closePath();x.stroke();
+      if(rnd()>.62){x.beginPath();const t=rnd();x.moveTo(a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t);x.lineTo(d[0]+(e[0]-d[0])*t,d[1]+(e[1]-d[1])*t);x.stroke()}
+      if(rnd()>.8){x.fillStyle=col;x.font="11px Hind, sans-serif";x.fillText(String(Math.floor(100+rnd()*800))+"/"+(1+Math.floor(rnd()*4)),(a[0]+e[0])/2-14,(a[1]+e[1])/2+4)}
+    }
+  }
+  draw();let t;addEventListener("resize",()=>{clearTimeout(t);t=setTimeout(draw,120)});
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",draw);
+  new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+  window.__drawParcels=draw;
+})();
+</script>
+
+</html>

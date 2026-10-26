@@ -1,0 +1,66 @@
+---
+layout: default
+title: Ayush Dewangan
+body_class: home
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello" lang="hi">नमस्ते, I'm</p>
+      <h1>Ayush Dewangan</h1>
+      <p class="lead">I work on how government records become services people can use. Right now that means registration and land-records reform as a Chief Minister's Good Governance Fellow with the Government of Chhattisgarh, alongside an MBA in Public Policy &amp; Governance at IIM Raipur.</p>
+      <div class="cta">
+        <a class="btn" href="{{ '/registries/' | relative_url }}">See my latest analysis</a>
+        <a class="btn ghost" href="{{ '/files/Ayush_Dewangan_CV.pdf' | relative_url }}">Download CV</a>
+      </div>
+    </div>
+    <dl class="now">
+      <div><dt>Now</dt><dd>CM Good Governance Fellow, Commercial Tax (Registration) and Housing &amp; Environment, Govt of Chhattisgarh</dd></div>
+      <div><dt>Studying</dt><dd>MBA, Public Policy &amp; Governance, IIM Raipur, graduating April 2027</dd></div>
+      <div><dt>Interested in</dt><dd>Property data, lending infrastructure, citizen services, state capacity</dd></div>
+      <div><dt>Available</dt><dd>From May 2027</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>Selected work</h2><a class="more" href="{{ '/work/' | relative_url }}">All work</a></div>
+    <div class="cards">
+      {% for p in site.data.projects %}{% if p.featured %}
+      <article class="card">
+        <span class="kind">{{ p.kind }} · {{ p.year }}</span>
+        <h3>{% if p.url %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+        <p>{{ p.summary }}</p>
+        {% if p.links %}<div class="card-links">{% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+      </article>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>Latest posts</h2><a class="more" href="{{ '/posts/' | relative_url }}">All posts</a></div>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}{% include post-row.html post=post %}{% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty">No posts yet.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band contact-band">
+  <div class="wrap contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p>I reply to every message about policy, property data or roles from May 2027.</p>
+    </div>
+    <div class="contact-actions">
+      <button type="button" class="btn copy-email" data-email="{{ site.author.email }}"><span>{{ site.author.email }}</span><small>Copy</small></button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% assign cat = page.category | default: 'notes' %}
+{% assign catlabel = cat | capitalize %}
+{% for c in site.categories_list %}{% if c.key == cat %}{% assign catlabel = c.label %}{% endif %}{% endfor %}
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
+<article class="wrap post">
+  <header class="post-head">
+    <div class="post-meta">
+      <a class="cat cat-{{ cat }}" href="{{ '/posts/' | relative_url }}#{{ cat }}">{{ catlabel }}</a>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time>
+      <span>{{ minutes }} min read</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+  </header>
+  {% if page.image %}
+  <figure class="post-cover"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}">{% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}</figure>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+  {% if page.sources %}
+  <section class="sources">
+    <h2>Sources</h2>
+    <ol>{% for s in page.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ol>
+  </section>
+  {% endif %}
+  <footer class="post-foot">
+    <button type="button" class="copy-link" data-url="{{ page.url | absolute_url }}">Copy link to this post</button>
+    <nav class="pager" aria-label="More posts">
+      {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>Older</small>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><small>Newer</small>{{ page.next.title }}</a>{% endif %}
+    </nav>
+  </footer>
+</article>

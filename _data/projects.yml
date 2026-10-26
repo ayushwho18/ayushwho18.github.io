@@ -1,0 +1,30 @@
+# Work shown on the home page and the Work page.
+# Add a new item at the top. `featured: true` puts it on the home page.
+- title: The Next Ten Registries
+  year: 2026
+  kind: Analysis
+  url: /registries/
+  featured: true
+  summary: >-
+    Ranks ten Indian states on registration-data readiness for title search
+    and lending, from 21 public sources, with a 60-day plan for opening a new state.
+  links:
+    - label: PDF
+      url: /files/Ayush_Dewangan_Next_Ten_Registries.pdf
+
+- title: Sub-Registrar Performance Scorecard
+  year: 2026
+  kind: Prototype
+  url: /sro-scorecard/
+  featured: true
+  summary: >-
+    A working scorecard for 107 registration offices on synthetic data:
+    weighted score, office drill-down and a volume-versus-speed view.
+
+- title: Fifteen Passengers
+  year: 2026
+  kind: Publication
+  featured: false
+  summary: >-
+    Nava Raipur's transport economics and land value capture. Published in
+    ArthVichar Issue 01, IIM Raipur's economics and public policy magazine.

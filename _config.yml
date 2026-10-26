@@ -1,0 +1,60 @@
+# ------------------------------------------------------------
+# Site settings. Change these lines; everything else adapts.
+# ------------------------------------------------------------
+title: Ayush Dewangan
+tagline: Public policy, registration reform and the data behind them
+description: >-
+  Ayush Dewangan works on registration and land-records reform as a Chief
+  Minister's Good Governance Fellow with the Government of Chhattisgarh, and is
+  completing an MBA in Public Policy & Governance at IIM Raipur.
+author:
+  name: Ayush Dewangan
+  email: addy.dewangan278@gmail.com
+  linkedin: ayush-dewangann
+  location: Raipur, Chhattisgarh
+lang: en-IN
+timezone: Asia/Kolkata
+
+# Your address on the web. When you connect your own domain,
+# change url to it (for example https://ayushdewangan.me) and add a CNAME file.
+url: "https://ayushwho18.github.io"
+baseurl: ""
+
+# Post categories shown as filters on the Posts page.
+# Add a new one here, then use it in a post's front matter.
+categories_list:
+  - key: news
+    label: News
+  - key: analysis
+    label: Analysis
+  - key: notes
+    label: Notes
+
+permalink: /posts/:year/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, category: notes }
+  - scope: { path: "" }
+    values: { layout: page }
+
+exclude:
+  - README.md
+  - POSTING.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - _templates
