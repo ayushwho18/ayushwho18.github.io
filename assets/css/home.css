@@ -3,7 +3,8 @@
 .home main{overflow-x:clip}
 
 /* ---------- Reveal (only when GSAP is running) ---------- */
-.gs .rv{opacity:0;transform:translateY(28px)}
+.gs .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.gs .rv.in{opacity:1;transform:none}
 .gs .hero2 .rv{animation:rise .95s cubic-bezier(.2,.7,.2,1) forwards}
 .gs .hero2 .rv:nth-child(2){animation-delay:.09s}.gs .hero2 .rv:nth-child(3){animation-delay:.18s}.gs .hero2 .rv:nth-child(4){animation-delay:.27s}.gs .hero2 .rv:nth-child(5){animation-delay:.36s}
 @keyframes rise{to{opacity:1;transform:none}}
@@ -386,3 +387,6 @@ input[type=range]{width:100%;accent-color:var(--teal)}
 /* LCP: the name is visible from the first paint; it only slides */
 .gs .hero2 .hero2-name{opacity:1;animation-name:slide}
 @keyframes slide{from{transform:translateY(28px)}to{transform:none}}
+
+/* LCP: hero text is visible from the first paint and only slides in */
+.gs .hero2 .rv{opacity:1;animation-name:slide}

@@ -1,4 +1,4 @@
-/* Home page engine. Plain JS + WebGL. Optional: GSAP/ScrollTrigger (reveals), three.js (3D demos, lazy-loaded). */
+/* Home page engine. Plain JS + WebGL. Optional: GSAP (chart timelines), three.js (3D, lazy-loaded). */
 (function () {
   "use strict";
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -118,16 +118,23 @@
   /* ============ SCROLL REVEALS (GSAP + ScrollTrigger) ============ */
   (function () {
     var root = document.documentElement;
-    if (reduce || !window.gsap || !window.ScrollTrigger) { root.classList.remove("gs"); return; }
-    gsap.registerPlugin(ScrollTrigger);
-    // hero reveal runs in CSS (time-based, so a busy GPU cannot stall it)
-    $$(".rv").forEach(function (el) {
-      if (el.closest(".hero2")) return;
-      gsap.to(el, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } });
-    });
-    // hero content drifts up and fades as you leave it
-    gsap.to(".hero2-inner", { yPercent: -12, opacity: 0.2, ease: "none", scrollTrigger: { trigger: ".hero2", start: "top top", end: "bottom top", scrub: true } });
-    addEventListener("load", function () { ScrollTrigger.refresh(); });
+    window.__revealReady = true;
+    if (reduce || !("IntersectionObserver" in window)) { root.classList.remove("gs"); return; }
+    // reveals: one IntersectionObserver + CSS transitions (compositor-friendly, no scroll listeners)
+    // "reached or passed" (not "is visible"), so a fast fling can never leave a section hidden
+    var pend = $$(".rv").filter(function (el) { return !el.closest(".hero2"); });
+    function sweep() { for (var i = pend.length - 1; i >= 0; i--) if (pend[i].getBoundingClientRect().top < innerHeight * .9) { pend[i].classList.add("in"); pend.splice(i, 1); } }
+    sweep(); addEventListener("load", sweep); addEventListener("resize", sweep);
+    $$(".seg-b").forEach(function (b) { b.addEventListener("click", function () { setTimeout(sweep, 50); }); });
+    // hero content drifts up and fades as you leave it (one passive listener, rAF-throttled)
+    var inner = $(".hero2-inner"), hero = $(".hero2"), tick = false;
+    addEventListener("scroll", function () {
+      if (tick) return; tick = true;
+      requestAnimationFrame(function () {
+        tick = false; if (pend.length) sweep(); var p = Math.max(0, Math.min(1, scrollY / (hero.offsetHeight || 1)));
+        inner.style.transform = p ? "translateY(" + (-12 * p) + "%)" : ""; inner.style.opacity = p ? String(1 - .8 * p) : "";
+      });
+    }, { passive: true });
   })();
 
   /* ============ DEMO SWITCHER ============ */
@@ -152,7 +159,7 @@
     $$(".demo-link").forEach(function (b) { b.addEventListener("click", function () { showDemo(b.dataset.demo); }); });
     function fromHash(instant) { var h = (location.hash || "").replace("#demo-", ""); if (h && h !== location.hash && $("#d-" + h)) showDemo(h, instant); }
     addEventListener("hashchange", function () { fromHash(false); });
-    // deep link: select now, scroll after load so ScrollTrigger's refresh cannot reset the position
+    // deep link: select now, and again after load so late layout shifts cannot move the position
     if (/^#demo-/.test(location.hash)) {
       fromHash(true);
       var land = function () { setTimeout(function () { fromHash(true); }, 60); };

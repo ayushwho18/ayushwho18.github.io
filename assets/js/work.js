@@ -3,8 +3,16 @@
 (function () {
   "use strict";
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var G = !reduce && window.gsap && window.ScrollTrigger ? window.gsap : null;
-  if (G) { G.registerPlugin(ScrollTrigger); G.ticker.lagSmoothing(0); } // time-accurate: charts finish on time even if frames are slow
+  var G = !reduce && window.gsap ? window.gsap : null;
+  if (G) G.ticker.lagSmoothing(0); // time-accurate: charts finish on time even if frames are slow
+  var IO = "IntersectionObserver" in window;
+  function io(el, opts, cb) { if (!IO) { cb(true); return; } var o = new IntersectionObserver(function (es) { es.forEach(function (e) { cb(e.isIntersecting, o); }); }, opts); o.observe(el); }
+  // "reached or passed": fires once the element's top crosses a line in the viewport, even after a fast fling
+  var waiting = [], ticking = false;
+  function sweep() { ticking = false; for (var i = waiting.length - 1; i >= 0; i--) { var w = waiting[i], r = w.el.getBoundingClientRect(); if (r.top < innerHeight * w.line) { waiting.splice(i, 1); w.cb(); } } }
+  function reached(el, line, cb) { waiting.push({ el: el, line: line, cb: cb }); if (!ticking) { ticking = true; requestAnimationFrame(sweep); } }
+  addEventListener("scroll", function () { if (!ticking && waiting.length) { ticking = true; requestAnimationFrame(sweep); } }, { passive: true });
+  addEventListener("resize", function () { if (waiting.length) requestAnimationFrame(sweep); });
   var NS = "http://www.w3.org/2000/svg";
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var PAINT = { fill: 1, stroke: 1, "stop-color": 1 };
@@ -16,11 +24,13 @@
     return e;
   }
   function svg(fig, w, h) { var s = el("svg", { viewBox: "0 0 " + w + " " + h, class: "wchart", role: "presentation" }); fig.insertBefore(s, fig.firstChild); return s; }
+  // lazy: a chart is built only when it nears the viewport, and plays once 30% of it is visible
+  function lazy(fig, make) { reached(fig, 1.9, make); }
   function whenSeen(trigger, build) {
     if (!G) { build(null); return; }
     var tl = G.timeline({ paused: true });
     build(tl);
-    ScrollTrigger.create({ trigger: trigger, start: "top 72%", once: true, onEnter: function () { tl.play(); } });
+    reached(trigger, .72, function () { tl.play(); });
   }
   function count(tl, node, to, dec, pre, suf, at, dur) {
     var o = { v: 0 }; node.textContent = pre + (0).toFixed(dec) + suf;
@@ -42,12 +52,14 @@
     now.style.left = (frac * 100) + "%";
     if (frac > .86 || frac < .14) now.style.display = "none";
     if (!G) { fill.style.width = (frac * 100) + "%"; return; }
-    G.fromTo(fill, { width: "0%" }, { width: (frac * 100) + "%", duration: 1.6, ease: "power3.out", scrollTrigger: { trigger: fill, start: "top 85%", once: true } });
+    fill.style.width = "0%";
+    reached(fill, .85, function () { G.to(fill, { width: (frac * 100) + "%", duration: 1.6, ease: "power3.out" }); });
   })();
 
   /* ---------- 01 reforms: 10 states -> 30 reforms -> 2 directed ---------- */
   (function () {
     var fig = $("#chart-reforms"); if (!fig) return;
+    lazy(fig, function () {
     var s = svg(fig, 560, 340);
     var states = ["KA", "TS", "MH", "GJ", "", "", "", "", "", ""], sN = [];
     el("text", { x: 34, y: 22, class: "wc-lab", "text-anchor": "middle" }, s, "10 states");
@@ -95,6 +107,7 @@
       tl.from(cards, { opacity: 0, x: 18, duration: .5, stagger: .15, ease: "power3.out" }, 2.6);
       tl.from(big, { opacity: 0, y: 10, duration: .4 }, 3.0);
     });
+    });
   })();
 
   /* ---------- 02 office race (synthetic) ---------- */
@@ -121,13 +134,14 @@
       }, reduce ? 0 : 1700);
     }
     btn.addEventListener("click", run);
-    if (!G || !("IntersectionObserver" in window)) { run(); return; }
-    ScrollTrigger.create({ trigger: track, start: "top 75%", once: true, onEnter: run });
+    if (!G) { run(); return; }
+    reached(track, .75, run);
   })();
 
   /* ---------- 03 DPR: 107 offices -> registry, then the sequence ---------- */
   (function () {
     var fig = $("#chart-dpr"); if (!fig) return;
+    lazy(fig, function () {
     var s = svg(fig, 560, 340), HX = 160, HY = 172, rings = [[62, 24], [96, 36], [130, 47]], nodes = [], spokes = [];
     var spokeG = el("g", {}, s), nodeG = el("g", {}, s);
     rings.forEach(function (rg, ri) {
@@ -161,11 +175,13 @@
       count(tl, money, 3.24, 2, "₹", " Cr", .8, 1.2);
       bars.forEach(function (b, i) { tl.from(b, { attr: { width: 0 }, duration: .55, ease: "power2.out" }, 1.4 + i * .45); });
     });
+    });
   })();
 
   /* ---------- 04 cool roof: who pays, and how much cooler ---------- */
   (function () {
     var fig = $("#chart-roof"); if (!fig) return;
+    lazy(fig, function () {
     var s = svg(fig, 560, 340), W = 300, X = 150;
     function row(y, label, sub) { el("text", { x: 20, y: y + 4, class: "wc-sm b" }, s, label); if (sub) el("text", { x: 20, y: y + 20, class: "wc-tiny" }, s, sub); }
     el("text", { x: 20, y: 30, class: "wc-lab" }, s, "Who pays ₹2–4 per sq ft?");
@@ -198,11 +214,13 @@
       tl.from(band, { attr: { width: 0 }, duration: .9, ease: "power3.out" }, 1.7);
       tl.from(bt, { opacity: 0, y: 6, duration: .4 }, 2.3);
     });
+    });
   })();
 
   /* ---------- 05 CM Helpline: the ladder, and the scale ---------- */
   (function () {
     var fig = $("#chart-help"); if (!fig) return;
+    lazy(fig, function () {
     var s = svg(fig, 560, 340), lv = [["L1", "Block"], ["L2", "District"], ["L3", "Division / Directorate"], ["L4", "Secretary / HoD"]], rungs = [];
     el("line", { x1: 40, y1: 40, x2: 40, y2: 300, stroke: "var(--rule-2)", "stroke-width": 2 }, s);
     lv.forEach(function (l, i) {
@@ -235,7 +253,8 @@
       climb.to(tok, { opacity: 0, duration: .3 }, "+=0.8").set(tok, { attr: { transform: "translate(40," + rungs[0].y + ")" } }).to(tok, { opacity: 1, duration: .3 });
       var seen = false;
       tl.add(function () { seen = true; climb.play(); }, 1.0);
-      ScrollTrigger.create({ trigger: fig, start: "top bottom", end: "bottom top", onLeave: function () { climb.pause(); }, onLeaveBack: function () { climb.pause(); }, onEnter: function () { if (seen) climb.play(); }, onEnterBack: function () { if (seen) climb.play(); } });
+      io(fig, { threshold: 0 }, function (v) { if (!seen) return; v ? climb.play() : climb.pause(); });
+    });
     });
   })();
 })();

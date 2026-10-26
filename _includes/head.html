@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>
   (function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
-  (function(){var d=document.documentElement;if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("gs");setTimeout(function(){if(!window.gsap)d.classList.remove("gs")},3500)})();
+  (function(){var d=document.documentElement;if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("gs");setTimeout(function(){if(!window.__revealReady)d.classList.remove("gs")},3500)})();
 </script>
 {% seo %}
 {% feed_meta %}
