@@ -9,6 +9,7 @@
       <a class="nv" href="{{ '/#work' | relative_url }}">Work</a>
       <a class="nv" href="{{ '/#demos' | relative_url }}">Demos</a>
       <a class="nv" href="{{ '/#proof' | relative_url }}">Proof</a>
+      <a class="nv" href="{{ '/cv/' | relative_url }}" {% if here contains '/cv/' %}aria-current="page"{% endif %}>CV</a>
       <a class="nv" href="{{ '/posts/' | relative_url }}" {% if here contains '/posts/' %}aria-current="page"{% endif %}>Writing</a>
       <a class="nv" href="{{ '/about/' | relative_url }}" {% if here contains '/about/' %}aria-current="page"{% endif %}>About</a>
       <button type="button" class="kbar-btn" id="kbar-open" aria-label="Search the site"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><kbd>Ctrl K</kbd></button>

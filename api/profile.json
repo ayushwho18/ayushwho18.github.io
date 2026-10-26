@@ -2,7 +2,7 @@
   "name": "Ayush Dewangan",
   "name_hi": "आयुष देवांगन",
   "location": "Raipur, Chhattisgarh, India",
-  "available_from": "2027-05",
+  "available_from": "2027-04",
   "role": {
     "title": "Chief Minister's Good Governance Fellow",
     "org": "Government of Chhattisgarh",
@@ -11,7 +11,9 @@
       "Commercial Tax (Registration)",
       "Housing & Environment",
       "Good Governance (CM Helpline 1076)"
-    ]
+    ],
+    "until": "2027-03",
+    "until_note": "tentative"
   },
   "education": [
     {
@@ -86,7 +88,7 @@
   "links": {
     "site": "https://ayushwho18.github.io/",
     "linkedin": "https://www.linkedin.com/in/ayush-dewangann/",
-    "cv": "https://ayushwho18.github.io/files/Ayush_Dewangan_CV.pdf",
+    "cv": "https://ayushwho18.github.io/cv/",
     "registries": "https://ayushwho18.github.io/api/registries.json"
   },
   "email": "addy.dewangan278@gmail.com",
