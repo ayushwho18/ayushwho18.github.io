@@ -229,3 +229,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .menu-btn{display:none;font:inherit;font-size:14px;font-weight:600;height:34px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
 @media (max-width:860px){.menu-btn{display:inline-flex;align-items:center}}
 .filters button.zero{display:none}
+.lang{display:grid;place-items:center;min-width:34px;height:34px;padding:0 8px;margin-left:4px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--ink-2);font:600 13px/1 var(--deva);cursor:pointer}
+.lang:hover{color:var(--ink);border-color:var(--rule-2)}
+/* Hindi: Inter keeps Latin glyphs; Devanagari falls back per glyph to the system Devanagari font */
+.lang-hi :is(h2,h3,h4,.hero2-line){letter-spacing:0;line-height:1.3}

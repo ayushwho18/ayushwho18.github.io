@@ -1,0 +1,88 @@
+---
+layout: default
+styles: [/assets/css/home.css]
+gsap: true
+---
+{% assign p = page %}
+<section class="pitch-hero">
+  <div class="wrap">
+    <p class="status"><span class="pulse" aria-hidden="true"></span>Prepared for {{ p.company }} · {{ p.date | date: "%-d %B %Y" }}</p>
+    <h1 class="pitch-h1">{{ p.headline }}</h1>
+    <p class="pitch-lead">{{ p.lead }}</p>
+    <div class="hero2-cta" style="justify-content:flex-start">
+      <a class="btn2 primary" href="#plan">See the 90-day plan</a>
+      <a class="btn2" href="{{ '/cv/' | relative_url }}">CV</a>
+      <button type="button" class="btn2 copy-email" data-email="{{ site.author.email }}">Copy email</button>
+    </div>
+    <p class="pitch-note">This page is not listed anywhere. It uses public information about {{ p.company }} and nothing from government files.</p>
+  </div>
+</section>
+
+<section class="sec pitch-sec">
+  <div class="wrap">
+    <header class="sec-h"><p class="kicker">What I understand</p><h2>{{ p.understand_title }}</h2></header>
+    <div class="pitch-cards">
+      {% for u in p.understand %}<article class="card2"><h3>{{ u.title }}</h3><p>{{ u.text }}</p>{% if u.src %}<p class="fine-cap"><a href="{{ u.src }}" target="_blank" rel="noopener">Source</a></p>{% endif %}</article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec pitch-sec" id="plan">
+  <div class="wrap">
+    <header class="sec-h"><p class="kicker">First 90 days</p><h2>What I would do, and what you would see.</h2></header>
+    <ol class="plan">
+      {% for s in p.plan %}<li><span class="plan-n">{{ s.when }}</span><div><h3>{{ s.title }}</h3><ul>{% for x in s.items %}<li>{{ x }}</li>{% endfor %}</ul><p class="plan-out"><b>You get:</b> {{ s.output }}</p></div></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sec pitch-sec">
+  <div class="wrap">
+    <header class="sec-h"><p class="kicker">Three experiments</p><h2>Small bets I would run first.</h2></header>
+    <div class="pitch-cards three">
+      {% for e in p.experiments %}<article class="card2"><p class="chap-n">0{{ forloop.index }}</p><h3>{{ e.title }}</h3><p>{{ e.why }}</p><p class="fine-cap"><b>Measure:</b> {{ e.metric }}</p></article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if p.demo %}
+<section class="sec pitch-sec">
+  <div class="wrap">
+    <div class="pitch-demo card2 wide">
+      <p class="kicker">Built for this page</p>
+      <h3>{{ p.demo.title }}</h3>
+      <p>{{ p.demo.text }}</p>
+      <div class="card2-links"><a href="{{ p.demo.url | relative_url }}">{{ p.demo.cta }} <span aria-hidden="true">→</span></a></div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="sec pitch-sec">
+  <div class="wrap pitch-why">
+    <header class="sec-h"><p class="kicker">Why me</p><h2>What I bring that is hard to hire.</h2></header>
+    <ul class="why">{% for w in p.why %}<li>{{ w }}</li>{% endfor %}</ul>
+    <details class="qa faq-mini"><summary>The usual questions</summary>
+      {% for f in site.data.faq %}<p><b>{{ f.q }}</b> {{ f.a }}</p>{% endfor %}
+    </details>
+  </div>
+</section>
+
+<section class="contact2">
+  <div class="wrap contact2-inner">
+    <h2>{{ p.cta }}</h2>
+    <p>Available from April 2027. Happy to talk before that.</p>
+    <div class="hero2-cta">
+      <button type="button" class="btn2 primary copy-email" data-email="{{ site.author.email }}">Copy email</button>
+      <a class="btn2" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn2" href="{{ '/' | relative_url }}">Full portfolio</a>
+    </div>
+  </div>
+</section>
+
+{% if p.sources %}
+<section class="wrap pitch-src">
+  <h2 class="h-sm">Sources</h2>
+  <ol>{% for s in p.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ol>
+</section>
+{% endif %}

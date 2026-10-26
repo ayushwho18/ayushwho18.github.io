@@ -23,11 +23,13 @@
     var clock = $("#hx-clock");
     function tick() { if (clock) clock.textContent = new Date().toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit", hour12: false }) + " IST"; }
     tick(); setInterval(tick, 20000);
-    var words = ["verifiable", "searchable", "lendable", "accountable"], el = $("#hx-swap"), i = 0;
-    if (!el || reduce) return;
-    el.style.display = "inline-block"; el.style.transition = "opacity .35s ease, transform .35s ease";
+    var EN = ["verifiable", "searchable", "lendable", "accountable"], el, i = 0;
+    if (!$("#hx-swap") || reduce) return;
     setInterval(function () {
       if (document.hidden) return;
+      el = $("#hx-swap"); if (!el) return; // re-query: the language toggle can replace the line
+      var words = window.__swapWords || EN;
+      el.style.display = "inline-block"; el.style.transition = "opacity .35s ease, transform .35s ease";
       el.style.opacity = "0"; el.style.transform = "translateY(-0.18em)";
       setTimeout(function () {
         i = (i + 1) % words.length; el.textContent = words[i];
@@ -788,6 +790,111 @@
       }, reduce ? 0 : t);
     });
     upd();
+  })();
+
+
+
+  /* ============ CHHATTISGARH 3D DISTRICT MAP (Census 2011, 18 districts) ============ */
+  (function () {
+    var box = $("#map3d"); if (!box) return;
+    var started = false;
+    onVisible(box, function (v) { if (v && !started) { started = true; threeReady(go); } }, { threshold: 0.05 });
+    function go(ok) {
+      if (!ok) return fallback(box, "3D view needs WebGL.");
+      fetch("/assets/data/cg-map.json").then(function (r) { return r.json(); }).then(build).catch(function () { fallback(box, "Could not load the map data."); });
+    }
+    var M = {
+      households: { label: "Households", fmt: function (v) { return Math.round(v).toLocaleString("en-IN"); }, get: function (d) { return d.households; }, c0: "#DDE4FF", c1: "#2541B2", note: "Households, Census 2011" },
+      density: { label: "People per km²", fmt: function (v) { return Math.round(v).toLocaleString("en-IN"); }, get: function (d) { return d.density; }, c0: "#E9DEFF", c1: "#5B2FD1", note: "People per km² (area computed from boundaries)" },
+      literacy: { label: "Literates", fmt: function (v) { return v.toFixed(1) + "%"; }, get: function (d) { return d.literate / d.population * 100; }, c0: "#D8F0E6", c1: "#0F7A57", note: "Literate persons as % of total population (all ages)" },
+      st: { label: "ST share", fmt: function (v) { return v.toFixed(1) + "%"; }, get: function (d) { return d.st / d.population * 100; }, c0: "#FFE6D6", c1: "#A8481A", note: "Scheduled Tribe population, % of total" }
+    };
+    function build(data) {
+      var S = stage3d(box, { pos: new THREE.Vector3(2, 21, 19), target: new THREE.Vector3(0, 0, 0), minD: 8, maxD: 70, spinSpeed: .35, maxPolar: 1.25, fov: 36 });
+      if (!S) return fallback(box, "3D view needs WebGL.");
+      var scene = S.scene, LON0 = 82.25, LAT0 = 21.25, K = 4.6, CL = Math.cos(LAT0 * Math.PI / 180);
+      scene.add(new THREE.HemisphereLight(0xffffff, 0x8890a8, .62));
+      var key = new THREE.DirectionalLight(0xffffff, .75); key.position.set(-10, 20, 12); scene.add(key);
+      var rim = new THREE.DirectionalLight(0xc8d2ff, .3); rim.position.set(12, 8, -10); scene.add(rim);
+      var base = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), new THREE.ShadowMaterial ? new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0 }) : new THREE.MeshBasicMaterial({ visible: false }));
+      base.rotation.x = -Math.PI / 2; scene.add(base);
+      var grid = new THREE.GridHelper(44, 44, 0xc3c8d8, 0xdfe2ec); grid.position.y = -.02; grid.material.transparent = true; grid.material.opacity = .55; scene.add(grid);
+      var D = data.districts.map(function (d, i) {
+        var shapes = d.rings.map(function (ring) {
+          var sh = new THREE.Shape();
+          ring.forEach(function (c, k) { var x = (c[0] - LON0) * CL * K, y = (c[1] - LAT0) * K; k ? sh.lineTo(x, y) : sh.moveTo(x, y); });
+          return sh;
+        });
+        var geo = new THREE.ExtrudeGeometry(shapes, { depth: 1, bevelEnabled: false }); geo.rotateX(-Math.PI / 2);
+        var mat = new THREE.MeshStandardMaterial({ color: 0xcccccc, roughness: .5, metalness: .05 });
+        var mesh = new THREE.Mesh(geo, mat); mesh.userData.i = i; mesh.scale.y = .001; scene.add(mesh);
+        // crisp top outline only (EdgesGeometry would stripe the walls of wiggly borders)
+        var edges = new THREE.Group(), lm = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: .85 });
+        d.rings.forEach(function (ring) { edges.add(new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(ring.map(function (c) { return new THREE.Vector3((c[0] - LON0) * CL * K, 1.002, -(c[1] - LAT0) * K); })), lm)); });
+        mesh.add(edges);
+        geo.computeBoundingBox(); var bb = geo.boundingBox, cx = (bb.min.x + bb.max.x) / 2, cz = (bb.min.z + bb.max.z) / 2;
+        var lab = makeLabel(d.name, { size: 30, color: "#fff", bg: "rgba(29,29,31,.78)", scale: .62, depthTest: false }); scene.add(lab);
+        return { d: d, mesh: mesh, edges: edges, lab: lab, cx: cx, cz: cz, cur: 0, tgt: 0, col: new THREE.Color(), delay: i * 45 };
+      });
+      var metric = "households", t0 = performance.now(), sel = -1, card = $("#map-card"), legend = $("#map-legend");
+      function setMetric(m) {
+        metric = m; t0 = performance.now();
+        var vals = D.map(function (x) { return M[m].get(x.d); }), lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+        var c0 = new THREE.Color(M[m].c0), c1 = new THREE.Color(M[m].c1);
+        D.forEach(function (x, i) { var t = (vals[i] - lo) / ((hi - lo) || 1); x.tgt = .35 + t * 4.2; x.col.copy(c0).lerp(c1, t); x.delay = i * 35; });
+        legend.innerHTML = "<span><i style='background:linear-gradient(90deg," + M[m].c0 + "," + M[m].c1 + ");width:44px'></i>" + M[m].note + "</span><span>" + M[m].fmt(lo) + " → " + M[m].fmt(hi) + "</span>";
+        if (sel >= 0) showCard(sel);
+      }
+      function showCard(i) {
+        var d = D[i].d;
+        var rows = Object.keys(M).map(function (k) { return "<span" + (k === metric ? " class='on'" : "") + ">" + M[k].label + "</span><b>" + M[k].fmt(M[k].get(d)) + "</b>"; }).join("");
+        card.innerHTML = "<button type='button' class='x' aria-label='Close'>×</button><p class='k'>District · Census 2011</p><h4>" + d.name + "</h4><p class='big'>" + M[metric].fmt(M[metric].get(d)) + "<small> " + M[metric].label.toLowerCase() + "</small></p><div class='kv'>" + rows + "<span>Population</span><b>" + d.population.toLocaleString("en-IN") + "</b></div>";
+        card.hidden = false;
+        card.querySelector(".x").addEventListener("click", function () { card.hidden = true; sel = -1; S.reset(); });
+      }
+      function focus(i) {
+        sel = i; showCard(i); var x = D[i];
+        S.flyTo(new THREE.Vector3(x.cx + 5, x.cur + 11, x.cz + 11), new THREE.Vector3(x.cx, x.cur * .5, x.cz), 1000);
+      }
+      S.onReset = function () { card.hidden = true; sel = -1; };
+      var meshes = D.map(function (x) { return x.mesh; });
+      S.onClick = function (m) { S.ray.setFromCamera(m, S.cam); var hit = S.ray.intersectObjects(meshes)[0]; if (hit) focus(hit.object.userData.i); };
+      box.addEventListener("keydown", function (e) {
+        var order = D.map(function (x, i) { return i; }).sort(function (a, b) { return M[metric].get(D[b].d) - M[metric].get(D[a].d); });
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); var pos = order.indexOf(sel); pos = pos < 0 ? 0 : (pos + (e.key === "ArrowRight" ? 1 : -1) + D.length) % D.length; focus(order[pos]); }
+      });
+      $("#dp-map").addEventListener("keydown", function (e) { if (e.key === "Escape" && !card.hidden) { card.hidden = true; sel = -1; S.reset(); } });
+      $$("#dp-map [data-mmetric]").forEach(function (b) { b.addEventListener("click", function () { $$("#dp-map [data-mmetric]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); setMetric(b.dataset.mmetric); }); });
+      var hover = -1, last = 0;
+      S.hook(function (now) {
+        var dt = last ? Math.min(100, now - last) : 16.7; last = now; var ease = reduce ? 1 : 1 - Math.pow(1 - .08, dt / 16.7), el = now - t0;
+        D.forEach(function (x) {
+          if (el > x.delay) x.cur += (x.tgt - x.cur) * ease;
+          x.mesh.scale.y = Math.max(.001, x.cur); x.mesh.material.color.lerp(x.col, ease);
+          x.lab.position.set(x.cx, x.cur + .9, x.cz);
+        });
+        S.ray.setFromCamera(S.mouse, S.cam); var hit = S.ray.intersectObjects(meshes)[0], h = hit ? hit.object.userData.i : -1;
+        if (h !== hover) { if (hover >= 0) D[hover].mesh.material.emissive.setHex(0); hover = h; if (h >= 0) D[h].mesh.material.emissive.setHex(0x1a1a33); S.r.domElement.style.cursor = h >= 0 ? "pointer" : ""; }
+      });
+      function th() { grid.material.opacity = isDark() ? .18 : .55; }
+      th();
+      document.addEventListener("themechange", th); var mq = matchMedia("(prefers-color-scheme: dark)"); if (mq.addEventListener) mq.addEventListener("change", th);
+      setMetric("households");
+    }
+  })();
+
+  /* ============ INTRO VIDEO (YouTube, privacy-enhanced, loaded only on click) ============ */
+  (function () {
+    var b = $("#intro-open"); if (!b) return;
+    b.addEventListener("click", function () {
+      var m = document.createElement("div"); m.className = "vmodal"; m.setAttribute("role", "dialog"); m.setAttribute("aria-modal", "true"); m.setAttribute("aria-label", "Intro video");
+      m.innerHTML = '<div class="vbox"><button type="button" class="vx" aria-label="Close video">×</button><iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.dataset.yt) + '?autoplay=1&rel=0&modestbranding=1" title="Ayush Dewangan in 90 seconds" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>';
+      document.body.appendChild(m);
+      function close() { m.remove(); document.removeEventListener("keydown", esc); b.focus(); }
+      function esc(e) { if (e.key === "Escape") close(); }
+      m.addEventListener("click", function (e) { if (e.target === m || e.target.classList.contains("vx")) close(); });
+      document.addEventListener("keydown", esc); m.querySelector(".vx").focus();
+    });
   })();
 
   /* ============ TERMINAL ============ */

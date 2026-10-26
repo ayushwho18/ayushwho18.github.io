@@ -52,6 +52,8 @@ defaults:
     values: { layout: page, image: /assets/img/og.png }
   - scope: { path: "", type: posts }
     values: { image: /assets/img/og.png }
+  - scope: { path: "", type: for }
+    values: { layout: pitch, noindex: true, sitemap: false, image: /assets/img/og.png }
 
 exclude:
   - README.md
@@ -60,3 +62,12 @@ exclude:
   - Gemfile.lock
   - vendor
   - _templates
+
+# Optional extras: leave blank to hide
+intro_video: ""      # YouTube video id (unlisted is fine), e.g. "dQw4w9WgXcQ"
+goatcounter: ""      # GoatCounter code, e.g. "ayushdewangan" -> privacy-friendly visit counts, no cookies
+
+collections:
+  for:
+    output: true
+    permalink: /for/:name/

@@ -61,6 +61,8 @@
     { g: "Go to", t: "Cool Roof policy demo", k: "heat housing environment roof sri", run: go("/#demo-roof") },
     { g: "Go to", t: "Proof of work", k: "evidence proof documents", run: go("/#proof") },
     { g: "Go to", t: "Ten states in 3D", k: "3d chart demo states", run: go("/#demo-states") },
+    { g: "Go to", t: "Chhattisgarh 3D district map", k: "map districts census 3d", run: go("/#demo-map") },
+    { g: "Go to", t: "Objections, answered (FAQ)", k: "faq questions salary join code", run: go("/#faq") },
     { g: "Go to", t: "Office race: measure offices, not states", k: "race sro turnaround analytics", run: go("/#ch-sro") },
     { g: "Go to", t: "Name match demo (Hindi / English)", k: "name matching transliteration fuzzy", run: go("/#demo-match") },
     { g: "Go to", t: "Parcel API playground", k: "api json land record lender", run: go("/#demo-api") },

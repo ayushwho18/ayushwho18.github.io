@@ -19,6 +19,7 @@ gsap: true
     <div class="hero2-cta rv">
       <a class="btn2 primary" href="#work">See my work</a>
       <a class="btn2" href="{{ '/cv/' | relative_url }}">View CV</a>
+      {% if site.intro_video != "" %}<button type="button" class="btn2 play" id="intro-open" data-yt="{{ site.intro_video }}"><span aria-hidden="true">▶</span> Watch 90 seconds</button>{% endif %}
     </div>
   </div>
   <p class="hero-cap">Live 3D, illustrative: every plot stands for a land record. Watch one get registered.</p>
@@ -126,6 +127,7 @@ gsap: true
 
     <div class="seg rv" role="tablist" aria-label="Demos">
       <button role="tab" class="seg-b" id="d-states" aria-controls="dp-states" aria-selected="true">States in 3D</button>
+      <button role="tab" class="seg-b" id="d-map" aria-controls="dp-map" aria-selected="false" tabindex="-1">Chhattisgarh map</button>
       <button role="tab" class="seg-b" id="d-roof" aria-controls="dp-roof" aria-selected="false" tabindex="-1">Cool Roof city</button>
       <button role="tab" class="seg-b" id="d-helpline" aria-controls="dp-helpline" aria-selected="false" tabindex="-1">CM Helpline</button>
       <button role="tab" class="seg-b" id="d-match" aria-controls="dp-match" aria-selected="false" tabindex="-1">Name match</button>
@@ -151,6 +153,27 @@ gsap: true
           <aside class="d3-card" id="bar-card" aria-live="polite" hidden></aside>
           <div class="d3-legend" id="bars-legend"></div>
         </div>
+      </div>
+
+      <!-- CG map -->
+      <div class="dpane" role="tabpanel" id="dp-map" aria-labelledby="d-map" hidden>
+        <div class="d3-head">
+          <div><h3>Chhattisgarh, district by district</h3><p>Each district rises by the measure you pick. Households are the closest public proxy for how many property records a district holds.</p></div>
+          <div class="chips" role="group" aria-label="Map measure">
+            <button type="button" class="chip" data-mmetric="households" aria-pressed="true">Households</button>
+            <button type="button" class="chip" data-mmetric="density" aria-pressed="false">Density</button>
+            <button type="button" class="chip" data-mmetric="literacy" aria-pressed="false">Literates</button>
+            <button type="button" class="chip" data-mmetric="st" aria-pressed="false">ST share</button>
+          </div>
+        </div>
+        <div class="d3-wrap">
+          <div id="map3d" class="three-box tall" role="img" tabindex="0" aria-label="Interactive 3D map of Chhattisgarh's 18 Census 2011 districts. Use left and right arrow keys to step through districts."></div>
+          <div class="d3-tools"><button type="button" data-act="reset">Reset view</button><button type="button" data-act="spin" aria-pressed="true">Auto-rotate</button><button type="button" data-act="full">Full screen</button></div>
+          <p class="d3-hint">Drag to rotate · Click, then scroll or pinch to zoom · Click a district to fly to it</p>
+          <aside class="d3-card" id="map-card" aria-live="polite" hidden></aside>
+          <div class="d3-legend" id="map-legend"></div>
+        </div>
+        <p class="src">Census of India 2011, Primary Census Abstract, digitised by Jolad &amp; Singh (<a href="https://doi.org/10.7910/DVN/ON8CP8" target="_blank" rel="noopener">Harvard Dataverse</a>, CC BY 4.0). Boundaries: <a href="https://github.com/datameet/maps" target="_blank" rel="noopener">DataMeet</a> (CC BY 2.5 India). Shows the 18 districts of 2011; Chhattisgarh has 33 today. Area and density are computed from the boundaries.</p>
       </div>
 
       <!-- Cool roof -->
@@ -266,7 +289,7 @@ gsap: true
         <div class="dpane-grid">
           <div class="dpane-copy">
             <h3>For the engineers</h3>
-            <p>Try <code>help</code>, <code>match आयुष | Ayush</code>, <code>parcel 214/3</code> or <code>curl api</code>. No framework, no cookies, no trackers; three.js and GSAP from public CDNs.</p>
+            <p>Try <code>help</code>, <code>match आयुष | Ayush</code>, <code>parcel 214/3</code> or <code>curl api</code>. {% if site.goatcounter != "" %}No framework and no cookies; visits are counted anonymously with GoatCounter. three.js and GSAP come from public CDNs.{% else %}No framework, no cookies, no trackers; three.js and GSAP from public CDNs.{% endif %}</p>
             <dl class="perf" id="perf">
               <div><dt>Loaded in</dt><dd id="pf-load">—</dd></div>
               <div><dt>Transferred</dt><dd id="pf-kb">—</dd></div>
@@ -317,6 +340,20 @@ gsap: true
         </ul>
         <p class="note">Government documents stay inside government. I walk through them where permitted.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <header class="sec-h rv">
+      <p class="kicker" data-i18n="faq.k">Objections, answered</p>
+      <h2 data-i18n="faq.h">The questions founders ask me, before they ask.</h2>
+    </header>
+    <div class="faq rv">
+      {% for f in site.data.faq %}<details class="qa"{% if forloop.first %} open{% endif %}><summary data-i18n="faq.q{{ forloop.index }}">{{ f.q }}</summary><p data-i18n="faq.a{{ forloop.index }}">{{ f.a }}</p></details>
+      {% endfor %}
     </div>
   </div>
 </section>
