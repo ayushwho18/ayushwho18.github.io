@@ -660,7 +660,7 @@
     var SOFT = /^(bai|devi|bi)$/;
     function fold(t) {
       return t.replace(/aa+/g, "a").replace(/ee|ii/g, "i").replace(/oo|uu/g, "u").replace(/w/g, "v").replace(/ph/g, "f").replace(/sh/g, "s")
-        .replace(/z/g, "j").replace(/ck/g, "k").replace(/q/g, "k").replace(/([bcdfghjklmnprstvy])\1+/g, "$1").replace(/(?!^)h(?=[^aeiou]|$)/g, "").replace(/y$/, "i");
+        .replace(/z/g, "j").replace(/ck/g, "k").replace(/q/g, "k").replace(/([bcdfghjklmnprstvy])\1+/g, "$1").replace(/(?!^)h(?=[^aeiou]|$)/g, "").replace(/y$/, "i").replace(/x/g, "ks").replace(/^varma$/, "verma"); // laxmi~lakshmi; known surname pair
     }
     function jw(a, b) {
       if (a === b) return 1; var la = a.length, lb = b.length; if (!la || !lb) return 0;
@@ -904,7 +904,7 @@
     function esc(t) { return String(t).replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; }); }
     function w(html, cls) { var d = document.createElement("div"); if (cls) d.className = cls; d.innerHTML = html; out.appendChild(d); out.scrollTop = out.scrollHeight; }
     var C = {
-      help: function () { return "<span class='h'>commands</span>\n  whoami      who I am\n  match A | B compare two names (Hindi or English)\n  parcel 214/3  call the synthetic parcel API\n  work        what I did, by department\n  helpline    CM Helpline 1076 work\n  coolroof    the Cool Roof pitch\n  registries  open the ten-state scorecard\n  sro         open the SRO prototype\n  curl api    fetch /api/profile.json\n  evidence    proof of work\n  cv          download my CV\n  contact     how to reach me\n  theme       switch light / dark\n  clear       clear the screen\n<span class='m'>tip: Tab completes, ↑ recalls. There is also one hidden command.</span>"; },
+      help: function () { return "<span class='h'>commands</span>\n  whoami      who I am\n  match A | B compare two names (Hindi or English)\n  github      the open-source naam-match repo\n  parcel 214/3  call the synthetic parcel API\n  work        what I did, by department\n  helpline    CM Helpline 1076 work\n  coolroof    the Cool Roof pitch\n  registries  open the ten-state scorecard\n  sro         open the SRO prototype\n  curl api    fetch /api/profile.json\n  evidence    proof of work\n  cv          download my CV\n  contact     how to reach me\n  theme       switch light / dark\n  clear       clear the screen\n<span class='m'>tip: Tab completes, ↑ recalls. There is also one hidden command.</span>"; },
       whoami: function () { return "Ayush Dewangan · Raipur, India\nCM Good Governance Fellow, Govt of Chhattisgarh · Aug 2025 – Mar 2027 (tentative)\nMBA Public Policy & Governance, IIM Raipur ('27)\nB.Com (Hons); ex site accountant, AJ Constructions"; },
       work: function () { return "<span class='c'>[registration]</span> 30 reforms / 10 states benchmarked; Secretary directed 2 for implementation\n<span class='c'>[registration]</span> DPR: ₹3.24 Cr across 107 Sub-Registrar offices\n<span class='c'>[housing-env]</span> Cool Roof pitch: SRI 78+ as an OC condition, ₹2–4/sq ft paid by developer\n<span class='c'>[good-gov]</span>    CM Helpline 1076: L1–L4 escalation map for 2 departments"; },
       helpline: function () { return "CM Helpline 1076 launched 9 Jun 2026: phone, portal, app, WhatsApp.\nLadder: L1 Block → L2 District → L3 Division/Directorate → L4 Secretary/HoD\nMy part: grievance categories + L1–L4 officer map for Commercial Tax and\nHousing & Environment; departmental point of contact for the portal.\n<a href='#demos' data-demo='helpline'>→ run the escalation demo</a>"; },
@@ -916,6 +916,7 @@
       contact: function () { return "email     " + (window.SITE && SITE.email) + "\nlinkedin  <a href='https://www.linkedin.com/in/ayush-dewangann/' target='_blank' rel='noopener'>linkedin.com/in/ayush-dewangann</a>\nstatus    available from April 2027"; },
       theme: function () { return "theme → " + toggleTheme(); },
       clear: function () { out.innerHTML = ""; return null; },
+      github: function () { return "<a href='https://github.com/ayushwho18/naam-match' target='_blank' rel='noopener'>github.com/ayushwho18/naam-match</a>  ·  dependency-free Python + JS name matcher, 14 tests, 1,000-pair benchmark"; },
       ls: function () { return "registries/  sro-scorecard/  posts/  api/profile.json  api/registries.json  files/Ayush_Dewangan_CV.pdf"; },
       date: function () { return new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST"; },
       "sudo hire-me": function () { copyText(SITE.email, "Email copied"); return "<span class='c'>permission granted.</span> Email copied to your clipboard. I can start in April 2027."; },

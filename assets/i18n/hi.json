@@ -92,7 +92,6 @@
 "Initials": "आद्याक्षर",
 "Order": "क्रम",
 "Near miss": "मामूली अंतर",
-"Rule-based transliteration, honorific and initial handling, token-order normalisation and Jaro–Winkler similarity, running in your browser. A heuristic to show the problem, not a production model.": "नियम-आधारित लिप्यंतरण, सम्मानसूचक शब्दों और आद्याक्षरों का प्रबंधन, शब्द-क्रम सामान्यीकरण और Jaro–Winkler समानता, सब आपके ब्राउज़र में। यह समस्या को दिखाने की एक अनुमानी विधि है, प्रोडक्शन मॉडल नहीं।",
 "The API a lender wants from a land record": "वह API जो ऋणदाता भूमि रिकॉर्ड से चाहता है",
 "One call that answers: who owns it, is it mortgaged, did the mutation go through, and do the names match. Here is the schema I would propose. Every response is <b>synthetic</b>.": "एक ही कॉल जो बताए: मालिक कौन है, क्या यह गिरवी है, क्या नामांतरण पूरा हुआ, और क्या नाम मेल खाते हैं। यह वह स्कीमा है जो मैं प्रस्तावित करूँगा। हर रिस्पॉन्स <b>सिंथेटिक</b> है।",
 "District": "ज़िला",
@@ -165,5 +164,8 @@
 "Registration reform catalogue": "पंजीयन सुधार सूची",
 "Property-registration DPR": "संपत्ति-पंजीयन DPR",
 "Cool Roof policy pitch": "कूल रूफ नीति प्रस्ताव",
-"CM Helpline 1076 escalation map": "CM हेल्पलाइन 1076 एस्केलेशन मानचित्र"
+"CM Helpline 1076 escalation map": "CM हेल्पलाइन 1076 एस्केलेशन मानचित्र",
+"Open source as <a href=\"https://github.com/ayushwho18/naam-match\" target=\"_blank\" rel=\"noopener\"><b>naam-match</b> on GitHub</a>: Python and JavaScript, tests, and a 1,000-pair synthetic benchmark (100% precision, 87% auto-matched; initials always go to a human). A heuristic, not a production model.": "<a href=\"https://github.com/ayushwho18/naam-match\" target=\"_blank\" rel=\"noopener\"><b>naam-match</b> GitHub पर</a> ओपन सोर्स है: Python और JavaScript, टेस्ट, और 1,000 जोड़ियों का सिंथेटिक बेंचमार्क (100% सटीकता, 87% स्वतः मिलान; इनिशियल हमेशा मानव जाँच के लिए जाते हैं)। यह एक ह्यूरिस्टिक है, प्रोडक्शन मॉडल नहीं।",
+"naam-match (open source)": "naam-match (ओपन सोर्स)",
+"Hindi/English name matching for land records · Python + JS, benchmarked": "भूमि रिकॉर्ड के लिए हिंदी/अंग्रेज़ी नाम मिलान · Python + JS, बेंचमार्क सहित"
 }
