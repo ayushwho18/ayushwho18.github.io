@@ -65,7 +65,7 @@ exclude:
 
 # Optional extras: leave blank to hide
 intro_video: ""      # YouTube video id (unlisted is fine), e.g. "dQw4w9WgXcQ"
-goatcounter: ""      # GoatCounter code, e.g. "ayushdewangan" -> privacy-friendly visit counts, no cookies
+goatcounter: "theayushdewangan"      # GoatCounter code, e.g. "ayushdewangan" -> privacy-friendly visit counts, no cookies
 
 collections:
   for:

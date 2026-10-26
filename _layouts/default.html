@@ -4,7 +4,7 @@
 {% include head.html %}
 {% if page.styles %}{% for s in page.styles %}<link rel="stylesheet" href="{{ s | relative_url }}">{% endfor %}{% endif %}
 {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
-{% if site.goatcounter != "" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
+{% if site.goatcounter != "" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 </head>
 <body class="{{ page.body_class }}">
 <div class="progress" aria-hidden="true"></div>
