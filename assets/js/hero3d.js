@@ -1,12 +1,36 @@
 /* Hero: a lit aerial landscape of land parcels (three.js r128).
    Each parcel is a khasra; every few seconds one is "registered": its boundary lights up and a pin rises.
    Day palette in light mode, night village in dark mode. Falls back to the CSS/WebGL aurora if WebGL or three.js is missing. */
+// Shared, lazy three.js loader: nothing 3D is downloaded until it is needed.
+window.loadThree = window.loadThree || function () {
+  if (!window.__threeP) {
+    var ls = function (src) { return new Promise(function (ok, no) { var s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); };
+    window.__threeP = (window.THREE && THREE.OrbitControls) ? Promise.resolve() :
+      ls("https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js")
+        .then(function () { return ls("https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js").catch(function () {}); });
+  }
+  return window.__threeP;
+};
 (function () {
   "use strict";
   var host = document.getElementById("hero3d");
-  if (!host || !window.THREE) return;
-  // build after first paint so the headline is never delayed by scene construction
-  var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 1); })(init, { timeout: 1200 }); };
+  if (!host) return;
+  var force0 = /[?&]hero3d=force/.test(location.search);
+  function gpuOK() { // silent probe: no usable GPU -> keep the light aurora and never download three.js
+    if (force0) return true;
+    var c = document.createElement("canvas"), g = c.getContext("webgl", { failIfMajorPerformanceCaveat: true });
+    if (!g) return false;
+    var d = g.getExtension("WEBGL_debug_renderer_info"), name = d ? String(g.getParameter(d.UNMASKED_RENDERER_WEBGL)) : "";
+    var l = g.getExtension("WEBGL_lose_context"); if (l) l.loseContext();
+    return !/swiftshader|llvmpipe|software|basic render/i.test(name);
+  }
+  // after first paint and idle: probe, then fetch three.js, then build
+  var go = function () {
+    (window.requestIdleCallback || function (f) { setTimeout(f, 1); })(function () {
+      if (!gpuOK()) return;
+      window.loadThree().then(function () { if (window.THREE) init(); }, function () {});
+    }, { timeout: 1500 });
+  };
   if (document.readyState === "complete") go(); else addEventListener("load", go);
   function init() {
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -15,17 +39,8 @@
 
   var renderer, force = /[?&]hero3d=force/.test(location.search);
   // failIfMajorPerformanceCaveat: machines that would draw WebGL in software keep the light aurora instead
-  if (!force) { // silent probe first, so no console error is logged on machines without a usable GPU
-    var probe = document.createElement("canvas"), pgl = probe.getContext("webgl", { failIfMajorPerformanceCaveat: true });
-    if (!pgl) return;
-    var lose = pgl.getExtension("WEBGL_lose_context"); if (lose) lose.loseContext();
-  }
   try { renderer = new THREE.WebGLRenderer({ antialias: !small, alpha: false, powerPreference: "high-performance" }); } catch (e) { return; }
-  if (!force) {
-    var gl0 = renderer.getContext(), dbg = gl0.getExtension("WEBGL_debug_renderer_info");
-    var gpu = dbg ? String(gl0.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) : "";
-    if (/swiftshader|llvmpipe|software|basic render/i.test(gpu)) { renderer.dispose(); return; }
-  }
+
   renderer.setPixelRatio(Math.min(small ? 1.25 : 1.35, devicePixelRatio || 1));
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;

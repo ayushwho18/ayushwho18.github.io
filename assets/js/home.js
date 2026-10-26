@@ -165,6 +165,7 @@
   function loadScript(src) { return new Promise(function (ok, no) { var s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
   function threeReady(cb) {
     if (window.THREE && THREE.OrbitControls) { cb(true); return; } // already on the page: never load a second copy
+    if (window.loadThree) { window.loadThree().then(function () { cb(!!window.THREE); }, function () { cb(false); }); return; }
     if (!threeP) threeP = loadScript("https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js")
       .then(function () { return loadScript("https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js").catch(function () {}); });
     threeP.then(function () { cb(!!window.THREE); }, function () { cb(false); });
