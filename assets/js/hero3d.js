@@ -5,12 +5,27 @@
   "use strict";
   var host = document.getElementById("hero3d");
   if (!host || !window.THREE) return;
+  // build after first paint so the headline is never delayed by scene construction
+  var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 1); })(init, { timeout: 1200 }); };
+  if (document.readyState === "complete") go(); else addEventListener("load", go);
+  function init() {
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   var small = matchMedia("(max-width: 700px)").matches;
   function isDark() { var t = document.documentElement.getAttribute("data-theme"); return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; }
 
-  var renderer;
+  var renderer, force = /[?&]hero3d=force/.test(location.search);
+  // failIfMajorPerformanceCaveat: machines that would draw WebGL in software keep the light aurora instead
+  if (!force) { // silent probe first, so no console error is logged on machines without a usable GPU
+    var probe = document.createElement("canvas"), pgl = probe.getContext("webgl", { failIfMajorPerformanceCaveat: true });
+    if (!pgl) return;
+    var lose = pgl.getExtension("WEBGL_lose_context"); if (lose) lose.loseContext();
+  }
   try { renderer = new THREE.WebGLRenderer({ antialias: !small, alpha: false, powerPreference: "high-performance" }); } catch (e) { return; }
+  if (!force) {
+    var gl0 = renderer.getContext(), dbg = gl0.getExtension("WEBGL_debug_renderer_info");
+    var gpu = dbg ? String(gl0.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) : "";
+    if (/swiftshader|llvmpipe|software|basic render/i.test(gpu)) { renderer.dispose(); return; }
+  }
   renderer.setPixelRatio(Math.min(small ? 1.25 : 1.35, devicePixelRatio || 1));
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -233,6 +248,7 @@
   frame(performance.now());
   host.classList.add("ready");
   document.documentElement.classList.add("hero3d-on");
+  document.dispatchEvent(new CustomEvent("hero3d"));
   if (reduce) { document.addEventListener("themechange", function () { frame(0); }); addEventListener("resize", function () { size(); frame(0); }); }
   else {
     start();
@@ -240,4 +256,5 @@
     if ("IntersectionObserver" in window) new IntersectionObserver(function (es) { es[0].isIntersecting ? start() : stop(); }).observe(host);
   }
   renderer.domElement.addEventListener("webglcontextlost", function (e) { e.preventDefault(); stop(); host.classList.remove("ready"); document.documentElement.classList.remove("hero3d-on"); });
+  }
 })();

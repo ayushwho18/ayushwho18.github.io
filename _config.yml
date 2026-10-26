@@ -49,7 +49,9 @@ defaults:
   - scope: { path: "", type: posts }
     values: { layout: post, category: notes }
   - scope: { path: "" }
-    values: { layout: page }
+    values: { layout: page, image: /assets/img/og.png }
+  - scope: { path: "", type: posts }
+    values: { image: /assets/img/og.png }
 
 exclude:
   - README.md

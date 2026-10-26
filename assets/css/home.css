@@ -229,7 +229,7 @@ input[type=range]{width:100%;accent-color:var(--teal)}
 #hero3d{position:absolute;inset:0;z-index:-2;opacity:0;transition:opacity 1.4s ease}
 #hero3d.ready{opacity:1}
 #hero3d canvas{display:block;width:100%!important;height:100%!important}
-.hero3d-on #aurora{display:none}
+
 .veil{position:absolute;inset:0;z-index:-1;pointer-events:none;background:
   radial-gradient(42% 38% at 50% 46%,color-mix(in srgb,var(--paper) 66%,transparent) 0,color-mix(in srgb,var(--paper) 30%,transparent) 60%,transparent 100%),
   linear-gradient(to bottom,color-mix(in srgb,var(--paper) 45%,transparent),transparent 18%)}
@@ -382,3 +382,7 @@ input[type=range]{width:100%;accent-color:var(--teal)}
 .hero2-inner>*{max-width:100%}
 @media (max-width:640px){.race-track .promise span{left:auto;right:6px}}
 @media (max-width:640px){.d3-hint{display:none}.d3-legend{position:static;margin:0;border:0;border-radius:0;background:var(--surface);padding:10px 14px}.roof-grid .cr-readout{display:none}.d3-card{max-height:70%;overflow:auto}}
+
+/* LCP: the name is visible from the first paint; it only slides */
+.gs .hero2 .hero2-name{opacity:1;animation-name:slide}
+@keyframes slide{from{transform:translateY(28px)}to{transform:none}}

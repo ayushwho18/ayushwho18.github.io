@@ -42,8 +42,10 @@
   (function () {
     var c = $("#aurora"); if (!c) return;
     if (document.documentElement.classList.contains("hero3d-on")) { c.remove(); return; }
+    var soft = false; // software WebGL: draw one still frame instead of animating
     var gl = c.getContext("webgl", { antialias: false, alpha: false, premultipliedAlpha: false, powerPreference: "low-power" });
     if (!gl) { c.remove(); return; }
+    try { var dbgi = gl.getExtension("WEBGL_debug_renderer_info"); soft = !!dbgi && /swiftshader|llvmpipe|software|basic render/i.test(String(gl.getParameter(dbgi.UNMASKED_RENDERER_WEBGL))) && !/[?&]hero3d=force/.test(location.search); } catch (e) {}
     var vs = "attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
     var fs = [
       "#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\nuniform vec2 r;uniform float t;uniform vec2 m;uniform vec3 bg,c0,c1,c2,c3;uniform float k;",
@@ -90,7 +92,7 @@
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       if (running) raf = requestAnimationFrame(frame);
     }
-    function start() { if (running || reduce || !seen || document.hidden) return; running = true; raf = requestAnimationFrame(frame); }
+    function start() { if (running || reduce || soft || !seen || document.hidden) return; running = true; raf = requestAnimationFrame(frame); }
     function stop() { running = false; cancelAnimationFrame(raf); }
     size(); palette(); frame(performance.now()); start();
     $(".hero2").addEventListener("pointermove", function (e) { var r = c.getBoundingClientRect(); tx = (e.clientX - r.left) / r.width; ty = 1 - (e.clientY - r.top) / r.height; });
@@ -100,6 +102,7 @@
     document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
     onVisible(c, function (v) { seen = v; v ? start() : stop(); }, { threshold: 0 });
     c.addEventListener("webglcontextlost", function (e) { e.preventDefault(); stop(); c.remove(); });
+    document.addEventListener("hero3d", function () { stop(); setTimeout(function () { c.remove(); }, 1500); }); // the 3D hero took over
   })();
 
   /* ============ COUNTERS ============ */
@@ -719,7 +722,7 @@
     }
     var tm; [A, B].forEach(function (i) { i.addEventListener("input", function () { clearTimeout(tm); tm = setTimeout(render, 140); }); });
     $$("#nm-ex .chip").forEach(function (c) { c.addEventListener("click", function () { A.value = c.dataset.a; B.value = c.dataset.b; render(); }); });
-    var once = false; onVisible(A, function (v) { if (v && !once) { once = true; render(); } }, { threshold: .2 });
+    var once = false; onVisible($("#dp-match"), function (v) { if (v && !once) { once = true; render(); } }, { threshold: 0 });
   })();
 
   /* ============ PARCEL API PLAYGROUND (synthetic) ============ */

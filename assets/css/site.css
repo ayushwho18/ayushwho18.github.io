@@ -65,7 +65,7 @@ p{margin:0}
 .hero{padding-block:72px 56px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;align-items:end}
 .hello{font-family:var(--deva);font-size:20px;color:var(--teal);margin-bottom:6px}
-.hero h1{font-size:clamp(46px,7.4vw,88px);font-weight:780;font-stretch:80%;line-height:.95}
+.hero h1{font-size:clamp(46px,7.4vw,88px);font-weight:700;line-height:.95}
 .hero .lead{margin-top:22px}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:var(--r-s);background:var(--ink);color:var(--paper);text-decoration:none;font:inherit;font-weight:600;font-size:16px;border:1px solid var(--ink);cursor:pointer}
@@ -73,7 +73,7 @@ p{margin:0}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule-2)}
 .btn.ghost:hover{border-color:var(--ink);background:transparent;color:var(--ink)}
 .btn small{font-weight:500;opacity:.75;font-size:13px}
-.now{margin:0;border-top:2px solid var(--ink)}
+.now{margin:0;border-top:1px solid var(--rule)}
 .now div{display:grid;grid-template-columns:104px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule)}
 .now dt{font-family:var(--display);font-weight:650;font-size:14px;color:var(--teal)}
 .now dd{margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.5}
@@ -81,11 +81,11 @@ p{margin:0}
 /* Bands */
 .band{padding-block:52px;border-top:1px solid var(--rule)}
 .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:22px}
-.sec-head h2{font-size:clamp(26px,3vw,32px);font-weight:700;font-stretch:88%}
+.sec-head h2{font-size:clamp(26px,3vw,32px);font-weight:700;}
 .more{font-weight:600;text-decoration:none}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-m);padding:22px 24px;display:flex;flex-direction:column;gap:8px}
-.card h3{font-size:22px;font-weight:700;font-stretch:90%}
+.card h3{font-size:22px;font-weight:700;}
 .card h3 a{color:var(--ink);text-decoration:none}
 .card h3 a:hover{color:var(--teal)}
 .card p{color:var(--ink-2);font-size:16px}
@@ -93,7 +93,7 @@ p{margin:0}
 .card-links{display:flex;gap:14px;margin-top:4px;font-weight:600;font-size:15px}
 
 /* Post list */
-.post-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.post-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
 .post-row{display:grid;grid-template-columns:118px minmax(0,1fr) auto;gap:18px;align-items:start;padding:16px 0;border-bottom:1px solid var(--rule)}
 .post-row time{font-size:14px;color:var(--muted);padding-top:3px}
 .post-title{font-family:var(--display);font-weight:650;font-size:20px;color:var(--ink);text-decoration:none;line-height:1.25}
@@ -107,7 +107,7 @@ p{margin:0}
 /* Contact */
 .contact-band{background:var(--ink);color:var(--paper);border-top:0}
 .contact{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
-.contact h2{color:var(--paper);font-size:30px;font-weight:700;font-stretch:88%}
+.contact h2{color:var(--paper);font-size:30px;font-weight:700;}
 .contact p{color:color-mix(in srgb,var(--paper) 75%,transparent);margin-top:6px}
 .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
 .contact-band .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
@@ -116,7 +116,7 @@ p{margin:0}
 /* Pages */
 .page{padding-block:56px 72px}
 .page-head{display:grid;gap:12px;margin-bottom:32px;max-width:760px}
-.page-head h1{font-size:clamp(38px,5.4vw,60px);font-weight:760;font-stretch:82%}
+.page-head h1{font-size:clamp(38px,5.4vw,60px);font-weight:700;letter-spacing:-.035em;}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
 .filters button{font:inherit;font-size:15px;font-weight:500;padding:6px 14px;border-radius:99px;border:1px solid var(--rule-2);background:transparent;color:var(--ink-2);cursor:pointer}
 .filters button span{color:var(--muted);font-size:13px;margin-left:2px}
@@ -124,9 +124,9 @@ p{margin:0}
 .filters button[aria-pressed="true"] span{color:inherit;opacity:.7}
 .year{margin-bottom:28px}
 .year-h{font-size:15px;font-weight:650;color:var(--muted);margin-bottom:8px;letter-spacing:.04em}
-.work-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.work-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
 .work-list li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
-.work-list h2{font-size:24px;font-weight:700;font-stretch:90%;margin-bottom:6px}
+.work-list h2{font-size:24px;font-weight:700;margin-bottom:6px}
 .work-list h2 a{color:var(--ink);text-decoration:none}
 .work-list h2 a:hover{color:var(--teal)}
 .work-list p{color:var(--ink-2)}
@@ -134,7 +134,7 @@ p{margin:0}
 /* Prose (posts and pages) */
 .prose{max-width:700px;font-size:18px;line-height:1.72}
 .prose>*+*{margin-top:1.05em}
-.prose h2{font-size:28px;font-weight:700;font-stretch:88%;margin-top:1.8em}
+.prose h2{font-size:28px;font-weight:700;margin-top:1.8em}
 .prose h3{font-size:21px;font-weight:650;margin-top:1.5em}
 .prose ul,.prose ol{padding-left:1.25em}
 .prose li+li{margin-top:.35em}
@@ -152,7 +152,7 @@ p{margin:0}
 /* Post */
 .post{padding-block:48px 72px}
 .post-head{max-width:760px;display:grid;gap:14px;margin-bottom:30px}
-.post-head h1{font-size:clamp(34px,5vw,54px);font-weight:760;font-stretch:84%}
+.post-head h1{font-size:clamp(34px,5vw,54px);font-weight:700;letter-spacing:-.035em;}
 .post-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14.5px;color:var(--muted)}
 .post-cover{margin:0 0 28px;max-width:860px}
 .post-cover img{border-radius:var(--r-m);display:block}
@@ -222,3 +222,8 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .nav-cta{margin-left:8px;padding:7px 15px!important;border-radius:999px;background:var(--ink);color:var(--paper)!important;font-weight:600;font-size:14px;text-decoration:none}
 .nav-cta:hover{opacity:.86;background:var(--ink)!important}
 @media (max-width:860px){.nav .nv{display:none}.kbar-btn kbd{display:none}.kbar-btn{padding:0 9px}}
+
+/* mobile menu button (opens the command palette, which lists every page and demo) */
+.menu-btn{display:none;font:inherit;font-size:14px;font-weight:600;height:34px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+@media (max-width:860px){.menu-btn{display:inline-flex;align-items:center}}
+.filters button.zero{display:none}
