@@ -692,11 +692,11 @@
         var best = 0, bi = -1;
         long.forEach(function (u, j) {
           if (used[j]) return;
-          var s = (t.length === 1 || u.length === 1) ? (t[0] === u[0] ? .86 : 0) : sim(t, u);
+          var s = (t.length === 1 || u.length === 1) ? (t === u ? 1 : t[0] === u[0] ? .86 : 0) : sim(t, u);
           if (s > best) { best = s; bi = j; }
         });
         if (bi >= 0) used[bi] = 1;
-        if (t.length === 1 || (bi >= 0 && long[bi].length === 1)) initials++;
+        if ((t.length === 1 || (bi >= 0 && long[bi].length === 1)) && !(bi >= 0 && long[bi] === t)) initials++;
         else if (best < .92) weak = true;
         total += best;
       });
@@ -741,7 +741,7 @@
     function mask(n) { return n.split(" ").map(function (w) { return w[0] + "•••"; }).join(" "); }
     function get(dist, kh) {
       kh = (kh || "").trim();
-      if (!/^\d{1,4}(\/\d{1,3})?$/.test(kh)) return { status: 422, body: { error: { code: "invalid_khasra", message: "Khasra must look like 214 or 214/3.", field: "khasra" } } };
+      if (!/^[1-9]\d{0,3}(\/[1-9]\d{0,2})?$/.test(kh)) return { status: 422, body: { error: { code: "invalid_khasra", message: "Khasra must look like 214 or 214/3, starting from 1.", field: "khasra" } } };
       var h = hash(dist + "|" + kh), o = OWN[h % OWN.length], m = NM.run(o[0], o[1]);
       var area = ((h >>> 3) % 900 + 40) / 1000, enc = (h >>> 7) % 3, mut = (h >>> 11) % 5 ? "completed" : "pending";
       var y = 2019 + (h >>> 13) % 7, mo = 1 + (h >>> 17) % 12, dd = 1 + (h >>> 19) % 27, date = y + "-" + (mo < 10 ? "0" : "") + mo + "-" + (dd < 10 ? "0" : "") + dd;

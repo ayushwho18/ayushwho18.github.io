@@ -390,3 +390,5 @@ input[type=range]{width:100%;accent-color:var(--teal)}
 
 /* LCP: hero text is visible from the first paint and only slides in */
 .gs .hero2 .rv{opacity:1;animation-name:slide}
+.cv-h1{margin-top:10px;font-size:clamp(32px,4.4vw,54px);letter-spacing:-.035em}
+@media print{@page{size:A4;margin:0}.site-header,.site-footer,.progress,.skip,.cv-sec .sec-h,.kbar,.toast{display:none!important}.cv-sec{padding:0!important}.cv-sec .wrap{max-width:none;padding:0}.cv-sheet{box-shadow:none;border:0;border-radius:0;max-width:none;margin:0;animation:none}}

@@ -14,10 +14,10 @@
 /* Layout: survey-sheet page. Left-aligned editorial column, one wide ranked register in the middle, cadastral linework only in the hero. */
 :root{
   --paper:#F3F6F5; --surface:#FFFFFF; --sunk:#E9EFED;
-  --ink:#122128; --ink-2:#3F5157; --muted:#66777C; --rule:#D3DDDA; --rule-2:#BCCAC6;
+  --ink:#122128; --ink-2:#3F5157; --muted:#56666B; --rule:#D3DDDA; --rule-2:#BCCAC6;
   --teal:#0A7564; --teal-deep:#064A40; --teal-soft:#D6ECE7; --teal-wash:#EAF5F2;
   --stamp:#6B3A93; --stamp-soft:#EEE6F5;
-  --ok:#0A7564; --part:#A8670F; --part-soft:#F6EAD6; --none:#8A989C;
+  --ok:#0A7564; --part:#8A5410; --part-soft:#F6EAD6; --none:#5F6E73;
   --g1:#D6ECE7; --g2:#8FCDBF; --g3:#3FA48F; --g4:#0A7564; --g5:#064A40;
   --line:rgba(10,117,100,.22);
   --display:"Anek Latin","Segoe UI",system-ui,sans-serif;
@@ -30,7 +30,7 @@
   --ink:#E3ECEA; --ink-2:#A7B8B5; --muted:#839499; --rule:#22343A; --rule-2:#30464C;
   --teal:#45BBA4; --teal-deep:#8FDCCB; --teal-soft:#16362F; --teal-wash:#112A25;
   --stamp:#B993DB; --stamp-soft:#2A2036;
-  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#6F8186;
+  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#8A9BA0;
   --g1:#17332E; --g2:#1E5A4E; --g3:#2C8A77; --g4:#45BBA4; --g5:#9BE3D3;
   --line:rgba(69,187,164,.20); color-scheme:dark}}
 :root[data-theme="dark"]{
@@ -38,7 +38,7 @@
   --ink:#E3ECEA; --ink-2:#A7B8B5; --muted:#839499; --rule:#22343A; --rule-2:#30464C;
   --teal:#45BBA4; --teal-deep:#8FDCCB; --teal-soft:#16362F; --teal-wash:#112A25;
   --stamp:#B993DB; --stamp-soft:#2A2036;
-  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#6F8186;
+  --ok:#45BBA4; --part:#E2A64B; --part-soft:#33270F; --none:#8A9BA0;
   --g1:#17332E; --g2:#1E5A4E; --g3:#2C8A77; --g4:#45BBA4; --g5:#9BE3D3;
   --line:rgba(69,187,164,.20); color-scheme:dark}
 
@@ -100,7 +100,8 @@ table.reg{width:100%;border-collapse:collapse;min-width:760px}
 .reg td{padding:11px 10px;border-bottom:1px solid var(--rule);vertical-align:middle;font-size:15px}
 .reg tbody tr.row{cursor:pointer}
 .reg tbody tr.row:hover td{background:var(--teal-wash)}
-.reg tbody tr.row[aria-expanded="true"] td{background:var(--teal-wash)}
+.reg tbody tr.row[data-open="true"] td{background:var(--teal-wash)}
+.st-btn{all:unset;cursor:pointer;display:block}.st-btn:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
 .rank{font-family:var(--display);font-weight:750;font-size:22px;font-stretch:80%;color:var(--muted);width:44px}
 .st b{font-family:var(--display);font-size:18px;font-weight:650;display:block;line-height:1.15}
 .st small{color:var(--muted);font-size:12.5px}
@@ -481,22 +482,21 @@ function render(){
     const det=Object.keys(W).map(k=>{const [v,src]=s.f[k];const t=src?SRC[src][2]:null;
       return `<div class="dcell"><h4>${FN[k]}</h4><p>${LBL[v][1]}${src?` · <a href="#s-${src}">[${NUM[src]}]</a><span class="tier ${t}">${t==="o"?"official / press":"published guide"}</span>`:" · no source found"}</p></div>`}).join("");
     const isOpen=open===s.id;
-    return `<tr class="row" tabindex="0" data-id="${s.id}" aria-expanded="${isOpen}">
+    return `<tr class="row" data-id="${s.id}" data-open="${isOpen}">
       <td class="rank">${rankOf[s.id]}</td>
-      <td class="st"><b>${s.name}</b><small>${s.sys} · ${s.lang} records</small></td>
+      <td class="st"><button type="button" class="st-btn" aria-expanded="${isOpen}" aria-controls="det-${s.id}"><b>${s.name}</b></button><small>${s.sys} · ${s.lang} records</small></td>
       <td class="score"><div class="score-n">${s.score}<em>/ 100</em></div>
         <div class="bar" title="Market ${s.market} · Access ${s.access} · White space ${s.space}"><i class="m" style="width:${s.market}%"></i><i class="a" style="width:${s.access}%"></i><i class="w" style="width:${s.space}%"></i></div></td>
       <td class="money"><b>₹${fmt(s.be)} Cr</b><small>BE 2026–27</small><small>₹${fmt(s.act)} Cr in 2024–25</small></td>
       ${cells}
       <td>${s.sy?'<span class="ws taken">Square Yards</span>':'<span class="ws open">Open</span>'}</td>
     </tr>
-    <tr class="detail" ${isOpen?"":"hidden"} data-for="${s.id}"><td colspan="9"><div class="detail-grid">${det}
+    <tr class="detail" id="det-${s.id}" ${isOpen?"":"hidden"} data-for="${s.id}"><td colspan="9"><div class="detail-grid">${det}
       <p class="dnote"><b>Reading:</b> ${s.note} <span class="src">Revenue: <a href="#s-prs">[${NUM.prs}]</a>. Points: market ${s.market}, access ${s.access}, white space ${s.space}.</span></p></div></td></tr>`;
   }).join("");
   tb.querySelectorAll("tr.row").forEach(tr=>{
-    const go=()=>{open=open===tr.dataset.id?null:tr.dataset.id;render();const r=document.querySelector(`tr.row[data-id="${tr.dataset.id}"]`);r&&r.focus()};
+    const go=()=>{open=open===tr.dataset.id?null:tr.dataset.id;render();const r=document.querySelector(`tr.row[data-id="${tr.dataset.id}"] .st-btn`);r&&r.focus()};
     tr.addEventListener("click",e=>{if(e.target.closest("a"))return;go()});
-    tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
   });
   document.querySelectorAll("#reg th[data-k]").forEach(th=>th.setAttribute("aria-sort",th.dataset.k===sortK?(dir<0?"descending":"ascending"):"none"));
 }
