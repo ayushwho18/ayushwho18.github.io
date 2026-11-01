@@ -1,5 +1,25 @@
 # Work shown on the home page and the Work page.
 # Add a new item at the top. `featured: true` puts it on the home page.
+- title: CG Registration Pulse
+  year: 2026
+  kind: Monthly note
+  url: /posts/2026/cg-registration-pulse-october-2026/
+  featured: false
+  summary: >-
+    A monthly note on what changed in Chhattisgarh's property registration,
+    from public sources: volumes, guideline rates, new offices, and national
+    moves linking land records to lending.
+
+- title: naam-match
+  year: 2026
+  kind: Open source
+  url: https://github.com/ayushwho18/naam-match
+  featured: false
+  summary: >-
+    Matches the same person's name across Hindi and English records, the gap
+    that breaks automated checks between land records and loan files. Python
+    and JavaScript, with tests and a 1,000-pair synthetic benchmark.
+
 - title: The Next Ten Registries
   year: 2026
   kind: Analysis
