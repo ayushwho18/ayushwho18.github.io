@@ -18,7 +18,9 @@
   summary: >-
     Matches the same person's name across Hindi and English records, the gap
     that breaks automated checks between land records and loan files. Python
-    and JavaScript, with tests and a 1,000-pair synthetic benchmark.
+    and JavaScript, with tests and a 1,000-pair synthetic benchmark. Live demo
+    on the home page and a batch checker on Hugging Face
+    (huggingface.co/spaces/ayushx18/naam-match).
 
 - title: The Next Ten Registries
   year: 2026
