@@ -6,9 +6,11 @@
   url: /recon-task/
   featured: false
   summary: >-
-    Three finance and accounting reconciliation tasks on fictional data, with
-    one correct answer each, an 18-check grading sheet and a formula-driven
-    answer key. Tested blind on three AI models.
+    Finance and accounting reconciliation tasks on fictional data, with one
+    correct answer each and a formula-driven answer key: three document-based
+    tasks (18 checks) and a 253-line bank reconciliation with 13 planted items
+    (10 checks). Tested blind on Claude models, with the results reported as
+    they came out.
 
 - title: CG Registration Pulse
   year: 2026
