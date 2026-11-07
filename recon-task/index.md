@@ -17,7 +17,20 @@ Everything on this page is fictional. The companies, vendors, contractors and fi
 
 Each task has a set of pass or fail checks (18 in all), and every check has one right answer. A task counts as correct only if its final figure matches to the rupee. The answer key is a spreadsheet with live formulas, so anyone can audit the derivation.
 
-RESULTS_PLACEHOLDER
+## Results
+
+I ran the full prompt on three AI models (Claude Opus, Sonnet and Haiku), each as a separate fresh run with only the prompt, no answer key, no tools and no code, then graded each answer against the key myself.
+
+| Model | Task 1 | Task 2 | Task 3 | Total |
+|---|---|---|---|---|
+| Claude Opus | 6 of 6 | 6 of 6 | 6 of 6 | 18 of 18 |
+| Claude Sonnet | 6 of 6 | 6 of 6 | 6 of 6 | 18 of 18 |
+| Claude Haiku | 6 of 6 | 6 of 6 | 6 of 6 | 18 of 18 |
+
+An earlier version with only the first two tasks also scored 12 of 12 on all three models, which is why I added the third.
+
+**What I take from this.** The answer key is sound: I computed every figure separately in code, and three independent solvers reached the same numbers. But these tasks are not hard for current models when the rules are written out and the documents are clean. A harder version needs what real finance work has and this sample lacks: hundreds of ledger lines, messy narrations, and rules that are ambiguous or unwritten. That is the next version. I have not yet tested ChatGPT or Gemini.
+
 
 ## Files
 

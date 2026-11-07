@@ -1,5 +1,15 @@
 # Work shown on the home page and the Work page.
 # Add a new item at the top. `featured: true` puts it on the home page.
+- title: Reconciliation benchmark (sample)
+  year: 2026
+  kind: Prototype
+  url: /recon-task/
+  featured: false
+  summary: >-
+    Three finance and accounting reconciliation tasks on fictional data, with
+    one correct answer each, an 18-check grading sheet and a formula-driven
+    answer key. Tested blind on three AI models.
+
 - title: CG Registration Pulse
   year: 2026
   kind: Monthly note
