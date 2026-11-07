@@ -48,6 +48,8 @@ I ran it blind as before: a fresh run per model, only the prompt, then graded ag
 
 **What I take from this.** I expected the longer ledger to break at least one model. It did not. Length and arithmetic are not where current Claude models fail on written-rule reconciliation: all four runs found every planted item, avoided the false duplicates, and reached the right balance. Two of the four also flagged the one place a reviewer could disagree (whether the Rs 540 difference on cheque 004498 is a cash book error or a bank error), and said how the answer would change. So the next version cannot just be bigger. It has to depend on rules that are not written in the prompt, such as treatment under Indian tax law or company policy, or on judgement calls graded against a rubric, because that is where I would expect the models to diverge. I would rather publish this result than claim a failure I did not observe.
 
+**Known issue in hard mode.** Cheque 004498 shows Rs 45,280 in the cash book and Rs 45,820 on the bank statement, a gap of Rs 540. The answer key treats this as a cash book error, because a bank pays the amount written on the cheque. The prompt does not say so, and no cheque image is provided. Two of the four runs noticed this and said the adjusted balance would be Rs 30,82,787 if the bank were at fault instead. A reviewer could defend that reading, so this task does not yet have exactly one correct answer. The fix is one added rule stating which record is authoritative. I have not changed the files, because the results above were produced with this version.
+
 ## Files
 
 - [Task pack (Excel)]({{ '/files/Recon_Benchmark_Task_Pack.xlsx' | relative_url }}): policy, documents for all three tasks, and the prompt.
