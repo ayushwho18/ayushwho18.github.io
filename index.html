@@ -26,6 +26,45 @@ gsap: true
   <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span></a>
 </section>
 
+<!-- ================= FIT ================= -->
+<section class="sec" id="fit">
+  <div class="wrap">
+    <header class="sec-h rv">
+      <p class="kicker">Where I fit</p>
+      <h2>Two kinds of teams use what I do.</h2>
+      <p class="sec-lead">Start with the side that matches your work. Everything linked here uses public sources or synthetic data.</p>
+    </header>
+    <div class="proof">
+      <div class="proof-col rv">
+        <h3>Government advisory and consulting</h3>
+        <ul class="plist">
+          <li><a href="#ch-reforms"><b>Registration reform catalogue</b><span>30 reforms from 10 states · 2 directed for implementation</span></a></li>
+          <li><a href="#ch-dpr"><b>Project report for registration modernisation</b><span>₹3.24 crore budget · 107 Sub-Registrar offices</span></a></li>
+          <li><a href="#ch-help"><b>CM Helpline 1076 escalation design</b><span>L1–L4 officer chain · live statewide since June 2026</span></a></li>
+          <li><a href="{{ '/registries/' | relative_url }}"><b>The Next Ten Registries</b><span>Ten-state readiness scorecard · 21 public sources</span></a></li>
+        </ul>
+      </div>
+      <div class="proof-col rv">
+        <h3>AI evaluation and data</h3>
+        <ul class="plist">
+          <li><a href="{{ '/recon-task/' | relative_url }}"><b>Reconciliation benchmark for AI models</b><span>4 tasks · 28 pass/fail checks · results and a known flaw published</span></a></li>
+          <li><a href="https://github.com/ayushwho18/naam-match" target="_blank" rel="noopener"><b>naam-match</b><span>Hindi–English name matching · 1,000-pair test · 0 wrong automatic matches</span></a></li>
+          <li><a href="#demos"><b>Try the tools</b><span>Name matcher, escalation simulator and more, in your browser</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="now rv">
+      <p class="now-h"><b>Now</b> · updated November 2026</p>
+      <ul>
+        <li><span>Monitoring Housing &amp; Environment's CM Helpline 1076 cases with the department's nodal officer.</span></li>
+        <li><span>Published a hard-mode version of my AI reconciliation benchmark (7 November).</span></li>
+        <li><span>Building a public tracker of state readiness for DILRMP 3.0, from public sources only.</span></li>
+        <li><span>Final year of the MBA in Public Policy &amp; Governance at IIM Raipur. Available full-time from April 2027.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ================= WORK ================= -->
 <section class="sec work-sec" id="work">
   <div class="wrap">
@@ -327,6 +366,7 @@ gsap: true
           <li><a href="{{ '/registries/' | relative_url }}"><b>The Next Ten Registries</b><span>Ten-state registration-data scorecard · Oct 2026</span></a></li>
           <li><a href="{{ '/sro-scorecard/' | relative_url }}"><b>Sub-Registrar Performance Scorecard</b><span>Working prototype on synthetic data</span></a></li>
           <li><a href="{{ '/files/Ayush_Dewangan_Next_Ten_Registries.pdf' | relative_url }}"><b>Registries report (PDF)</b><span>7 pages, 21 sources</span></a></li>
+          <li><a href="{{ '/recon-task/' | relative_url }}"><b>Reconciliation benchmark for AI models</b><span>Task packs, answer keys and results · Nov 2026</span></a></li>
           <li><a href="https://github.com/ayushwho18/naam-match" target="_blank" rel="noopener"><b>naam-match (open source)</b><span>Hindi/English name matching for land records · Python + JS, benchmarked</span></a></li>
           <li><div><b>“Fifteen Passengers”</b><span>Nava Raipur transport and land value capture · ArthVichar, IIM Raipur</span></div></li>
         </ul>
@@ -350,7 +390,7 @@ gsap: true
   <div class="wrap">
     <header class="sec-h rv">
       <p class="kicker" data-i18n="faq.k">Objections, answered</p>
-      <h2 data-i18n="faq.h">The questions founders ask me, before they ask.</h2>
+      <h2 data-i18n="faq.h">The questions hiring teams ask me, before they ask.</h2>
     </header>
     <div class="faq rv">
       {% for f in site.data.faq %}<details class="qa"{% if forloop.first %} open{% endif %}><summary data-i18n="faq.q{{ forloop.index }}">{{ f.q }}</summary><p data-i18n="faq.a{{ forloop.index }}">{{ f.a }}</p></details>
@@ -372,8 +412,8 @@ gsap: true
 <!-- ================= CONTACT ================= -->
 <section class="contact2" id="contact">
   <div class="wrap contact2-inner rv">
-    <h2>Building with property data, lending or government?</h2>
-    <p>Let's talk. I reply to every message. My fellowship runs until March 2027, so I can start from April 2027.</p>
+    <h2>Hiring for government advisory, policy or AI evaluation?</h2>
+    <p>Let's talk. I reply to every message. My fellowship runs until March 2027 (tentative), so I can join full-time from April 2027.</p>
     <div class="hero2-cta">
       <button type="button" class="btn2 primary copy-email" data-email="{{ site.author.email }}">Copy email</button>
       <a class="btn2" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>

@@ -428,3 +428,11 @@ input[type=range]{width:100%;accent-color:var(--teal)}
 .pitch-src{padding-bottom:60px;font-size:14px;color:var(--muted)}.pitch-src ol{padding-left:20px;display:grid;gap:4px}
 @media (max-width:900px){.pitch-cards,.pitch-cards.three{grid-template-columns:1fr}.plan>li{grid-template-columns:1fr;gap:8px}}
 .d3-card .kv{display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:12.5px;margin-top:8px}.d3-card .kv span{color:var(--muted)}.d3-card .kv span.on{color:var(--ink);font-weight:600}
+
+/* Now block (Where I fit) */
+.now{margin-top:18px;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-l);padding:22px 28px;box-shadow:var(--shadow)}
+.now .now-h{margin:0 0 8px;font-size:14px;color:var(--muted)}
+.now .now-h b{color:var(--teal);font-weight:600}
+.now ul{margin:0;padding-left:18px}
+.now li{margin:4px 0;line-height:1.5}
+@media (max-width:640px){.now{padding:18px 18px}}
