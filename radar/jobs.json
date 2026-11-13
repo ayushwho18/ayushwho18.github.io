@@ -1,6 +1,14 @@
 {
  "signals": [
   {
+   "title": "Suresh Menon Joins Sazerac-John Distilleries to Lead Corporate Advocacy and Regulatory Affairs in India",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV1N3bUFYdDlFYURhN3g5TzRVWndrLWI1c0FnUnpIOWdiV05Palg0d1RrTWxvcFVQQUpvTWdaUkQ4OE02bEp1Ri1LZkV1TnFVa01mb2djaWM2aFZqYVV6ZGZNM3NLMHpSV2Y5RjhuYTNSZlpOblYxN0JEa2FEeFp6R0J4TkVVaDNjUGF5YnU2bER6cHQxU0JRUW8xakZaTFVBWTJOSVNpZjU?oc=5",
+   "source": "Aabkari Times",
+   "date": "2026-11-12",
+   "kind": "Policy / govt-affairs leader moved (a seat or a new team opens)",
+   "new": true
+  },
+  {
    "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxON296QjFrZ29rblJhaTRxaDFOMERDWEJHN3lPTUNYaktVUV9uTk5qemJfZzRaai1zTGxreVQ0dmlHdE5GMktlU01mclhyNkl3UGo4NEoteFVZaFRvanQ4UVRqOXN3U2pmN0VWclNrekNic2poXzVPT3B2SUhFODNWaEM5U3ZoRGtqWEFTUmxKR2wyNEJFNkdxZ3J1SFV5ekVhbXNYSmJtTlQ5VkZCVmgzUVl6N3BqQ3hSaWNjZFdLLTliemRObUp2YTZB?oc=5",
    "source": "Exchange4Media",
@@ -23,32 +31,22 @@
    "date": "2026-11-11",
    "kind": "Advisory / PMU tender (consultancies will staff up)",
    "new": false
-  },
-  {
-   "title": "Two Consortia Bid for General Consultancy Contract for Hyderabad Metro Phase 2 Project",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWkZwaEZDQmExOHoxemZZQ0ZqWWdVVzdONEpLRGNIN0x3YWFKaV9KbENlSm9KTi1lc3BkeVlfcTY3N3F2REUxOXc4RnBaU2lBdGI2RDlmSXFxUWFzWnJNTUdRbkJIX2swdFU4bnZhSGlSTzE4anluZWl1ZnRwTDJraWxRNWVKSU9Vc2dKS0VMRHJxQnZ5OUk2ZlkzUTRtM0RXU3h0X3piMWlLWkMxRXZpaFFQUzdtUDNxTVE?oc=5",
-   "source": "Metro Rail Today",
-   "date": "2026-10-29",
-   "kind": "Advisory / PMU tender (consultancies will staff up)",
-   "new": false
   }
  ],
  "page_changes": [
-  {
-   "company": "Cashfree Payments",
-   "url": "https://careers.kula.ai/cashfree",
-   "role_words": [
-    "operations",
-    "regulatory",
-    "strategy"
-   ]
-  },
   {
    "company": "Google India",
    "url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
    "role_words": [
     "government",
     "operations",
+    "policy"
+   ]
+  },
+  {
+   "company": "Jar",
+   "url": "https://www.myjar.app/careers",
+   "role_words": [
     "policy"
    ]
   },
@@ -60,21 +58,11 @@
     "operations",
     "policy"
    ]
-  },
-  {
-   "company": "Sattva Consulting",
-   "url": "https://careers.kula.ai/sattva",
-   "role_words": [
-    "government",
-    "operations",
-    "policy",
-    "strategy"
-   ]
   }
  ],
- "generated": "2026-11-12 09:47 UTC",
+ "generated": "2026-11-13 09:30 UTC",
  "companies": 345,
- "raw_jobs": 29588,
+ "raw_jobs": 29815,
  "matched": [
   {
    "company": "Accenture",
@@ -194,7 +182,7 @@
    "title": "Policy & Change Management Analyst - (12-Month Contract)",
    "location": "Bahrain; India; United Arab Emirates",
    "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5025665101",
-   "posted": "2026-11-05",
+   "posted": "2026-11-12",
    "team": "Compliance Governance",
    "id": "gh:binance:5025665101",
    "sector": "crypto-global",
@@ -267,11 +255,86 @@
    "new": false
   },
   {
+   "company": "Deutsche Bank",
+   "title": "Regulatory Control Analyst, AS",
+   "location": "Bangalore Velankani ISC",
+   "url": "https://db.wd3.myworkdayjobs.com/DBWebsite/job/Bangalore-Velankani-ISC/Regulatory-Control-Analyst--AS_R0457125",
+   "posted": "Posted Yesterday",
+   "team": "",
+   "id": "wd:db:/job/Bangalore-Velankani-ISC/Regulatory-Control-Analyst--AS_R0457125",
+   "sector": "bank-global",
+   "score": 69,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "regulatory"
+    ],
+    "boosts": [
+     "regulatory",
+     "policy",
+     "stakeholder"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
+   "company": "Deutsche Bank",
+   "title": "Regulatory Control Analyst, AS",
+   "location": "Bangalore Velankani ISC",
+   "url": "https://db.wd3.myworkdayjobs.com/DBWebsite/job/Bangalore-Velankani-ISC/Regulatory-Control-Analyst--AS_R0457124",
+   "posted": "Posted Yesterday",
+   "team": "",
+   "id": "wd:db:/job/Bangalore-Velankani-ISC/Regulatory-Control-Analyst--AS_R0457124",
+   "sector": "bank-global",
+   "score": 69,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "regulatory"
+    ],
+    "boosts": [
+     "regulatory",
+     "policy",
+     "stakeholder"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
+   "company": "Novartis",
+   "title": "Regulatory Translation Coordinator",
+   "location": "Hyderabad (Office)",
+   "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Regulatory-Translation-Coordinator_REQ-10092011-1",
+   "posted": "Posted Yesterday",
+   "team": "",
+   "id": "wd:novartis:/job/Hyderabad-Office/Regulatory-Translation-Coordinator_REQ-10092011-1",
+   "sector": "pharma-global (public affairs)",
+   "score": 69,
+   "why": {
+    "years_asked": 3,
+    "where": "india",
+    "title_hits": [
+     "regulatory"
+    ],
+    "boosts": [
+     "regulatory",
+     "registration",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
    "company": "DBS Bank India",
    "title": "Senior Associate, Specialist, Regulatory & Process Control, Consumer Banking Group",
    "location": "Regional Office Mumbai",
    "url": "https://dbs.wd3.myworkdayjobs.com/DBS_Careers/job/Regional-Office-Mumbai/Assistant-Vice-President--Specialist--Regulatory---Process-Control--Consumer-Banking-Group_WD89319",
-   "posted": "Posted 20 Days Ago",
+   "posted": "Posted 21 Days Ago",
    "team": "",
    "id": "wd:dbs:/job/Regional-Office-Mumbai/Assistant-Vice-President--Specialist--Regulatory---Process-Control--Consumer-Banking-Group_WD89319",
    "sector": "bank",
@@ -443,7 +506,7 @@
    "title": "Market, Technology & Policy Analyst, Energy Transition",
    "location": "Gurugram, Haryana",
    "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Careers/job/Gurugram-Haryana/Market--Technology---Policy-Analyst--Energy-Transition_332253-1",
-   "posted": "Posted Today",
+   "posted": "Posted Yesterday",
    "team": "",
    "id": "wd:spgi:/job/Gurugram-Haryana/Market--Technology---Policy-Analyst--Energy-Transition_332253-1",
    "sector": "ratings/data-global",
@@ -553,6 +616,31 @@
    "new": false
   },
   {
+   "company": "Novartis",
+   "title": "Senior Regulatory Coordinator",
+   "location": "Hyderabad (Office)",
+   "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Senior-Regulatory-Coordinator_REQ-10092014",
+   "posted": "Posted Yesterday",
+   "team": "",
+   "id": "wd:novartis:/job/Hyderabad-Office/Senior-Regulatory-Coordinator_REQ-10092014",
+   "sector": "pharma-global (public affairs)",
+   "score": 65,
+   "why": {
+    "years_asked": 3,
+    "where": "india",
+    "title_hits": [
+     "regulatory"
+    ],
+    "boosts": [
+     "regulatory",
+     "registration",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
    "company": "The Apprentice Project (TAP)",
    "title": "Manager - Founders Office",
    "location": "Remote",
@@ -582,7 +670,7 @@
    "title": "Chief Of Staff",
    "location": "Bangalore, India",
    "url": "https://job-boards.greenhouse.io/celonis/jobs/8000413003?gh_jid=8000413003",
-   "posted": "2026-10-07",
+   "posted": "2026-11-13",
    "team": "Corporate",
    "id": "gh:celonis:8000413003",
    "sector": "global (India presence)",
@@ -617,7 +705,7 @@
     "boosts": []
    },
    "first_seen": "2026-11-12",
-   "new": true
+   "new": false
   },
   {
    "company": "UNOPS - United Nations Office for Project Services",
@@ -689,6 +777,51 @@
    },
    "first_seen": "2026-11-03",
    "new": false
+  },
+  {
+   "company": "Ground Zero",
+   "title": "Senior Associate - Policy Engagement, Mumbai",
+   "location": "Remote: India",
+   "url": "https://himalayas.app/companies/ground-zero/jobs/senior-associate-policy-engagement-mumbai?utm_source=api",
+   "posted": "1794523199",
+   "team": "",
+   "sector": "Feed: himalayas",
+   "id": "fd:himalayas:https://himalayas.app/companies/ground-zero/jobs/senior-associate-policy-engagement-mumbai?utm_source=api",
+   "score": 56,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "policy"
+    ],
+    "boosts": []
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
+   "company": "Novartis",
+   "title": "Associate Global Regulatory Manager, GRSS&C",
+   "location": "Hyderabad (Office)",
+   "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Associate-Global-Regulatory-Manager--GRSS-C_REQ-10089481",
+   "posted": "Posted Yesterday",
+   "team": "",
+   "id": "wd:novartis:/job/Hyderabad-Office/Associate-Global-Regulatory-Manager--GRSS-C_REQ-10089481",
+   "sector": "pharma-global (public affairs)",
+   "score": 56,
+   "why": {
+    "years_asked": 5,
+    "where": "india",
+    "title_hits": [
+     "regulatory"
+    ],
+    "boosts": [
+     "regulatory",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "Rocket Learning",
@@ -884,34 +1017,6 @@
    "new": false
   },
   {
-   "company": "JLL",
-   "title": "Assistant Manager - Program Coordination",
-   "location": "Bengaluru, KA",
-   "url": "https://jll.wd1.myworkdayjobs.com/jllcareers/job/Bengaluru-KA/Assistant-Manager---Program-Coordination_REQ546991",
-   "posted": "Posted 8 Days Ago",
-   "team": "",
-   "id": "wd:jll:/job/Bengaluru-KA/Assistant-Manager---Program-Coordination_REQ546991",
-   "sector": "real estate services",
-   "score": 48,
-   "why": {
-    "years_asked": 4,
-    "where": "india",
-    "title_hits": [
-     "program"
-    ],
-    "boosts": [
-     "regulatory",
-     "stakeholder",
-     "real estate",
-     "mba",
-     "governance",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
    "company": "Paytm",
    "title": "Business Partnerships - Insurance",
    "location": "Noida, Uttar Pradesh",
@@ -944,7 +1049,7 @@
    "title": "Compliance officer",
    "location": "IN - Mumbai, India",
    "url": "https://visa.wd5.myworkdayjobs.com/Visa/job/IN---Mumbai-India/Compliance-officer_REF088286W",
-   "posted": "Posted 30 Days Ago",
+   "posted": "Posted 30+ Days Ago",
    "team": "",
    "id": "wd:visa:/job/IN---Mumbai-India/Compliance-officer_REF088286W",
    "sector": "fintech-global",
@@ -997,34 +1102,6 @@
   },
   {
    "company": "indgovtjobs",
-   "title": "Young Professional Recruitment 2026 \u2013 Latest YP Central Govt Jobs 500+ Vacancies",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/07/Young-Professional-Recruitment.html",
-   "posted": "2026-10-20",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/07/Young-Professional-Recruitment.html",
-   "score": 48,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "regulatory",
-     "public sector",
-     "mba",
-     "aadhaar"
-    ]
-   },
-   "first_seen": "2026-11-06",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
    "title": "BIRAC Young Professional Recruitment 2026: Apply Online for 02 Posts | Last Date 11-10-2026",
    "location": "India",
    "url": "https://www.indgovtjobs.in/2026/09/birac-young-professional-recruitment.html",
@@ -1056,7 +1133,7 @@
    "title": "Internal IP Program Manager",
    "location": "IND - Karnataka - Bengaluru - North",
    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/IND---Karnataka---Bengaluru---North/Internal-IP-Program-Manager_JR-2605387",
-   "posted": "Posted 15 Days Ago",
+   "posted": "Posted 16 Days Ago",
    "team": "",
    "id": "wd:globalfoundries:/job/IND---Karnataka---Bengaluru---North/Internal-IP-Program-Manager_JR-2605387",
    "sector": "semis-global",
@@ -1083,7 +1160,7 @@
    "title": "Finance Strategy & Transformation Consultant",
    "location": "Bengaluru, Karnataka, India",
    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Bengaluru-Karnataka-India/Senior-Automation-Developer_3166146",
-   "posted": "Posted 14 Days Ago",
+   "posted": "Posted 15 Days Ago",
    "team": "",
    "id": "wd:hp:/job/Bengaluru-Karnataka-India/Senior-Automation-Developer_3166146",
    "sector": "tech-global",
@@ -1103,33 +1180,6 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
-   "company": "Health Security Partners",
-   "title": "Consultant - Public Health Advisor - Infection Prevention and Control",
-   "location": "India",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=306961",
-   "posted": "apply by 2",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=306961",
-   "score": 47,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "consultant",
-     "public"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "regulatory",
-     "policy"
-    ]
-   },
-   "first_seen": "2026-11-07",
    "new": false
   },
   {
@@ -1215,6 +1265,33 @@
    },
    "first_seen": "2026-11-12",
    "new": false
+  },
+  {
+   "company": "Param Hansa Philanthropies (PHP)",
+   "title": "Program Associate",
+   "location": "Bengaluru, Karnataka",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308142",
+   "posted": "apply by 2",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308142",
+   "score": 45,
+   "why": {
+    "years_asked": 2,
+    "where": "india",
+    "title_hits": [
+     "program"
+    ],
+    "boosts": [
+     "government",
+     "regulatory",
+     "policy",
+     "stakeholder",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "indgovtjobs",
@@ -1329,7 +1406,7 @@
    "title": "Manufacturing Program Manager",
    "location": "Bengaluru, Karn\u0101taka, India",
    "url": "https://hpe.wd5.myworkdayjobs.com/ACJobSite/job/Bengaluru-Karntaka-India/Manufacturing-Program-Manager_1209821",
-   "posted": "Posted 15 Days Ago",
+   "posted": "Posted 16 Days Ago",
    "team": "",
    "id": "wd:hpe:/job/Bengaluru-Karntaka-India/Manufacturing-Program-Manager_1209821",
    "sector": "tech-global",
@@ -1407,7 +1484,7 @@
    "title": "IT Compliance & Controls Analyst II",
    "location": "Bangalore - Bagmane Tridib",
    "url": "https://cmegroup.wd1.myworkdayjobs.com/cme_careers/job/Bangalore---Bagmane-Tridib/IT-Compliance---Controls-Analyst-II_34755-1",
-   "posted": "Posted 30 Days Ago",
+   "posted": "Posted 30+ Days Ago",
    "team": "",
    "id": "wd:cmegroup:/job/Bangalore---Bagmane-Tridib/IT-Compliance---Controls-Analyst-II_34755-1",
    "sector": "market infra-global",
@@ -1429,37 +1506,37 @@
    "new": false
   },
   {
-   "company": "CRCS",
-   "title": "crcs consultant recruitment 2026",
-   "location": "India",
-   "url": "https://centralstatejobs.in/jobs/crcs-consultant-recruitment-2026",
-   "posted": "2026-10-30",
+   "company": "Centre For Health Research and Innovation (CHRI)",
+   "title": "Program Associate \u2013 Digital Health (Tech)",
+   "location": "New Delhi, Delhi",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308135",
+   "posted": "apply by 1",
    "team": "",
-   "sector": "Feed: centralstatejobs",
-   "id": "fd:centralstatejobs:https://centralstatejobs.in/jobs/crcs-consultant-recruitment-2026",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308135",
    "score": 42,
    "why": {
-    "years_asked": null,
+    "years_asked": 3,
     "where": "india",
     "title_hits": [
-     "consultant"
+     "program"
     ],
     "boosts": [
      "government",
-     "ministry",
-     "regulatory",
-     "state government"
+     "property",
+     "digital public infrastructure",
+     "hindi"
     ]
    },
-   "first_seen": "2026-11-04",
-   "new": false
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "Cigna",
    "title": "Data Management Strategy & Governance Associate Advisor - HIH - Evernorth",
    "location": "Hyderabad, India",
    "url": "https://cigna.wd5.myworkdayjobs.com/cignacareers/job/Hyderabad-India/Data-Management-Strategy---Governance-Associate-Advisor_26012132-1",
-   "posted": "Posted 30 Days Ago",
+   "posted": "Posted 30+ Days Ago",
    "team": "",
    "id": "wd:cigna:/job/Hyderabad-India/Data-Management-Strategy---Governance-Associate-Advisor_26012132-1",
    "sector": "health insurance-global",
@@ -1485,7 +1562,7 @@
    "title": "Data Management Strategy and Governance Advisor - HIH - Evernorth",
    "location": "Hyderabad, India",
    "url": "https://cigna.wd5.myworkdayjobs.com/cignacareers/job/Hyderabad-India/Data-Management-Strategy-and-Governance-Advisor---HIH---Evernorth_26013301",
-   "posted": "Posted 15 Days Ago",
+   "posted": "Posted 16 Days Ago",
    "team": "",
    "id": "wd:cigna:/job/Hyderabad-India/Data-Management-Strategy-and-Governance-Advisor---HIH---Evernorth_26013301",
    "sector": "health insurance-global",
@@ -1537,7 +1614,7 @@
    "title": "Technical Delivery Consultant Product Owner",
    "location": "IND-Pune-Equifax Analytics-PEC",
    "url": "https://equifax.wd5.myworkdayjobs.com/External/job/IND-Pune-Equifax-Analytics-PEC/Technical-Delivery-Consultant-Product-Owner_J00179984-1",
-   "posted": "Posted 3 Days Ago",
+   "posted": "Posted 4 Days Ago",
    "team": "",
    "id": "wd:equifax:/job/IND-Pune-Equifax-Analytics-PEC/Technical-Delivery-Consultant-Product-Owner_J00179984-1",
    "sector": "credit bureau",
@@ -1563,7 +1640,7 @@
    "title": "Managing Consultant - Enterprise Risk Advisory 4D",
    "location": "1415-G-ENTERPRISE RISK CONSULTING: FF, 22B, Gurgaon",
    "url": "https://genpact.wd108.myworkdayjobs.com/External_Careers/job/1415-G-ENTERPRISE-RISK-CONSULTING-FF-22B-Gurgaon/Managing-Consultant---Enterprise-Risk-Advisory-4D_JR10017598",
-   "posted": "Posted Yesterday",
+   "posted": "Posted 2 Days Ago",
    "team": "",
    "id": "wd:genpact:/job/1415-G-ENTERPRISE-RISK-CONSULTING-FF-22B-Gurgaon/Managing-Consultant---Enterprise-Risk-Advisory-4D_JR10017598",
    "sector": "BPM/consulting-IN",
@@ -1582,32 +1659,6 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "new": false
-  },
-  {
-   "company": "Health Security Partners",
-   "title": "Consultant - Antimicrobial Stewardship (AMS)",
-   "location": "India",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=306960",
-   "posted": "apply by 2",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=306960",
-   "score": 42,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "policy",
-     "stakeholder"
-    ]
-   },
-   "first_seen": "2026-11-07",
    "new": false
   },
   {
@@ -1667,7 +1718,7 @@
    "title": "Cybersecurity Risk & Compliance Analyst  -2",
    "location": "Bengaluru, KA",
    "url": "https://jll.wd1.myworkdayjobs.com/jllcareers/job/Bengaluru-KA/Cybersecurity-Risk---Compliance-Analyst--TPRM---2_REQ492319",
-   "posted": "Posted 5 Days Ago",
+   "posted": "Posted 6 Days Ago",
    "team": "",
    "id": "wd:jll:/job/Bengaluru-KA/Cybersecurity-Risk---Compliance-Analyst--TPRM---2_REQ492319",
    "sector": "real estate services",
@@ -1689,11 +1740,37 @@
    "new": false
   },
   {
+   "company": "Jhpiego",
+   "title": "Compliance - Assistant Manager/ Manager",
+   "location": "New Delhi, Delhi",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308146",
+   "posted": "apply by 2",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308146",
+   "score": 42,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "compliance"
+    ],
+    "boosts": [
+     "regulatory",
+     "policy",
+     "governance",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
+  },
+  {
    "company": "KLA",
    "title": "Analyst, Global Trade Compliance",
    "location": "Chennai, India",
    "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Chennai-India/Analyst--Global-Trade-Compliance_2641291",
-   "posted": "Posted 27 Days Ago",
+   "posted": "Posted 28 Days Ago",
    "team": "",
    "id": "wd:kla:/job/Chennai-India/Analyst--Global-Trade-Compliance_2641291",
    "sector": "semis-global",
@@ -1719,7 +1796,7 @@
    "title": "Manager, Group Financial Crime Compliance Fiserv Operations-2",
    "location": "Bangalore",
    "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Bangalore/Manager--Group-Financial-Crime-Compliance-Fiserv-Operations-2_26040020",
-   "posted": "Posted Yesterday",
+   "posted": "Posted 2 Days Ago",
    "team": "",
    "id": "wd:prudential:/job/Bangalore/Manager--Group-Financial-Crime-Compliance-Fiserv-Operations-2_26040020",
    "sector": "insurance-global",
@@ -1797,7 +1874,7 @@
    "title": "Manager, Finance Data Governance & Compliance",
    "location": "India - Hyderabad",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Manager--Finance-Data-Governance---Compliance_JR366784",
-   "posted": "Posted Yesterday",
+   "posted": "Posted 2 Days Ago",
    "team": "",
    "id": "wd:salesforce:/job/India---Hyderabad/Manager--Finance-Data-Governance---Compliance_JR366784",
    "sector": "tech-global (India public sector/strategy roles)",
@@ -1849,7 +1926,7 @@
    "title": "Manager Program Management VCA X, Visa Consulting & Analytics",
    "location": "IN - Bengaluru, India",
    "url": "https://visa.wd5.myworkdayjobs.com/Visa/job/IN---Bengaluru-India/Program-Management_REF089303W",
-   "posted": "Posted 17 Days Ago",
+   "posted": "Posted 18 Days Ago",
    "team": "",
    "id": "wd:visa:/job/IN---Bengaluru-India/Program-Management_REF089303W",
    "sector": "fintech-global",
@@ -2032,7 +2109,7 @@
    "title": "Specialist- Commercial Regulatory Affairs",
    "location": "New Delhi, Delhi, India",
    "url": "https://danaher.wd1.myworkdayjobs.com/DanaherJobs/job/New-Delhi-Delhi-India/Specialist--Commercial-Regulatory-Affairs_R1316589",
-   "posted": "Posted 8 Days Ago",
+   "posted": "Posted 9 Days Ago",
    "team": "",
    "id": "wd:danaher:/job/New-Delhi-Delhi-India/Specialist--Commercial-Regulatory-Affairs_R1316589",
    "sector": "life sciences-global",
@@ -2057,7 +2134,7 @@
    "title": "Project Manager- CES Business Operations & Strategy",
    "location": "Gurgaon",
    "url": "https://gartner.wd5.myworkdayjobs.com/EXT/job/Gurgaon/Project-Manager--CES-Business-Operations---Strategy_115359-1",
-   "posted": "Posted Yesterday",
+   "posted": "Posted 2 Days Ago",
    "team": "",
    "id": "wd:gartner:/job/Gurgaon/Project-Manager--CES-Business-Operations---Strategy_115359-1",
    "sector": "research/advisory",
@@ -2103,36 +2180,11 @@
    "new": false
   },
   {
-   "company": "Inductus Limited",
-   "title": "State Consultant \u2013 Social and Behaviour Change Partnerships and Coordinati...",
-   "location": "Raipur, Chhattisgarh",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=306958",
-   "posted": "apply by 1",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=306958",
-   "score": 41,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "partnerships",
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "policy"
-    ]
-   },
-   "first_seen": "2026-11-06",
-   "new": false
-  },
-  {
    "company": "Invesco",
    "title": "Senior Compliance Analyst",
    "location": "Hyderabad, Telangana",
    "url": "https://invesco.wd1.myworkdayjobs.com/IVZ/job/Hyderabad-Telangana/Senior-Compliance-Analyst_R-15987",
-   "posted": "Posted 14 Days Ago",
+   "posted": "Posted 15 Days Ago",
    "team": "",
    "id": "wd:invesco:/job/Hyderabad-Telangana/Senior-Compliance-Analyst_R-15987",
    "sector": "asset mgmt-global",
@@ -2159,7 +2211,7 @@
    "title": "Manager / Managing Consultant, Services Business Development",
    "location": "Mumbai, India",
    "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Mumbai-India/Manager---Managing-Consultant--Services-Business-Development_R-294373",
-   "posted": "Posted 22 Days Ago",
+   "posted": "Posted 23 Days Ago",
    "team": "",
    "id": "wd:mastercard:/job/Mumbai-India/Manager---Managing-Consultant--Services-Business-Development_R-294373",
    "sector": "fintech-global",
@@ -2232,7 +2284,7 @@
    "title": "Program Lead, Construction & Facilities",
    "location": "Sanand - 303C - Facilities/Construction, India",
    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Sanand---303C---FacilitiesConstruction-India/Program-Lead--Construction---Facilities_JR113616",
-   "posted": "Posted 28 Days Ago",
+   "posted": "Posted 29 Days Ago",
    "team": "",
    "id": "wd:micron:/job/Sanand---303C---FacilitiesConstruction-India/Program-Lead--Construction---Facilities_JR113616",
    "sector": "semis-global (India fab policy)",
@@ -2258,7 +2310,7 @@
    "title": "Institutional Securities Strategic Consulting & Transformation (Global Markets), Manager/Senior Manager, Business Solutions Group- ISGM",
    "location": "Mumbai, India",
    "url": "https://ms.wd5.myworkdayjobs.com/External/job/Mumbai-India/Business-Solutions-Group--Manager-Senior-Manager--Institutional-Securities-Management_JR037034",
-   "posted": "Posted 16 Days Ago",
+   "posted": "Posted 17 Days Ago",
    "team": "",
    "id": "wd:ms:/job/Mumbai-India/Business-Solutions-Group--Manager-Senior-Manager--Institutional-Securities-Management_JR037034",
    "sector": "bank-global",
@@ -2284,7 +2336,7 @@
    "title": "Senior Program Manager",
    "location": "Bangalore",
    "url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Bangalore/Senior-Program-Manager_593753-1",
-   "posted": "Posted Yesterday",
+   "posted": "Posted 2 Days Ago",
    "team": "",
    "id": "wd:philips:/job/Bangalore/Senior-Program-Manager_593753-1",
    "sector": "health tech-global (govt sales)",
@@ -2356,10 +2408,10 @@
   },
   {
    "company": "Baxter",
-   "title": "Consultant, Information Technology",
+   "title": "Consultant, Information Technology - Workday",
    "location": "Bangalore, Karnataka",
    "url": "https://baxter.wd1.myworkdayjobs.com/baxter/job/Bangalore-Karnataka/Consultant--Information-Technology_JR-211387",
-   "posted": "Posted 2 Days Ago",
+   "posted": "Posted Yesterday",
    "team": "",
    "id": "wd:baxter:/job/Bangalore-Karnataka/Consultant--Information-Technology_JR-211387",
    "sector": "medtech-global",
@@ -2377,31 +2429,6 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
-   "company": "Bombay Natural History Society (BNHS)",
-   "title": "Membership & Programme Officer",
-   "location": "Mumbai, Maharashtra",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=306978",
-   "posted": "apply by 0",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=306978",
-   "score": 39,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "programme officer"
-    ],
-    "boosts": [
-     "policy",
-     "registration",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-08",
    "new": false
   },
   {
@@ -2434,7 +2461,7 @@
    "title": "Strategy & Planning Manager",
    "location": "Bangalore, India",
    "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Bangalore-India/Strategy---Planning-Manager_2028192-1",
-   "posted": "Posted 2 Days Ago",
+   "posted": "Posted 3 Days Ago",
    "team": "",
    "id": "wd:cisco:/job/Bangalore-India/Strategy---Planning-Manager_2028192-1",
    "sector": "tech-global",
@@ -2459,7 +2486,7 @@
    "title": "Relationship Manager , Small Medium Enterprises, Institutional Banking Group",
    "location": "Mumbai",
    "url": "https://dbs.wd3.myworkdayjobs.com/DBS_Careers/job/Mumbai/Relationship-Manager---Small-Medium-Enterprises--Institutional-Banking-Group_230000G0",
-   "posted": "Posted 3 Days Ago",
+   "posted": "Posted 4 Days Ago",
    "team": "",
    "id": "wd:dbs:/job/Mumbai/Relationship-Manager---Small-Medium-Enterprises--Institutional-Banking-Group_230000G0",
    "sector": "bank",
@@ -2509,7 +2536,7 @@
    "title": "Analyst Global Trade Compliance",
    "location": "India - Bengaluru - Embassy One Complex",
    "url": "https://illumina.wd1.myworkdayjobs.com/illumina-careers/job/India---Bengaluru---Embassy-One-Complex/Analyst-Global-Trade-Compliance_43511-JOB",
-   "posted": "Posted 29 Days Ago",
+   "posted": "Posted 30 Days Ago",
    "team": "",
    "id": "wd:illumina:/job/India---Bengaluru---Embassy-One-Complex/Analyst-Global-Trade-Compliance_43511-JOB",
    "sector": "genomics-global",
@@ -2528,6 +2555,31 @@
    },
    "first_seen": "2026-11-04",
    "new": false
+  },
+  {
+   "company": "Inductus Limited",
+   "title": "Digital Health Innovations Consultant (Individual Consultant)",
+   "location": "New Delhi, Delhi",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=307083",
+   "posted": "apply by 1",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=307083",
+   "score": 39,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "consultant"
+    ],
+    "boosts": [
+     "government",
+     "policy",
+     "digital public infrastructure"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "Ixigo Trains",
@@ -2559,7 +2611,7 @@
    "title": "Consultant for Documentation of Interministerial Consultations and Understanding of Prison Health Services in Mizoram and Punjab, HIV/HEP/ST",
    "location": "India, New Delhi Country Program Office",
    "url": "https://path.wd1.myworkdayjobs.com/External/job/India-New-Delhi-Country-Program-Office/Consultant-for-Documentation-of-Interministerial-Consultations-and-Understanding-of-Prison-Health-Services-in-Mizoram-and-Punjab--HIV-HEP-ST_JR2909",
-   "posted": "Posted 6 Days Ago",
+   "posted": "Posted 7 Days Ago",
    "team": "",
    "id": "wd:path:/job/India-New-Delhi-Country-Program-Office/Consultant-for-Documentation-of-Interministerial-Consultations-and-Understanding-of-Prison-Health-Services-in-Mizoram-and-Punjab--HIV-HEP-ST_JR2909",
    "sector": "global health",
@@ -2578,6 +2630,31 @@
    },
    "first_seen": "2026-11-06",
    "new": false
+  },
+  {
+   "company": "Partners for Urban Knowledge, Action and Research (PUKAR)",
+   "title": "Consultant \u2013 Accounts and Finance",
+   "location": "Mumbai, Maharashtra",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308134",
+   "posted": "apply by 1",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308134",
+   "score": 39,
+   "why": {
+    "years_asked": 2,
+    "where": "india",
+    "title_hits": [
+     "consultant"
+    ],
+    "boosts": [
+     "regulatory",
+     "policy",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "Paytm",
@@ -2609,7 +2686,7 @@
    "title": "Technical Consultant",
    "location": "Bangalore",
    "url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Bangalore/Technical-Consultant_584341",
-   "posted": "Posted Today",
+   "posted": "Posted Yesterday",
    "team": "",
    "id": "wd:philips:/job/Bangalore/Technical-Consultant_584341",
    "sector": "health tech-global (govt sales)",
@@ -2659,7 +2736,7 @@
    "title": "RVP , Global Program and Portfolio Management",
    "location": "India - Bangalore",
    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Bangalore/RVP---Global-Program-and-Portfolio-Management_JR353282-1",
-   "posted": "Posted 10 Days Ago",
+   "posted": "Posted 11 Days Ago",
    "team": "",
    "id": "wd:salesforce:/job/India---Bangalore/RVP---Global-Program-and-Portfolio-Management_JR353282-1",
    "sector": "tech-global (India public sector/strategy roles)",
@@ -2780,6 +2857,33 @@
    "new": false
   },
   {
+   "company": "Toast",
+   "title": "Program Manager, Inclusion & Impact (APAC)",
+   "location": "Bangalore",
+   "url": "https://careers.toasttab.com/jobs?gh_jid=8326864",
+   "posted": "2026-11-12",
+   "team": "G & A : Diversity, Equity, and Inclusion",
+   "id": "gh:toast:8326864",
+   "sector": "fintech-global",
+   "score": 39,
+   "why": {
+    "years_asked": 5,
+    "where": "india",
+    "title_hits": [
+     "program manager",
+     "impact",
+     "program"
+    ],
+    "boosts": [
+     "stakeholder",
+     "governance",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-02",
+   "new": false
+  },
+  {
    "company": "Visa",
    "title": "IRF Compliance Analyst",
    "location": "IN - Mumbai, India",
@@ -2830,31 +2934,6 @@
    "new": false
   },
   {
-   "company": "indgovtjobs",
-   "title": "SPMCIL Young Professional Recruitment 2026 \u2013 Apply Online for 06 Posts | Last Date 17-08-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/07/spmcil-young-professional-recruitment.html",
-   "posted": "2026-08-16",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/07/spmcil-young-professional-recruitment.html",
-   "score": 39,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "public sector",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
    "company": "Abbott",
    "title": "Head - Commercial & Strategic Planning",
    "location": "India - Mumbai",
@@ -2879,6 +2958,32 @@
    },
    "first_seen": "2026-11-04",
    "new": false
+  },
+  {
+   "company": "Diageo (United Spirits)",
+   "title": "Learning Operations Lead",
+   "location": "Bangalore, India",
+   "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Learning-Operations-Lead_JR1132194",
+   "posted": "Posted Today",
+   "team": "",
+   "id": "wd:diageo:/job/Bangalore-India/Learning-Operations-Lead_JR1132194",
+   "sector": "FMCG-global (corporate affairs)",
+   "score": 38,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "operations lead"
+    ],
+    "boosts": [
+     "regulatory",
+     "stakeholder",
+     "governance",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-13",
+   "new": true
   },
   {
    "company": "Freshworks",
@@ -2956,7 +3061,7 @@
    "title": "Assistant Manager - Compliance",
    "location": "Chennai, TN",
    "url": "https://jll.wd1.myworkdayjobs.com/jllcareers/job/Chennai-TN/Assistant-Manager---Compliance_REQ546020-1",
-   "posted": "Posted 2 Days Ago",
+   "posted": "Posted 3 Days Ago",
    "team": "",
    "id": "wd:jll:/job/Chennai-TN/Assistant-Manager---Compliance_REQ546020-1",
    "sector": "real estate services",
@@ -3010,7 +3115,7 @@
    "title": "Senior Analyst, AI & Data Strategy-1",
    "location": "Gurgaon, India",
    "url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Gurgaon-India/Senior-Analyst--AI---Data-Strategy-1_R-277151",
-   "posted": "Posted 8 Days Ago",
+   "posted": "Posted 9 Days Ago",
    "team": "",
    "id": "wd:mastercard:/job/Gurgaon-India/Senior-Analyst--AI---Data-Strategy-1_R-277151",
    "sector": "fintech-global",
@@ -3110,7 +3215,7 @@
    "title": "Senior Solution Consultant",
    "location": "India-Mohali-Remote",
    "url": "https://parexel.wd1.myworkdayjobs.com/Parexel_External_Careers/job/India-Mohali-Remote/Senior-Solution-Consultant_R0000044646",
-   "posted": "Posted 30 Days Ago",
+   "posted": "Posted 30+ Days Ago",
    "team": "",
    "id": "wd:parexel:/job/India-Mohali-Remote/Senior-Solution-Consultant_R0000044646",
    "sector": "health-global (HEOR/market access)",
@@ -3188,7 +3293,7 @@
    "title": "HR Compliance Analyst",
    "location": "IND-Hyderabad",
    "url": "https://syneoshealth.wd12.myworkdayjobs.com/Syneos_Health_External_Site/job/IND-Hyderabad/HR-Compliance-Analyst_25113782",
-   "posted": "Posted 6 Days Ago",
+   "posted": "Posted 7 Days Ago",
    "team": "",
    "id": "wd:syneoshealth:/job/IND-Hyderabad/HR-Compliance-Analyst_25113782",
    "sector": "health-global",
@@ -3212,37 +3317,11 @@
    "new": false
   },
   {
-   "company": "Unisys",
-   "title": "Sr. Manager Business Operations",
-   "location": "Bangalore, KA, India",
-   "url": "https://unisys.wd5.myworkdayjobs.com/External/job/Bangalore-KA-India/Sr-Manager-Business-Operations_REQ576141",
-   "posted": "Posted 9 Days Ago",
-   "team": "",
-   "id": "wd:unisys:/job/Bangalore-KA-India/Sr-Manager-Business-Operations_REQ576141",
-   "sector": "IT services-global (govt)",
-   "score": 38,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "business operations"
-    ],
-    "boosts": [
-     "policy",
-     "stakeholder",
-     "real estate",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-06",
-   "new": false
-  },
-  {
    "company": "Visa",
    "title": "Senior Manager Program Management VCA X, Visa Consulting & Analytics",
    "location": "IN - Bengaluru, India",
    "url": "https://visa.wd5.myworkdayjobs.com/Visa/job/IN---Bengaluru-India/Senior-Manager-Program-Management-VCA-X--Visa-Consulting---Analytics_REF089302W",
-   "posted": "Posted 17 Days Ago",
+   "posted": "Posted 18 Days Ago",
    "team": "",
    "id": "wd:visa:/job/IN---Bengaluru-India/Senior-Manager-Program-Management-VCA-X--Visa-Consulting---Analytics_REF089302W",
    "sector": "fintech-global",
@@ -3266,12 +3345,28 @@
  ],
  "funding": [
   {
-   "title": "Fintech infra startup OneStack raises Rs 12.5 Cr from Shepherd's Hill, others",
-   "url": "https://entrackr.com/snippets/fintech-infra-startup-onestack-raises-rs-125-cr-from-shepherds-hill-others-12782259",
-   "date": "Wed, 04 Nov 2026",
+   "title": "MGF-Kavachh leads Rs 18 Cr seed round in climate startup mistEO",
+   "url": "https://entrackr.com/snippets/mgf-kavachh-leads-rs-18-cr-seed-round-in-climate-startup-misteo-12803941",
+   "date": "Thu, 12 Nov 2026",
    "source": "entrackr.com",
-   "sector": "fintech",
-   "new": false
+   "sector": "climate",
+   "new": true
+  },
+  {
+   "title": "NHRC Member Flags Meta-UNICEF Funding Ties Amid CSAM Scrutiny",
+   "url": "https://inc42.com/buzz/nhrc-member-flags-meta-unicef-funding-ties-amid-csam-scrutiny/",
+   "date": "Thu, 12 Nov 2026",
+   "source": "inc42.com",
+   "sector": "",
+   "new": true
+  },
+  {
+   "title": "Exclusive: Sofina To Lead PlatinumRx\u2019s $32 Mn Funding At $200 Mn Valuation",
+   "url": "https://inc42.com/buzz/sofina-to-lead-platinumrxs-32-mn-funding-at-200-mn-valuation/",
+   "date": "Thu, 12 Nov 2026",
+   "source": "inc42.com",
+   "sector": "",
+   "new": true
   },
   {
    "title": "[Update] Greenjoules Closes Series B Round At \u20b9150 Cr",
@@ -3282,28 +3377,52 @@
    "new": false
   },
   {
-   "title": "[Update] Kissht Raises \u20b9832 Cr Via Preferential Issue, 24 New Investors Join Cap Table",
-   "url": "https://inc42.com/buzz/kissht-gets-board-nod-to-raise-%e2%82%b9832-cr-via-preferential-issue/",
-   "date": "Wed, 11 Nov 2026",
-   "source": "inc42.com",
+   "title": "Kutlerri.ai raises $4M to help US restaurants grow revenue and cut costs using AI agents",
+   "url": "https://yourstory.com/2026/11/kutlerriai-raises-4m-to-help-us-restaurants-grow-revenue-and-cut-costs-using-ai-agents",
+   "date": "Thu, 12 Nov 2026",
+   "source": "yourstory.com",
    "sector": "",
-   "new": false
+   "new": true
   },
   {
-   "title": "Froncort.AI Raises $2.3 Mn From Google.org To Expand AI-Based Disease Surveillance",
-   "url": "https://inc42.com/buzz/froncort-ai-raises-2-3-mn-from-google-org-to-expand-ai-based-disease-surveillance/",
-   "date": "Tue, 10 Nov 2026",
-   "source": "inc42.com",
+   "title": "Canonicus Capital raises Rs 192 Cr in its first close of Special Situations Fund",
+   "url": "https://yourstory.com/2026/11/canonicus-capital-raises-rs-192-crore-first-close-of-special-situations-fund-",
+   "date": "Thu, 12 Nov 2026",
+   "source": "yourstory.com",
    "sector": "",
-   "new": false
+   "new": true
   },
   {
-   "title": "InMobi Secures Naming Rights For Bengaluru\u2019s Ibbaluru Metro Station For \u20b965 Cr",
-   "url": "https://inc42.com/buzz/inmobi-secures-naming-rights-for-bengalurus-ibbaluru-metro-station-for-%e2%82%b965-cr/",
-   "date": "Tue, 10 Nov 2026",
-   "source": "inc42.com",
+   "title": "Kutlerri.ai raises $4 Mn from Narahari Investments to expand AI solutions for restaurants",
+   "url": "https://entrackr.com/snippets/kutlerriai-raises-4-mn-from-narahari-investments-to-expand-ai-solutions-for-restaurants-12806062",
+   "date": "Fri, 13 Nov 2026",
+   "source": "entrackr.com",
    "sector": "",
-   "new": false
+   "new": true
+  },
+  {
+   "title": "Desible.ai raises Rs 32 Cr led by Prime Venture Partners",
+   "url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+   "date": "Fri, 13 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
+  },
+  {
+   "title": "Exclusive: Baaz Bikes to kick off Series B round led by BIG Capital",
+   "url": "https://entrackr.com/exclusive/exclusive-baaz-bikes-to-kick-off-series-b-round-led-by-big-capital-12805522",
+   "date": "Fri, 13 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
+  },
+  {
+   "title": "Canonicus Capital raises Rs 192 Cr in first close of Rs 500 Cr special situations fund",
+   "url": "https://entrackr.com/snippets/canonicus-capital-raises-rs-192-cr-in-first-close-of-rs-500-cr-special-situations-fund-12803632",
+   "date": "Thu, 12 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
   },
   {
    "title": "Exclusive: Dhruva Space to raise $15.5 Mn in pre-Series B; revenue surges 8X",
@@ -3311,7 +3430,7 @@
    "date": "Thu, 12 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "Hundo Pizza raises maiden institutional round led by Titan Capital",
@@ -3319,7 +3438,7 @@
    "date": "Thu, 12 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "Exclusive: Olyv raises Rs 58 Cr in extended Series C round led by Nippon India Digital",
@@ -3327,7 +3446,7 @@
    "date": "Thu, 12 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "D2C menswear brand QB MEN raises pre seed funding led by BeyondSeed",
@@ -3392,43 +3511,19 @@
    "source": "entrackr.com",
    "sector": "",
    "new": false
-  },
-  {
-   "title": "Enrission India Capital participates in Ottonomy\u2019s Rs 40.6 Cr funding round",
-   "url": "https://entrackr.com/snippets/enrission-india-capital-participates-in-ottonomys-rs-406-cr-funding-round-12782975",
-   "date": "Wed, 04 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "EloElo Group raises $80 Mn in Series C led by Hornbill Capital, NBCUniversal",
-   "url": "https://entrackr.com/news/eloelo-group-raises-80-mn-in-series-c-led-by-hornbill-capital-nbcuniversal-12780928",
-   "date": "Wed, 04 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "Peppermint Robotics raises Rs 100 Cr in Pre-Series B led by pi Ventures, Crane Venture Partners",
-   "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643",
-   "date": "Wed, 04 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
   }
  ],
  "health": [
   {
    "company": "3M",
    "ats": "workday",
-   "jobs": 117,
+   "jobs": 119,
    "error": null
   },
   {
    "company": "AB InBev India",
    "ats": "workday",
-   "jobs": 39,
+   "jobs": 37,
    "error": null
   },
   {
@@ -3440,7 +3535,7 @@
   {
    "company": "AbhiBus",
    "ats": "smartrecruiters",
-   "jobs": 5,
+   "jobs": 6,
    "error": null
   },
   {
@@ -3470,25 +3565,25 @@
   {
    "company": "Adobe",
    "ats": "workday",
-   "jobs": 42,
+   "jobs": 41,
    "error": null
   },
   {
    "company": "Adyen",
    "ats": "greenhouse",
-   "jobs": 254,
+   "jobs": 249,
    "error": null
   },
   {
    "company": "Agoda",
    "ats": "greenhouse",
-   "jobs": 350,
+   "jobs": 351,
    "error": null
   },
   {
    "company": "Airbnb",
    "ats": "greenhouse",
-   "jobs": 207,
+   "jobs": 216,
    "error": null
   },
   {
@@ -3500,13 +3595,13 @@
   {
    "company": "Airwallex",
    "ats": "ashby",
-   "jobs": 483,
+   "jobs": 484,
    "error": null
   },
   {
    "company": "Alloy",
    "ats": "greenhouse",
-   "jobs": 31,
+   "jobs": 32,
    "error": null
   },
   {
@@ -3518,19 +3613,19 @@
   {
    "company": "Ameriprise Financial",
    "ats": "workday",
-   "jobs": 48,
+   "jobs": 49,
    "error": null
   },
   {
    "company": "Analog Devices",
    "ats": "workday",
-   "jobs": 91,
+   "jobs": 85,
    "error": null
   },
   {
    "company": "Anaplan",
    "ats": "greenhouse",
-   "jobs": 142,
+   "jobs": 143,
    "error": null
   },
   {
@@ -3542,7 +3637,7 @@
   {
    "company": "Anthropic",
    "ats": "greenhouse",
-   "jobs": 674,
+   "jobs": 673,
    "error": null
   },
   {
@@ -3572,7 +3667,7 @@
   {
    "company": "AT&T",
    "ats": "workday",
-   "jobs": 34,
+   "jobs": 35,
    "error": null
   },
   {
@@ -3584,13 +3679,13 @@
   {
    "company": "Atlan",
    "ats": "ashby",
-   "jobs": 7,
+   "jobs": 8,
    "error": null
   },
   {
    "company": "Atlys",
    "ats": "ashby",
-   "jobs": 27,
+   "jobs": 28,
    "error": null
   },
   {
@@ -3620,7 +3715,7 @@
   {
    "company": "Baxter",
    "ats": "workday",
-   "jobs": 42,
+   "jobs": 41,
    "error": null
   },
   {
@@ -3644,7 +3739,7 @@
   {
    "company": "Binance",
    "ats": "greenhouse",
-   "jobs": 219,
+   "jobs": 224,
    "error": null
   },
   {
@@ -3656,19 +3751,19 @@
   {
    "company": "BlackRock",
    "ats": "workday",
-   "jobs": 40,
+   "jobs": 43,
    "error": null
   },
   {
    "company": "Blackstone",
    "ats": "workday",
-   "jobs": 13,
+   "jobs": 200,
    "error": null
   },
   {
    "company": "Block",
    "ats": "greenhouse",
-   "jobs": 192,
+   "jobs": 191,
    "error": null
   },
   {
@@ -3680,7 +3775,7 @@
   {
    "company": "Boeing",
    "ats": "workday",
-   "jobs": 10,
+   "jobs": 17,
    "error": null
   },
   {
@@ -3692,19 +3787,19 @@
   {
    "company": "Brex",
    "ats": "greenhouse",
-   "jobs": 284,
+   "jobs": 283,
    "error": null
   },
   {
    "company": "Broadcom",
    "ats": "workday",
-   "jobs": 4,
+   "jobs": 3,
    "error": null
   },
   {
    "company": "Broadridge",
    "ats": "workday",
-   "jobs": 29,
+   "jobs": 28,
    "error": null
   },
   {
@@ -3740,13 +3835,13 @@
   {
    "company": "Canva",
    "ats": "smartrecruiters",
-   "jobs": 32,
+   "jobs": 33,
    "error": null
   },
   {
    "company": "Capital One",
    "ats": "workday",
-   "jobs": 18,
+   "jobs": 17,
    "error": null
   },
   {
@@ -3758,31 +3853,31 @@
   {
    "company": "Carelon Global Solutions India (Elevance)",
    "ats": "workday",
-   "jobs": 16,
+   "jobs": 13,
    "error": null
   },
   {
    "company": "Celonis",
    "ats": "greenhouse",
-   "jobs": 262,
+   "jobs": 274,
    "error": null
   },
   {
    "company": "Central Square Foundation",
    "ats": "manatal",
-   "jobs": 18,
+   "jobs": 17,
    "error": null
   },
   {
    "company": "Checkout.com",
    "ats": "ashby",
-   "jobs": 173,
+   "jobs": 171,
    "error": null
   },
   {
    "company": "Cigna",
    "ats": "workday",
-   "jobs": 125,
+   "jobs": 124,
    "error": null
   },
   {
@@ -3806,13 +3901,13 @@
   {
    "company": "Clearwater Analytics",
    "ats": "greenhouse",
-   "jobs": 18,
+   "jobs": 15,
    "error": null
   },
   {
    "company": "Cloudflare",
    "ats": "greenhouse",
-   "jobs": 483,
+   "jobs": 481,
    "error": null
   },
   {
@@ -3830,7 +3925,7 @@
   {
    "company": "Cockroach Labs",
    "ats": "greenhouse",
-   "jobs": 12,
+   "jobs": 13,
    "error": null
   },
   {
@@ -3848,13 +3943,13 @@
   {
    "company": "Cognition",
    "ats": "ashby",
-   "jobs": 116,
+   "jobs": 114,
    "error": null
   },
   {
    "company": "Coinbase",
    "ats": "greenhouse",
-   "jobs": 273,
+   "jobs": 271,
    "error": null
   },
   {
@@ -3866,13 +3961,13 @@
   {
    "company": "Commvault",
    "ats": "greenhouse",
-   "jobs": 57,
+   "jobs": 55,
    "error": null
   },
   {
    "company": "ComplyAdvantage",
    "ats": "greenhouse",
-   "jobs": 18,
+   "jobs": 19,
    "error": null
   },
   {
@@ -3884,13 +3979,13 @@
   {
    "company": "Coupa",
    "ats": "lever",
-   "jobs": 49,
+   "jobs": 48,
    "error": null
   },
   {
    "company": "Coursera",
    "ats": "greenhouse",
-   "jobs": 40,
+   "jobs": 39,
    "error": null
   },
   {
@@ -3902,43 +3997,43 @@
   {
    "company": "CrowdStrike",
    "ats": "workday",
-   "jobs": 31,
+   "jobs": 32,
    "error": null
   },
   {
    "company": "Crypto.com",
    "ats": "lever",
-   "jobs": 81,
+   "jobs": 84,
    "error": null
   },
   {
    "company": "CureBay",
    "ats": "keka",
-   "jobs": 168,
+   "jobs": 172,
    "error": null
   },
   {
    "company": "Cursor (Anysphere)",
    "ats": "ashby",
-   "jobs": 113,
+   "jobs": 115,
    "error": null
   },
   {
    "company": "Danaher",
    "ats": "workday",
-   "jobs": 179,
+   "jobs": 177,
    "error": null
   },
   {
    "company": "Databricks",
    "ats": "greenhouse",
-   "jobs": 912,
+   "jobs": 905,
    "error": null
   },
   {
    "company": "Datadog",
    "ats": "greenhouse",
-   "jobs": 391,
+   "jobs": 383,
    "error": null
   },
   {
@@ -3968,13 +4063,13 @@
   {
    "company": "Dhan (Raise Securities)",
    "ats": "keka",
-   "jobs": 32,
+   "jobs": 31,
    "error": null
   },
   {
    "company": "Diageo (United Spirits)",
    "ats": "workday",
-   "jobs": 50,
+   "jobs": 51,
    "error": null
   },
   {
@@ -4004,13 +4099,13 @@
   {
    "company": "Dow",
    "ats": "workday",
-   "jobs": 21,
+   "jobs": 23,
    "error": null
   },
   {
    "company": "Druva",
    "ats": "greenhouse",
-   "jobs": 27,
+   "jobs": 29,
    "error": null
   },
   {
@@ -4028,7 +4123,7 @@
   {
    "company": "Elastic",
    "ats": "greenhouse",
-   "jobs": 421,
+   "jobs": 397,
    "error": null
   },
   {
@@ -4040,7 +4135,7 @@
   {
    "company": "Elliptic",
    "ats": "ashby",
-   "jobs": 24,
+   "jobs": 23,
    "error": null
   },
   {
@@ -4052,7 +4147,7 @@
   {
    "company": "Equifax",
    "ats": "workday",
-   "jobs": 24,
+   "jobs": 28,
    "error": null
   },
   {
@@ -4070,13 +4165,13 @@
   {
    "company": "Experian",
    "ats": "smartrecruiters",
-   "jobs": 397,
+   "jobs": 390,
    "error": null
   },
   {
    "company": "FactSet",
    "ats": "workday",
-   "jobs": 20,
+   "jobs": 19,
    "error": null
   },
   {
@@ -4094,25 +4189,25 @@
   {
    "company": "FHI 360",
    "ats": "workday",
-   "jobs": 3,
+   "jobs": 4,
    "error": null
   },
   {
    "company": "Fidelity Investments",
    "ats": "workday",
-   "jobs": 26,
+   "jobs": 25,
    "error": null
   },
   {
    "company": "Figma",
    "ats": "greenhouse",
-   "jobs": 141,
+   "jobs": 143,
    "error": null
   },
   {
    "company": "FIS",
    "ats": "workday",
-   "jobs": 11,
+   "jobs": 12,
    "error": null
   },
   {
@@ -4124,13 +4219,13 @@
   {
    "company": "Fiserv",
    "ats": "workday",
-   "jobs": 22,
+   "jobs": 23,
    "error": null
   },
   {
    "company": "Fivetran",
    "ats": "greenhouse",
-   "jobs": 179,
+   "jobs": 191,
    "error": null
   },
   {
@@ -4142,7 +4237,7 @@
   {
    "company": "Freshworks",
    "ats": "smartrecruiters",
-   "jobs": 121,
+   "jobs": 124,
    "error": null
   },
   {
@@ -4166,7 +4261,7 @@
   {
    "company": "Gartner",
    "ats": "workday",
-   "jobs": 44,
+   "jobs": 47,
    "error": null
   },
   {
@@ -4178,19 +4273,19 @@
   {
    "company": "GE Aerospace",
    "ats": "workday",
-   "jobs": 12,
+   "jobs": 11,
    "error": null
   },
   {
    "company": "GE Vernova",
    "ats": "workday",
-   "jobs": 52,
+   "jobs": 54,
    "error": null
   },
   {
    "company": "Gemini",
    "ats": "greenhouse",
-   "jobs": 29,
+   "jobs": 28,
    "error": null
   },
   {
@@ -4208,7 +4303,7 @@
   {
    "company": "GitLab",
    "ats": "greenhouse",
-   "jobs": 259,
+   "jobs": 254,
    "error": null
   },
   {
@@ -4226,13 +4321,13 @@
   {
    "company": "Glance (InMobi)",
    "ats": "greenhouse",
-   "jobs": 35,
+   "jobs": 34,
    "error": null
   },
   {
    "company": "Glean",
    "ats": "greenhouse",
-   "jobs": 124,
+   "jobs": 120,
    "error": null
   },
   {
@@ -4244,13 +4339,13 @@
   {
    "company": "Globalization Partners (G-P)",
    "ats": "greenhouse",
-   "jobs": 64,
+   "jobs": 62,
    "error": null
   },
   {
    "company": "GoKwik",
    "ats": "keka",
-   "jobs": 21,
+   "jobs": 24,
    "error": null
   },
   {
@@ -4262,13 +4357,13 @@
   {
    "company": "Grab",
    "ats": "smartrecruiters",
-   "jobs": 436,
+   "jobs": 435,
    "error": null
   },
   {
    "company": "Grafana Labs",
    "ats": "greenhouse",
-   "jobs": 144,
+   "jobs": 158,
    "error": null
   },
   {
@@ -4280,7 +4375,7 @@
   {
    "company": "GSK",
    "ats": "workday",
-   "jobs": 144,
+   "jobs": 116,
    "error": null
   },
   {
@@ -4298,7 +4393,7 @@
   {
    "company": "Harvey",
    "ats": "ashby",
-   "jobs": 380,
+   "jobs": 377,
    "error": null
   },
   {
@@ -4322,7 +4417,7 @@
   {
    "company": "HP Inc",
    "ats": "workday",
-   "jobs": 96,
+   "jobs": 97,
    "error": null
   },
   {
@@ -4334,7 +4429,7 @@
   {
    "company": "ID.me",
    "ats": "greenhouse",
-   "jobs": 51,
+   "jobs": 50,
    "error": null
   },
   {
@@ -4346,7 +4441,7 @@
   {
    "company": "Illumina",
    "ats": "workday",
-   "jobs": 25,
+   "jobs": 26,
    "error": null
   },
   {
@@ -4364,19 +4459,19 @@
   {
    "company": "Intel",
    "ats": "workday",
-   "jobs": 106,
+   "jobs": 107,
    "error": null
   },
   {
    "company": "Invesco",
    "ats": "workday",
-   "jobs": 48,
+   "jobs": 41,
    "error": null
   },
   {
    "company": "IQVIA",
    "ats": "workday",
-   "jobs": 104,
+   "jobs": 101,
    "error": null
   },
   {
@@ -4400,13 +4495,13 @@
   {
    "company": "Jodo",
    "ats": "keka",
-   "jobs": 8,
+   "jobs": 9,
    "error": null
   },
   {
    "company": "Jumio",
    "ats": "greenhouse",
-   "jobs": 14,
+   "jobs": 15,
    "error": null
   },
   {
@@ -4448,13 +4543,13 @@
   {
    "company": "KLA",
    "ats": "workday",
-   "jobs": 83,
+   "jobs": 84,
    "error": null
   },
   {
    "company": "Kong",
    "ats": "ashby",
-   "jobs": 118,
+   "jobs": 121,
    "error": null
   },
   {
@@ -4466,7 +4561,7 @@
   {
    "company": "Kraken",
    "ats": "ashby",
-   "jobs": 92,
+   "jobs": 97,
    "error": null
   },
   {
@@ -4478,7 +4573,7 @@
   {
    "company": "Kuku FM",
    "ats": "keka",
-   "jobs": 17,
+   "jobs": 18,
    "error": null
   },
   {
@@ -4490,7 +4585,7 @@
   {
    "company": "Labcorp",
    "ats": "workday",
-   "jobs": 73,
+   "jobs": 60,
    "error": null
   },
   {
@@ -4520,7 +4615,7 @@
   {
    "company": "Loop Health",
    "ats": "keka",
-   "jobs": 21,
+   "jobs": 22,
    "error": null
   },
   {
@@ -4538,13 +4633,13 @@
   {
    "company": "Mark43",
    "ats": "greenhouse",
-   "jobs": 36,
+   "jobs": 38,
    "error": null
   },
   {
    "company": "Marsh McLennan (Oliver Wyman, Mercer, Marsh)",
    "ats": "workday",
-   "jobs": 124,
+   "jobs": 117,
    "error": null
   },
   {
@@ -4556,13 +4651,13 @@
   {
    "company": "Medtronic",
    "ats": "workday",
-   "jobs": 122,
+   "jobs": 124,
    "error": null
   },
   {
    "company": "Meesho (incl. Financial Services)",
    "ats": "lever",
-   "jobs": 49,
+   "jobs": 48,
    "error": null
   },
   {
@@ -4574,7 +4669,7 @@
   {
    "company": "Mindtickle",
    "ats": "lever",
-   "jobs": 22,
+   "jobs": 20,
    "error": null
   },
   {
@@ -4586,7 +4681,7 @@
   {
    "company": "MongoDB",
    "ats": "greenhouse",
-   "jobs": 379,
+   "jobs": 386,
    "error": null
   },
   {
@@ -4610,13 +4705,13 @@
   {
    "company": "Mozilla",
    "ats": "greenhouse",
-   "jobs": 114,
+   "jobs": 121,
    "error": null
   },
   {
    "company": "Nasdaq",
    "ats": "workday",
-   "jobs": 36,
+   "jobs": 200,
    "error": null
   },
   {
@@ -4634,13 +4729,13 @@
   {
    "company": "Nava PBC",
    "ats": "greenhouse",
-   "jobs": 21,
+   "jobs": 20,
    "error": null
   },
   {
    "company": "NCR (APAC)",
    "ats": "workday",
-   "jobs": 33,
+   "jobs": 31,
    "error": null
   },
   {
@@ -4652,13 +4747,13 @@
   {
    "company": "New Relic",
    "ats": "greenhouse",
-   "jobs": 42,
+   "jobs": 43,
    "error": null
   },
   {
    "company": "NewSpace Research & Technologies",
    "ats": "keka",
-   "jobs": 247,
+   "jobs": 250,
    "error": null
   },
   {
@@ -4676,7 +4771,7 @@
   {
    "company": "Notion",
    "ats": "ashby",
-   "jobs": 157,
+   "jobs": 165,
    "error": null
   },
   {
@@ -4712,7 +4807,7 @@
   {
    "company": "Okta",
    "ats": "greenhouse",
-   "jobs": 374,
+   "jobs": 368,
    "error": null
   },
   {
@@ -4724,31 +4819,31 @@
   {
    "company": "One Acre Fund",
    "ats": "greenhouse",
-   "jobs": 51,
+   "jobs": 52,
    "error": null
   },
   {
    "company": "OpenAI",
    "ats": "ashby",
-   "jobs": 822,
+   "jobs": 828,
    "error": null
   },
   {
    "company": "OpenGov",
    "ats": "ashby",
-   "jobs": 91,
+   "jobs": 95,
    "error": null
   },
   {
    "company": "Parexel",
    "ats": "workday",
-   "jobs": 51,
+   "jobs": 49,
    "error": null
   },
   {
    "company": "PATH",
    "ats": "workday",
-   "jobs": 26,
+   "jobs": 25,
    "error": null
   },
   {
@@ -4760,13 +4855,13 @@
   {
    "company": "Payoneer",
    "ats": "greenhouse",
-   "jobs": 98,
+   "jobs": 100,
    "error": null
   },
   {
    "company": "PayPal",
    "ats": "workday",
-   "jobs": 23,
+   "jobs": 22,
    "error": null
   },
   {
@@ -4778,7 +4873,7 @@
   {
    "company": "Penta Group",
    "ats": "lever",
-   "jobs": 6,
+   "jobs": 5,
    "error": null
   },
   {
@@ -4790,7 +4885,7 @@
   {
    "company": "Perplexity",
    "ats": "ashby",
-   "jobs": 136,
+   "jobs": 142,
    "error": null
   },
   {
@@ -4802,7 +4897,7 @@
   {
    "company": "Pfizer",
    "ats": "workday",
-   "jobs": 36,
+   "jobs": 34,
    "error": null
   },
   {
@@ -4814,7 +4909,7 @@
   {
    "company": "Plaid",
    "ats": "ashby",
-   "jobs": 143,
+   "jobs": 142,
    "error": null
   },
   {
@@ -4850,19 +4945,19 @@
   {
    "company": "PTC",
    "ats": "workday",
-   "jobs": 27,
+   "jobs": 25,
    "error": null
   },
   {
    "company": "PwC (incl. PwC India)",
    "ats": "workday",
-   "jobs": 109,
+   "jobs": 108,
    "error": null
   },
   {
    "company": "Quantiphi",
    "ats": "workday",
-   "jobs": 38,
+   "jobs": 39,
    "error": null
   },
   {
@@ -4886,13 +4981,13 @@
   {
    "company": "Razorpay",
    "ats": "greenhouse",
-   "jobs": 26,
+   "jobs": 25,
    "error": null
   },
   {
    "company": "Red Hat",
    "ats": "workday",
-   "jobs": 5,
+   "jobs": 7,
    "error": null
   },
   {
@@ -4904,37 +4999,37 @@
   {
    "company": "RELX (Elsevier, LexisNexis)",
    "ats": "workday",
-   "jobs": 200,
+   "jobs": 78,
    "error": null
   },
   {
    "company": "Ripple",
    "ats": "greenhouse",
-   "jobs": 116,
+   "jobs": 112,
    "error": null
   },
   {
    "company": "Robinhood",
    "ats": "greenhouse",
-   "jobs": 155,
+   "jobs": 160,
    "error": null
   },
   {
    "company": "Roland Berger",
    "ats": "smartrecruiters",
-   "jobs": 209,
+   "jobs": 206,
    "error": null
   },
   {
    "company": "Rubrik",
    "ats": "greenhouse",
-   "jobs": 157,
+   "jobs": 181,
    "error": null
   },
   {
    "company": "S&P Global (incl. CRISIL group)",
    "ats": "workday",
-   "jobs": 64,
+   "jobs": 65,
    "error": null
   },
   {
@@ -4952,13 +5047,13 @@
   {
    "company": "Samsara",
    "ats": "greenhouse",
-   "jobs": 314,
+   "jobs": 313,
    "error": null
   },
   {
    "company": "Sanofi",
    "ats": "workday",
-   "jobs": 90,
+   "jobs": 89,
    "error": null
   },
   {
@@ -4988,7 +5083,7 @@
   {
    "company": "Scale AI",
    "ats": "greenhouse",
-   "jobs": 169,
+   "jobs": 170,
    "error": null
   },
   {
@@ -5000,7 +5095,7 @@
   {
    "company": "ServiceNow",
    "ats": "smartrecruiters",
-   "jobs": 792,
+   "jobs": 800,
    "error": null
   },
   {
@@ -5018,19 +5113,19 @@
   {
    "company": "Sid's Farm",
    "ats": "keka",
-   "jobs": 24,
+   "jobs": 25,
    "error": null
   },
   {
    "company": "Sigmoid",
    "ats": "greenhouse",
-   "jobs": 42,
+   "jobs": 41,
    "error": null
   },
   {
    "company": "Signzy",
    "ats": "keka",
-   "jobs": 16,
+   "jobs": 17,
    "error": null
   },
   {
@@ -5072,13 +5167,13 @@
   {
    "company": "Snowflake",
    "ats": "ashby",
-   "jobs": 381,
+   "jobs": 377,
    "error": null
   },
   {
    "company": "Socure",
    "ats": "ashby",
-   "jobs": 89,
+   "jobs": 91,
    "error": null
   },
   {
@@ -5102,7 +5197,7 @@
   {
    "company": "SS&C Technologies",
    "ats": "workday",
-   "jobs": 78,
+   "jobs": 77,
    "error": null
   },
   {
@@ -5126,7 +5221,7 @@
   {
    "company": "Sumo Logic",
    "ats": "greenhouse",
-   "jobs": 20,
+   "jobs": 23,
    "error": null
   },
   {
@@ -5144,13 +5239,13 @@
   {
    "company": "Swiggy",
    "ats": "smartrecruiters",
-   "jobs": 187,
+   "jobs": 185,
    "error": null
   },
   {
    "company": "Syneos Health",
    "ats": "workday",
-   "jobs": 184,
+   "jobs": 179,
    "error": null
   },
   {
@@ -5186,7 +5281,7 @@
   {
    "company": "Teneo",
    "ats": "greenhouse",
-   "jobs": 54,
+   "jobs": 57,
    "error": null
   },
   {
@@ -5204,7 +5299,7 @@
   {
    "company": "The Apprentice Project (TAP)",
    "ats": "keka",
-   "jobs": 10,
+   "jobs": 9,
    "error": null
   },
   {
@@ -5222,7 +5317,7 @@
   {
    "company": "The Nudge Institute",
    "ats": "keka",
-   "jobs": 40,
+   "jobs": 42,
    "error": null
   },
   {
@@ -5240,43 +5335,43 @@
   {
    "company": "Thunes",
    "ats": "greenhouse",
-   "jobs": 39,
+   "jobs": 37,
    "error": null
   },
   {
    "company": "Tide",
    "ats": "greenhouse",
-   "jobs": 72,
+   "jobs": 71,
    "error": null
   },
   {
    "company": "Toast",
    "ats": "greenhouse",
-   "jobs": 352,
+   "jobs": 357,
    "error": null
   },
   {
    "company": "Together AI",
    "ats": "greenhouse",
-   "jobs": 80,
+   "jobs": 78,
    "error": null
   },
   {
    "company": "TransUnion (CIBIL)",
    "ats": "workday",
-   "jobs": 51,
+   "jobs": 50,
    "error": null
   },
   {
    "company": "Trimble",
    "ats": "workday",
-   "jobs": 23,
+   "jobs": 21,
    "error": null
   },
   {
    "company": "TRM Labs",
    "ats": "ashby",
-   "jobs": 117,
+   "jobs": 116,
    "error": null
   },
   {
@@ -5306,7 +5401,7 @@
   {
    "company": "Twilio",
    "ats": "greenhouse",
-   "jobs": 124,
+   "jobs": 116,
    "error": null
   },
   {
@@ -5330,7 +5425,7 @@
   {
    "company": "Unisys",
    "ats": "workday",
-   "jobs": 97,
+   "jobs": 99,
    "error": null
   },
   {
@@ -5348,7 +5443,7 @@
   {
    "company": "Vanguard",
    "ats": "workday",
-   "jobs": 75,
+   "jobs": 68,
    "error": null
   },
   {
@@ -5360,13 +5455,13 @@
   {
    "company": "Visa",
    "ats": "workday",
-   "jobs": 95,
+   "jobs": 99,
    "error": null
   },
   {
    "company": "Warner Bros. Discovery",
    "ats": "workday",
-   "jobs": 10,
+   "jobs": 9,
    "error": null
   },
   {
@@ -5396,7 +5491,7 @@
   {
    "company": "Wise",
    "ats": "smartrecruiters",
-   "jobs": 439,
+   "jobs": 441,
    "error": null
   },
   {
@@ -5408,7 +5503,7 @@
   {
    "company": "Workday",
    "ats": "workday",
-   "jobs": 22,
+   "jobs": 24,
    "error": null
   },
   {
@@ -5432,19 +5527,19 @@
   {
    "company": "Yugabyte",
    "ats": "greenhouse",
-   "jobs": 14,
+   "jobs": 15,
    "error": null
   },
   {
    "company": "Zebra Technologies",
    "ats": "workday",
-   "jobs": 33,
+   "jobs": 32,
    "error": null
   },
   {
    "company": "Zeta",
    "ats": "lever",
-   "jobs": 29,
+   "jobs": 30,
    "error": null
   },
   {
@@ -5474,7 +5569,7 @@
   {
    "company": "Zscaler",
    "ats": "greenhouse",
-   "jobs": 375,
+   "jobs": 378,
    "error": null
   },
   {
@@ -5492,7 +5587,7 @@
   {
    "company": "Feed: centralstatejobs",
    "ats": "feed",
-   "jobs": 10,
+   "jobs": 0,
    "error": null
   },
   {
@@ -5510,7 +5605,7 @@
   {
    "company": "Feed: devnetjobsindia",
    "ats": "feed",
-   "jobs": 175,
+   "jobs": 176,
    "error": null
   },
   {
