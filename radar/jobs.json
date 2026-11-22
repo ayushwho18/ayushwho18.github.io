@@ -54,50 +54,23 @@
    "source": "Prop News Time",
    "date": "2026-11-20",
    "kind": "Advisory / PMU tender (consultancies will staff up)",
-   "new": true
+   "new": false
   },
   {
-   "title": "Pune: PMC Approves Consultant Appointment For 750-Metre Sarasbaug-Parvati Ropeway Project",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWx4UnVTN3Bnb1FTdHdPdkUzbjh6QkljX2VnTlpNbHduSHl0RjVhLWkwbWdLQ3VmRFZrTXJ6RUROak5PWFJVa25pNXYtckphdzkzNkVLV2p4d3IyODhQRUtIQW9nRmRrSWt5N28tdXlRaVAxOXVFNlBhM2trVWZMYkdYcTZselNtQTE2RnFMQTY5aDh4c0NnamVpSlFhWDdUR2RKZ3hMbFdWckJ3SVpoWk5pNks4ZmhZM1NWY3E3NXRqNzDSAcgBQVVfeXFMTkYwUWlkVE9qdzdYNzI3TGt3ZHExM1hyNlpOcWZoV3hvVm93VHdqUnhKS0xzQWpJYkF4RmxyQWVVNnhsSC14NmxsSW9PX1p5NUdfTXc0cm1xbXAydkZvN09YTzJZS2VBMVBncWNWNzNGazZjVGNnNkFwZ21IT1NfbVZKSWJDRTF3YVpMS1pmeUszM1E5WElOUVFlZzNsN1BxcUkzNzhVYXVxZDBNbkR4dm5XMEVuZElVdENQakZwWXZaekhpUkljc2s?oc=5",
-   "source": "Free Press Journal",
-   "date": "2026-11-01",
+   "title": "PMC revives Peshwe Park-Parvati ropeway proposal, approves project consultant",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNU0FqU3pHWmRncWFaVkxRcmhkUHhPbnBLR0ViNTJXNmdQQ3VKb2VTcUdOODBZWkZCdUo5RV8zeV9vNk9jRUJrX3UwM0wtVlllWkZaam9acnJuR2tvMmN6MFQwYk1fV2wydEJra0JzX21aRktyeW1DU2U1V1dZNGIwckhDa3JFMmhyRkcyN0kxSW5QT0k1aFBDYnNuT2d6Um1uRkRBaGUxbFQwQlk3LXRtQ0l0b2ctT2FOcExQNW55dlF6cnNFaGRV?oc=5",
+   "source": "Prop News Time",
+   "date": "2026-11-11",
    "kind": "Advisory / PMU tender (consultancies will staff up)",
    "new": false
   }
  ],
  "page_changes": [
   {
-   "company": "Cashfree Payments",
-   "url": "https://careers.kula.ai/cashfree",
+   "company": "BharatPe",
+   "url": "https://bharatpe.com/careers",
    "role_words": [
-    "operations",
-    "strategy"
-   ]
-  },
-  {
-   "company": "Google India",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
-   "role_words": [
-    "government",
-    "operations",
     "policy"
-   ]
-  },
-  {
-   "company": "HyperVerge",
-   "url": "https://hyperverge.co/careers/",
-   "role_words": [
-    "government",
-    "operations",
-    "policy"
-   ]
-  },
-  {
-   "company": "Lendingkart",
-   "url": "https://www.lendingkart.com/careers/",
-   "role_words": [
-    "policy",
-    "regulatory"
    ]
   },
   {
@@ -108,30 +81,11 @@
     "operations",
     "policy"
    ]
-  },
-  {
-   "company": "Sahamati",
-   "url": "https://sahamati.org.in/careers/",
-   "role_words": [
-    "operations",
-    "policy",
-    "regulatory",
-    "strategy"
-   ]
-  },
-  {
-   "company": "Sattva Consulting",
-   "url": "https://careers.kula.ai/sattva",
-   "role_words": [
-    "government",
-    "operations",
-    "strategy"
-   ]
   }
  ],
- "generated": "2026-11-21 09:43 UTC",
+ "generated": "2026-11-22 09:43 UTC",
  "companies": 345,
- "raw_jobs": 21217,
+ "raw_jobs": 21282,
  "matched": [
   {
    "company": "GDI South Asia, Pvt Ltd",
@@ -762,35 +716,6 @@
    "new": false
   },
   {
-   "company": "indgovtjobs",
-   "title": "AIU Young Professionals & Consultant Recruitment 2026: Notification for 06 Posts | Last Date 23-08-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/07/aiu-young-professionals-consultant.html",
-   "posted": "2026-07-27",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/07/aiu-young-professionals-consultant.html",
-   "score": 51,
-   "why": {
-    "years_asked": 3,
-    "where": "india",
-    "title_hits": [
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "public sector",
-     "policy",
-     "mba",
-     "public policy",
-     "governance"
-    ]
-   },
-   "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
    "company": "Paytm",
    "title": "Program Management - Lending Partnerships",
    "location": "Mumbai, Maharashtra",
@@ -816,34 +741,6 @@
     ]
    },
    "first_seen": "2026-11-12",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "NPPA Consultant & Young Professional Recruitment 2026 \u2013 Apply for 07 Vacancies | Last Date 26-10-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/10/nppa-consultant-young-professional.html",
-   "posted": "2026-10-24",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/10/nppa-consultant-young-professional.html",
-   "score": 50,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "young professional",
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "regulatory",
-     "public sector",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-04",
    "new": false
   },
   {
@@ -904,34 +801,6 @@
   },
   {
    "company": "indgovtjobs",
-   "title": "Young Professional Recruitment 2026 \u2013 Latest YP Central Govt Jobs 500+ Vacancies",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/07/Young-Professional-Recruitment.html",
-   "posted": "2026-10-20",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/07/Young-Professional-Recruitment.html",
-   "score": 48,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "regulatory",
-     "public sector",
-     "mba",
-     "aadhaar"
-    ]
-   },
-   "first_seen": "2026-11-06",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
    "title": "BIRAC Young Professional Recruitment 2026: Apply Online for 02 Posts | Last Date 11-10-2026",
    "location": "India",
    "url": "https://www.indgovtjobs.in/2026/09/birac-young-professional-recruitment.html",
@@ -983,87 +852,6 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "KVIC South Zone Young Professional Vacancy 2026 Apply Online 10 Posts | Last Date 20-10-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/09/kvic-south-zone-young-professional.html",
-   "posted": "2026-09-21",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/09/kvic-south-zone-young-professional.html",
-   "score": 45,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "public sector",
-     "registration",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-05",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "ADA Consultant Recruitment 2026: Apply for Technical & Non Technical Posts | Last Date 08-08-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/08/ada-consultant-recruitment.html",
-   "posted": "2026-08-05",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/08/ada-consultant-recruitment.html",
-   "score": 45,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "public sector",
-     "state government",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "NFRA Young Professional Recruitment 2026 \u2013 Notification for 09 Posts | Last Date 02-08-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/06/nfra-young-professional-recruitment.html",
-   "posted": "2026-08-02",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/06/nfra-young-professional-recruitment.html",
-   "score": 45,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "regulatory",
-     "public sector",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-06",
    "new": false
   },
   {
@@ -1174,6 +962,32 @@
    "new": false
   },
   {
+   "company": "Public Health Foundation of India (PHFI)",
+   "title": "Consultant - District",
+   "location": "IIPH-Bhubaneswar, Odisha",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308565",
+   "posted": "apply by 0",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308565",
+   "score": 42,
+   "why": {
+    "years_asked": null,
+    "where": "india",
+    "title_hits": [
+     "consultant"
+    ],
+    "boosts": [
+     "government",
+     "state government",
+     "policy",
+     "mba"
+    ]
+   },
+   "first_seen": "2026-11-20",
+   "new": false
+  },
+  {
    "company": "Stripe",
    "title": "Risk Operations Analyst - Restricted Business Operations ",
    "location": "Remote ",
@@ -1222,32 +1036,6 @@
     ]
    },
    "first_seen": "2026-11-01",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "CWC Young Professional Recruitment 2026 Apply Online for 06 Posts, Notification | Last Date 05-08-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/07/cwc-young-professional-recruitment.html",
-   "posted": "2026-08-04",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/07/cwc-young-professional-recruitment.html",
-   "score": 42,
-   "why": {
-    "years_asked": 3,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "public sector",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-04",
    "new": false
   },
   {
@@ -1327,7 +1115,7 @@
     ]
    },
    "first_seen": "2026-11-21",
-   "new": true
+   "new": false
   },
   {
    "company": "Atlys",
@@ -1506,31 +1294,6 @@
    "new": false
   },
   {
-   "company": "Groww",
-   "title": "Manager - Compliance (PMS)",
-   "location": "Bengaluru-VTP, India",
-   "url": "https://job-boards.eu.greenhouse.io/groww/jobs/5000618101",
-   "posted": "2026-11-20",
-   "team": "Compliance",
-   "id": "gh:groww:5000618101",
-   "sector": "fintech-IN",
-   "score": 39,
-   "why": {
-    "years_asked": 4,
-    "where": "india",
-    "title_hits": [
-     "compliance"
-    ],
-    "boosts": [
-     "regulatory",
-     "mba",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-01",
-   "new": false
-  },
-  {
    "company": "Integrated Project Management Unit, Ministry of Environment, Forest and Climate Change",
    "title": "Young Professional (Technical)",
    "location": "Delhi",
@@ -1604,6 +1367,31 @@
    },
    "first_seen": "2026-11-01",
    "new": false
+  },
+  {
+   "company": "Pratham Education Foundation",
+   "title": "Program Coordinator",
+   "location": "Safdarjung Enclave, Delhi",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308630",
+   "posted": "apply by 1",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308630",
+   "score": 39,
+   "why": {
+    "years_asked": 4,
+    "where": "india",
+    "title_hits": [
+     "program"
+    ],
+    "boosts": [
+     "government",
+     "registration",
+     "hindi"
+    ]
+   },
+   "first_seen": "2026-11-22",
+   "new": true
   },
   {
    "company": "Razorpay",
@@ -1705,31 +1493,6 @@
     ]
    },
    "first_seen": "2026-11-02",
-   "new": false
-  },
-  {
-   "company": "indgovtjobs",
-   "title": "CDOT Young Professional Recruitment 2026 - Apply Online for 05 Posts | Last Date 08-11-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/10/cdot-young-professional-recruitment.html",
-   "posted": "2026-11-06",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/10/cdot-young-professional-recruitment.html",
-   "score": 39,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "public sector",
-     "mba"
-    ]
-   },
-   "first_seen": "2026-11-04",
    "new": false
   },
   {
@@ -1873,18 +1636,10 @@
     ]
    },
    "first_seen": "2026-11-21",
-   "new": true
+   "new": false
   }
  ],
  "funding": [
-  {
-   "title": "InPrime Finserv Raises \u20b9101 Cr To Expand Lending, Enter Micro-Mortgages",
-   "url": "https://inc42.com/buzz/inprime-finserv-raises-%e2%82%b9101-cr-to-expand-lending-enter-micro-mortgages/",
-   "date": "Thu, 19 Nov 2026",
-   "source": "inc42.com",
-   "sector": "lending",
-   "new": false
-  },
   {
    "title": "AI infra startup JohnAIC raises $1.9 Mn in pre-seed round",
    "url": "https://entrackr.com/snippets/ai-infra-startup-johnaic-raises-19-mn-in-pre-seed-round-12815778",
@@ -1894,64 +1649,32 @@
    "new": false
   },
   {
-   "title": "From Dreamteam To Boba Bhai \u2014 Indian Startups Raised Over $291 Mn This Week",
-   "url": "https://inc42.com/buzz/from-dreamteam-to-boba-bhai-indian-startups-raised-over-291-mn-this-week/",
+   "title": "Sarvam\u2019s Token Factory Raises India\u2019s AI Inference Stakes",
+   "url": "https://inc42.com/features/sarvams-token-factory-raises-indias-ai-inference-stakes/",
    "date": "Sat, 21 Nov 2026",
    "source": "inc42.com",
    "sector": "",
    "new": true
   },
   {
-   "title": "Centre\u2019s Antariksh VC Fund Leads SatSure\u2019s \u20b9200 Cr Series B Round",
-   "url": "https://inc42.com/buzz/centres-antariksh-vc-fund-leads-satsures-%e2%82%b9200-cr-series-b-round/",
+   "title": "From Dreamteam To Boba Bhai \u2014 Indian Startups Raised Over $291 Mn This Week",
+   "url": "https://inc42.com/buzz/from-dreamteam-to-boba-bhai-indian-startups-raised-over-291-mn-this-week/",
+   "date": "Sat, 21 Nov 2026",
+   "source": "inc42.com",
+   "sector": "",
+   "new": false
+  },
+  {
+   "title": "Urban Company raises Rs 2,500 Cr through QIP",
+   "url": "https://yourstory.com/2026/11/urban-company-raises-rs-2500-cr-through-qip",
    "date": "Fri, 20 Nov 2026",
-   "source": "inc42.com",
-   "sector": "",
-   "new": true
-  },
-  {
-   "title": "Urban Company Raises \u20b92,500 Cr Via QIP, Draws Bids Worth Over \u20b915,000 Cr",
-   "url": "https://inc42.com/buzz/urban-company-raises-%e2%82%b92500-cr-via-qip-draws-bids-worth-over-%e2%82%b915000-cr/",
-   "date": "Fri, 20 Nov 2026",
-   "source": "inc42.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "Paytm Lines Up \u20b9200 Cr Investment in Singapore\u2019s Funding Societies",
-   "url": "https://inc42.com/buzz/paytm-lines-up-%e2%82%b9200-cr-investment-in-singapores-funding-societies/",
-   "date": "Thu, 19 Nov 2026",
-   "source": "inc42.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "AI Startup Disseqt AI Raises $8 Mn To Scale International Operations",
-   "url": "https://inc42.com/buzz/ai-startup-disseqt-ai-raises-8-mn-to-scale-international-operations/",
-   "date": "Thu, 19 Nov 2026",
-   "source": "inc42.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "NEPRA Raises \u20b9110 Cr To Expand Plastic Recycling Capacity",
-   "url": "https://inc42.com/buzz/nepra-raises-%e2%82%b9110-cr-to-expand-plastic-recycling-capacity/",
-   "date": "Thu, 19 Nov 2026",
-   "source": "inc42.com",
+   "source": "yourstory.com",
    "sector": "",
    "new": false
   },
   {
    "title": "(Weekly funding roundup Nov 14-20) VC funding bounces back after record low last week",
    "url": "https://yourstory.com/2026/11/weekly-funding-roundup-nov-14-20-vc-funding-bounces-back-after-record-low-last-week",
-   "date": "Fri, 20 Nov 2026",
-   "source": "yourstory.com",
-   "sector": "",
-   "new": true
-  },
-  {
-   "title": "Karnataka aims to raise its share in aerospace, defence sector to 75%: Minister",
-   "url": "https://yourstory.com/2026/11/karnataka-aims-to-raise-its-share-in-aerospace-defence-sector-to-75-per-cent-minister",
    "date": "Fri, 20 Nov 2026",
    "source": "yourstory.com",
    "sector": "",
@@ -1963,7 +1686,7 @@
    "date": "Sat, 21 Nov 2026",
    "source": "yourstory.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "Spacetech firm SatSure raises Rs 60 Cr from Antariksh fund",
@@ -1971,15 +1694,15 @@
    "date": "Fri, 20 Nov 2026",
    "source": "yourstory.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
-   "title": "Urban Company raises Rs 2,500 Cr through QIP",
-   "url": "https://yourstory.com/2026/11/urban-company-raises-rs-2500-cr-through-qip",
-   "date": "Fri, 20 Nov 2026",
-   "source": "yourstory.com",
+   "title": "Funding and acquisitions in Indian startups this week [Nov 16- Nov 21]",
+   "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-nov-16-nov-21-12829487",
+   "date": "Sat, 21 Nov 2026",
+   "source": "entrackr.com",
    "sector": "",
-   "new": false
+   "new": true
   },
   {
    "title": "InPrime Finserv raises Rs 101 Cr in Series B round led by FMO",
@@ -2208,7 +1931,7 @@
   {
    "company": "Adyen",
    "ats": "greenhouse",
-   "jobs": 241,
+   "jobs": 243,
    "error": null
   },
   {
@@ -2232,7 +1955,7 @@
   {
    "company": "Airwallex",
    "ats": "ashby",
-   "jobs": 495,
+   "jobs": 497,
    "error": null
   },
   {
@@ -2274,7 +1997,7 @@
   {
    "company": "Anthropic",
    "ats": "greenhouse",
-   "jobs": 633,
+   "jobs": 635,
    "error": null
   },
   {
@@ -2322,7 +2045,7 @@
   {
    "company": "Atlys",
    "ats": "ashby",
-   "jobs": 32,
+   "jobs": 33,
    "error": null
   },
   {
@@ -2376,7 +2099,7 @@
   {
    "company": "Binance",
    "ats": "greenhouse",
-   "jobs": 227,
+   "jobs": 226,
    "error": null
   },
   {
@@ -2544,7 +2267,7 @@
   {
    "company": "Cloudflare",
    "ats": "greenhouse",
-   "jobs": 503,
+   "jobs": 504,
    "error": null
   },
   {
@@ -2640,7 +2363,7 @@
   {
    "company": "Crypto.com",
    "ats": "lever",
-   "jobs": 90,
+   "jobs": 91,
    "error": null
   },
   {
@@ -2664,7 +2387,7 @@
   {
    "company": "Databricks",
    "ats": "greenhouse",
-   "jobs": 897,
+   "jobs": 895,
    "error": null
   },
   {
@@ -2682,7 +2405,7 @@
   {
    "company": "Deliveroo",
    "ats": "greenhouse",
-   "jobs": 189,
+   "jobs": 190,
    "error": null
   },
   {
@@ -2946,7 +2669,7 @@
   {
    "company": "GiveDirectly",
    "ats": "greenhouse",
-   "jobs": 23,
+   "jobs": 21,
    "error": null
   },
   {
@@ -2988,13 +2711,13 @@
   {
    "company": "GovTech Singapore",
    "ats": "greenhouse",
-   "jobs": 264,
+   "jobs": 262,
    "error": null
   },
   {
    "company": "Grab",
    "ats": "smartrecruiters",
-   "jobs": 429,
+   "jobs": 433,
    "error": null
   },
   {
@@ -3006,7 +2729,7 @@
   {
    "company": "Groww",
    "ats": "greenhouse",
-   "jobs": 9,
+   "jobs": 8,
    "error": null
   },
   {
@@ -3018,8 +2741,8 @@
   {
    "company": "Habitat for Humanity International",
    "ats": "workday",
-   "jobs": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://habitat.wd12.myworkdayjobs.com/wday/cxs/habitat/External/jobs"
+   "jobs": 1,
+   "error": null
   },
   {
    "company": "Harness",
@@ -3030,7 +2753,7 @@
   {
    "company": "Harvey",
    "ats": "ashby",
-   "jobs": 388,
+   "jobs": 390,
    "error": null
   },
   {
@@ -3294,7 +3017,7 @@
   {
    "company": "Meesho (incl. Financial Services)",
    "ats": "lever",
-   "jobs": 48,
+   "jobs": 47,
    "error": null
   },
   {
@@ -3444,7 +3167,7 @@
   {
    "company": "Okta",
    "ats": "greenhouse",
-   "jobs": 372,
+   "jobs": 374,
    "error": null
   },
   {
@@ -3468,7 +3191,7 @@
   {
    "company": "OpenGov",
    "ats": "ashby",
-   "jobs": 88,
+   "jobs": 90,
    "error": null
   },
   {
@@ -3654,7 +3377,7 @@
   {
    "company": "Roland Berger",
    "ats": "smartrecruiters",
-   "jobs": 206,
+   "jobs": 205,
    "error": null
   },
   {
@@ -3684,7 +3407,7 @@
   {
    "company": "Samsara",
    "ats": "greenhouse",
-   "jobs": 288,
+   "jobs": 299,
    "error": null
   },
   {
@@ -3702,7 +3425,7 @@
   {
    "company": "Sarvam AI",
    "ats": "ashby",
-   "jobs": 43,
+   "jobs": 42,
    "error": null
   },
   {
@@ -3720,7 +3443,7 @@
   {
    "company": "Scale AI",
    "ats": "greenhouse",
-   "jobs": 169,
+   "jobs": 166,
    "error": null
   },
   {
@@ -3732,7 +3455,7 @@
   {
    "company": "ServiceNow",
    "ats": "smartrecruiters",
-   "jobs": 998,
+   "jobs": 997,
    "error": null
   },
   {
@@ -3852,7 +3575,7 @@
   {
    "company": "Stripe",
    "ats": "greenhouse",
-   "jobs": 778,
+   "jobs": 777,
    "error": null
   },
   {
@@ -3876,7 +3599,7 @@
   {
    "company": "Swiggy",
    "ats": "smartrecruiters",
-   "jobs": 173,
+   "jobs": 175,
    "error": null
   },
   {
@@ -3918,7 +3641,7 @@
   {
    "company": "Teneo",
    "ats": "greenhouse",
-   "jobs": 51,
+   "jobs": 52,
    "error": null
   },
   {
@@ -3984,13 +3707,13 @@
   {
    "company": "Toast",
    "ats": "greenhouse",
-   "jobs": 326,
+   "jobs": 325,
    "error": null
   },
   {
    "company": "Together AI",
    "ats": "greenhouse",
-   "jobs": 73,
+   "jobs": 76,
    "error": null
   },
   {
@@ -4044,7 +3767,7 @@
   {
    "company": "UiPath",
    "ats": "ashby",
-   "jobs": 109,
+   "jobs": 110,
    "error": null
   },
   {
@@ -4128,7 +3851,7 @@
   {
    "company": "Wise",
    "ats": "smartrecruiters",
-   "jobs": 432,
+   "jobs": 433,
    "error": null
   },
   {
@@ -4153,13 +3876,13 @@
    "company": "World Food Programme",
    "ats": "workday",
    "jobs": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://wfp.wd3.myworkdayjobs.com/wday/cxs/wfp/job_openings/jobs"
+   "error": null
   },
   {
    "company": "World Resources Institute (WRI India)",
    "ats": "workday",
-   "jobs": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://wri.wd501.myworkdayjobs.com/wday/cxs/wri/WRI/jobs"
+   "jobs": 5,
+   "error": null
   },
   {
    "company": "Yugabyte",
@@ -4170,8 +3893,8 @@
   {
    "company": "Zebra Technologies",
    "ats": "workday",
-   "jobs": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://zebra.wd501.myworkdayjobs.com/wday/cxs/zebra/Zebra_careers/jobs"
+   "jobs": 32,
+   "error": null
   },
   {
    "company": "Zeta",
@@ -4206,7 +3929,7 @@
   {
    "company": "Zscaler",
    "ats": "greenhouse",
-   "jobs": 386,
+   "jobs": 387,
    "error": null
   },
   {
@@ -4242,7 +3965,7 @@
   {
    "company": "Feed: devnetjobsindia",
    "ats": "feed",
-   "jobs": 171,
+   "jobs": 175,
    "error": null
   },
   {
