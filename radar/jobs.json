@@ -41,14 +41,6 @@
    "new": false
   },
   {
-   "title": "Amara Raja Group appoints Dheeraj Jain as Head, Corporate Affairs",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUEJWRFVYZ0NtclQ0eExqSFA0OVVLUzZvOEV0cFNtUm5McUNUNk9FaktvVUV4eHktalFGdXJJOFd2YlBKNk5qTXpYYWp0ZWlvZWJIX1MtMFA2Q0hCSkJ5UlRXSVFuLWtQdHhNN2N3MFBZUnBJWjhnb3Y0dXVzdUdsWTNnUkViRVI2RnVzcXJXdUtENGNQcmlxdmcxdC1UTWdVeHE3WkJybEg2ZXRMSFg0MThXTjlCVFc1UnpmUEM4RlVVOXVRN1JJ?oc=5",
-   "source": "Exchange4Media",
-   "date": "2026-11-03",
-   "kind": "Policy / govt-affairs leader moved (a seat or a new team opens)",
-   "new": false
-  },
-  {
    "title": "Mumbai Water Metro Phase 1: MMB appoints project management and environmental consultants",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOVHA2aWUwLUctdWQ3Z2dYa3pFVXdBVDgtUVE1aGZ2Vm91T2hhR1ZEN0NqNWJkSTBXSjlyOWJ3M0daRERCWEFHNTlveVF1YURDYzJmZ3Brb2gtNWpFTmV4NC1GYzNrY3VJU0t6dkpUZHVKVmlzTjRJV0M4MW03MmRGbzR5SDAwSVh2cDFIYnp1dnhickhvRUVmZjJpNTBtdUNzMUhFNHFWT2FsQW9sV1EyTXhBallqNjFCdDdhTVZtb1QxQjBaS0FSWnZiUTlrZXhrM21fRVAzWQ?oc=5",
    "source": "Prop News Time",
@@ -59,17 +51,16 @@
  ],
  "page_changes": [
   {
-   "company": "Google India",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
+   "company": "Cashfree Payments",
+   "url": "https://careers.kula.ai/cashfree",
    "role_words": [
-    "government",
     "operations",
-    "policy"
+    "strategy"
    ]
   },
   {
-   "company": "HyperVerge",
-   "url": "https://hyperverge.co/careers/",
+   "company": "Google India",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/?location=India",
    "role_words": [
     "government",
     "operations",
@@ -86,49 +77,28 @@
    ]
   },
   {
-   "company": "The Quantum Hub",
-   "url": "https://thequantumhub.com/",
+   "company": "Open Financial",
+   "url": "https://open.money/careers",
+   "role_words": [
+    "founder",
+    "operations",
+    "policy"
+   ]
+  },
+  {
+   "company": "Sattva Consulting",
+   "url": "https://careers.kula.ai/sattva",
    "role_words": [
     "government",
-    "partnership",
-    "policy",
-    "regulatory"
+    "operations",
+    "strategy"
    ]
   }
  ],
- "generated": "2026-11-23 10:42 UTC",
+ "generated": "2026-11-24 12:25 UTC",
  "companies": 345,
- "raw_jobs": 21252,
+ "raw_jobs": 21174,
  "matched": [
-  {
-   "company": "GDI South Asia, Pvt Ltd",
-   "title": "Consultant - LSI Policy and Partnerships Specialist",
-   "location": "Chennai, Bengaluru, Tamil Nadu, Karnataka",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308417",
-   "posted": "apply by 1",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308417",
-   "score": 85,
-   "why": {
-    "years_asked": 4,
-    "where": "india",
-    "title_hits": [
-     "policy",
-     "partnerships",
-     "consultant"
-    ],
-    "boosts": [
-     "government",
-     "ministry",
-     "policy",
-     "stakeholder",
-     "governance"
-    ]
-   },
-   "first_seen": "2026-11-19",
-   "new": false
-  },
   {
    "company": "Stable Money",
    "title": "Compliance Monitoring, Testing & Regulatory Automation",
@@ -341,7 +311,7 @@
     "boosts": []
    },
    "first_seen": "2026-11-23",
-   "new": true
+   "new": false
   },
   {
    "company": "Inc42",
@@ -392,6 +362,32 @@
    },
    "first_seen": "2026-11-01",
    "new": false
+  },
+  {
+   "company": "National Health Systems Resource Centre (NHSRC)",
+   "title": "Senior Consultant \u2013 Health Policy and Integrated Planning/ Human Resources...",
+   "location": "New Delhi, Delhi",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308673",
+   "posted": "apply by 1",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308673",
+   "score": 70,
+   "why": {
+    "years_asked": 3,
+    "where": "india",
+    "title_hits": [
+     "policy",
+     "consultant"
+    ],
+    "boosts": [
+     "ministry",
+     "policy",
+     "mba"
+    ]
+   },
+   "first_seen": "2026-11-24",
+   "new": true
   },
   {
    "company": "Jodo",
@@ -598,66 +594,6 @@
    "new": false
   },
   {
-   "company": "Experian",
-   "title": "Compliance Analyst",
-   "location": "Mumbai, in",
-   "url": "https://jobs.smartrecruiters.com/experian/744000159304239",
-   "posted": "2026-11-03",
-   "team": "Legal & Compliance",
-   "id": "sr:experian:744000159304239",
-   "sector": "fintech/data-global",
-   "score": 59,
-   "why": {
-    "years_asked": 3,
-    "where": "india",
-    "title_hits": [
-     "compliance"
-    ],
-    "boosts": [
-     "regulator",
-     "regulatory",
-     "policy",
-     "stakeholder",
-     "mba",
-     "governance",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-03",
-   "new": false
-  },
-  {
-   "company": "The University of Chicago Trust (the Trust)",
-   "title": "Program Manager, DPIC",
-   "location": "Bhubaneswar, Odisha",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308486",
-   "posted": "apply by 1",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308486",
-   "score": 59,
-   "why": {
-    "years_asked": 3,
-    "where": "india",
-    "title_hits": [
-     "program manager",
-     "program"
-    ],
-    "boosts": [
-     "government",
-     "policy",
-     "stakeholder",
-     "mba",
-     "public policy",
-     "grievance",
-     "governance",
-     "hindi"
-    ]
-   },
-   "first_seen": "2026-11-19",
-   "new": false
-  },
-  {
    "company": "Rocket Learning",
    "title": "Lead, State Policy and Advocacy",
    "location": "Remote: India",
@@ -822,34 +758,6 @@
    "new": false
   },
   {
-   "company": "indgovtjobs",
-   "title": "BIRAC Young Professional Recruitment 2026: Apply Online for 02 Posts | Last Date 11-10-2026",
-   "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/09/birac-young-professional-recruitment.html",
-   "posted": "2026-10-10",
-   "team": "",
-   "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/09/birac-young-professional-recruitment.html",
-   "score": 48,
-   "why": {
-    "years_asked": null,
-    "where": "india",
-    "title_hits": [
-     "young professional"
-    ],
-    "boosts": [
-     "government",
-     "regulatory",
-     "public sector",
-     "policy",
-     "mba",
-     "public policy"
-    ]
-   },
-   "first_seen": "2026-11-04",
-   "new": false
-  },
-  {
    "company": "NEDAR Foundation",
    "title": "Program Lead - Nedar Entrepreneurs Business Network",
    "location": "South Delhi, Delhi",
@@ -875,33 +783,6 @@
     ]
    },
    "first_seen": "2026-11-16",
-   "new": false
-  },
-  {
-   "company": "Param Hansa Philanthropies (PHP)",
-   "title": "Program Associate",
-   "location": "Bengaluru, Karnataka",
-   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308142",
-   "posted": "apply by 2",
-   "team": "",
-   "sector": "Feed: devnetjobsindia",
-   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308142",
-   "score": 45,
-   "why": {
-    "years_asked": 2,
-    "where": "india",
-    "title_hits": [
-     "program"
-    ],
-    "boosts": [
-     "government",
-     "regulatory",
-     "policy",
-     "stakeholder",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-13",
    "new": false
   },
   {
@@ -933,29 +814,29 @@
   },
   {
    "company": "indgovtjobs",
-   "title": "ADA Consultant Recruitment 2026: Apply for Technical & Non Technical Posts | Last Date 08-08-2026",
+   "title": "NFRA Young Professional Recruitment 2026 \u2013 Notification for 09 Posts | Last Date 02-08-2026",
    "location": "India",
-   "url": "https://www.indgovtjobs.in/2026/08/ada-consultant-recruitment.html",
-   "posted": "2026-08-05",
+   "url": "https://www.indgovtjobs.in/2026/06/nfra-young-professional-recruitment.html",
+   "posted": "2026-08-02",
    "team": "",
    "sector": "Feed: indgovtjobs",
-   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/08/ada-consultant-recruitment.html",
+   "id": "fd:indgovtjobs:https://www.indgovtjobs.in/2026/06/nfra-young-professional-recruitment.html",
    "score": 45,
    "why": {
-    "years_asked": null,
+    "years_asked": 2,
     "where": "india",
     "title_hits": [
-     "consultant"
+     "young professional"
     ],
     "boosts": [
      "government",
      "ministry",
+     "regulatory",
      "public sector",
-     "state government",
      "mba"
     ]
    },
-   "first_seen": "2026-11-04",
+   "first_seen": "2026-11-06",
    "new": false
   },
   {
@@ -1063,7 +944,7 @@
     ]
    },
    "first_seen": "2026-11-23",
-   "new": true
+   "new": false
   },
   {
    "company": "Public Health Foundation of India (PHFI)",
@@ -1089,31 +970,6 @@
     ]
    },
    "first_seen": "2026-11-20",
-   "new": false
-  },
-  {
-   "company": "Stripe",
-   "title": "Risk Operations Analyst - Restricted Business Operations ",
-   "location": "Remote ",
-   "url": "https://stripe.com/jobs/search?gh_jid=8175824",
-   "posted": "2026-11-19",
-   "team": "3110 User Policy Operations",
-   "id": "gh:stripe:8175824",
-   "sector": "fintech-global",
-   "score": 42,
-   "why": {
-    "years_asked": 3,
-    "where": "remote",
-    "title_hits": [
-     "business operations"
-    ],
-    "boosts": [
-     "regulatory",
-     "policy",
-     "compliance"
-    ]
-   },
-   "first_seen": "2026-11-18",
    "new": false
   },
   {
@@ -1330,7 +1186,7 @@
    "title": "Program Manager",
    "location": "Gurugram",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8386495",
-   "posted": "2026-11-16",
+   "posted": "2026-11-23",
    "team": "Customer PMO",
    "id": "gh:mongodb:8386495",
    "sector": "tech-global",
@@ -1374,6 +1230,33 @@
    },
    "first_seen": "2026-11-01",
    "new": false
+  },
+  {
+   "company": "Public Health Foundation of India (PHFI)",
+   "title": "Senior Officer/ Assistant Manager- Program Management and Coordination",
+   "location": "India",
+   "url": "https://devnetjobsindia.org/jobdescription.aspx?job_id=308694",
+   "posted": "apply by 0",
+   "team": "",
+   "sector": "Feed: devnetjobsindia",
+   "id": "fd:devnetjobsindia:https://devnetjobsindia.org/jobdescription.aspx?job_id=308694",
+   "score": 41,
+   "why": {
+    "years_asked": 4,
+    "where": "india",
+    "title_hits": [
+     "program"
+    ],
+    "boosts": [
+     "government",
+     "ministry",
+     "policy",
+     "stakeholder",
+     "compliance"
+    ]
+   },
+   "first_seen": "2026-11-24",
+   "new": true
   },
   {
    "company": "Razorpay",
@@ -1706,7 +1589,7 @@
    "title": "Associate Technology Consultant - Galaxy Graduate Program",
    "location": "Bangalore, India",
    "url": "https://job-boards.greenhouse.io/celonis/jobs/8203121003?gh_jid=8203121003",
-   "posted": "2026-11-18",
+   "posted": "2026-11-24",
    "team": "Services",
    "id": "gh:celonis:8203121003",
    "sector": "global (India presence)",
@@ -1852,12 +1735,28 @@
  ],
  "funding": [
   {
+   "title": "Fintech startup Vegapay to raise Rs 38.4 Cr in Series A funding round led by Prosus",
+   "url": "https://yourstory.com/2026/11/vegapay-to-raise-rs-384-cr-series-a-funding-led-by-prosus",
+   "date": "Tue, 24 Nov 2026",
+   "source": "yourstory.com",
+   "sector": "fintech",
+   "new": true
+  },
+  {
+   "title": "Ionic Wealth secures Rs 177 Cr from Angel One, others",
+   "url": "https://yourstory.com/2026/11/ionic-wealth-secures-rs-177-cr-from-angel-one-others",
+   "date": "Mon, 23 Nov 2026",
+   "source": "yourstory.com",
+   "sector": "wealth",
+   "new": true
+  },
+  {
    "title": "Ionic Wealth raises Rs 177 Cr from Angel One, marquee families",
    "url": "https://entrackr.com/news/ionic-wealth-raises-rs-177-cr-from-angel-one-marquee-families-12833453",
    "date": "Mon, 23 Nov 2026",
    "source": "entrackr.com",
    "sector": "wealth",
-   "new": true
+   "new": false
   },
   {
    "title": "AI infra startup JohnAIC raises $1.9 Mn in pre-seed round",
@@ -1868,36 +1767,52 @@
    "new": false
   },
   {
-   "title": "Sarvam\u2019s Token Factory Raises India\u2019s AI Inference Stakes",
-   "url": "https://inc42.com/features/sarvams-token-factory-raises-indias-ai-inference-stakes/",
-   "date": "Sat, 21 Nov 2026",
+   "title": "Cosine Robots Bags \u20b922.4 Cr To Scale Robotics Hardware Production",
+   "url": "https://inc42.com/buzz/cosine-robots-bags-%e2%82%b922-4-cr-to-scale-robotics-hardware-production/",
+   "date": "Tue, 24 Nov 2026",
    "source": "inc42.com",
    "sector": "",
-   "new": false
+   "new": true
   },
   {
-   "title": "Google announces $5M funding for IIT Kharagpur for advanced AI research",
-   "url": "https://yourstory.com/2026/11/google-announces-5m-funding-for-iit-kharagpur-for-advanced-ai-research",
-   "date": "Sat, 21 Nov 2026",
-   "source": "yourstory.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "VC funding rebounds as startups raise $255M; Women founders driving social change",
-   "url": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change",
+   "title": "India AI funding nearly doubles to $1.6B in Jan-Sept 2026: Tracxn",
+   "url": "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
    "date": "Mon, 23 Nov 2026",
    "source": "yourstory.com",
    "sector": "",
    "new": true
   },
   {
-   "title": "(Weekly funding roundup Nov 14-20) VC funding bounces back after record low last week",
-   "url": "https://yourstory.com/2026/11/weekly-funding-roundup-nov-14-20-vc-funding-bounces-back-after-record-low-last-week",
-   "date": "Fri, 20 Nov 2026",
+   "title": "Enterprise data security startup Matters.AI raises Rs 115 Cr in pre-Series A round",
+   "url": "https://yourstory.com/2026/11/enterprise-data-security-startup-matters-ai-raises-rs-115-cr-pre-series-a-round",
+   "date": "Mon, 23 Nov 2026",
    "source": "yourstory.com",
    "sector": "",
-   "new": false
+   "new": true
+  },
+  {
+   "title": "Hospitality brand Bloom raises $75 Mn in funding round led by Kedaara Capital",
+   "url": "https://entrackr.com/snippets/hospitality-brand-bloom-raises-75-mn-in-funding-round-led-by-kedaara-capital-12838049",
+   "date": "Tue, 24 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
+  },
+  {
+   "title": "Lawvek raises $550K in pre-seed round led by Neon Fund",
+   "url": "https://entrackr.com/snippets/lawvek-raises-550k-in-pre-seed-round-led-by-neon-fund-12838009",
+   "date": "Tue, 24 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
+  },
+  {
+   "title": "Cosine Robots raises Rs 22.36 Cr led by Avaana Capital",
+   "url": "https://entrackr.com/snippets/cosine-robots-raises-rs-2236-cr-led-by-avaana-capital-12836692",
+   "date": "Tue, 24 Nov 2026",
+   "source": "entrackr.com",
+   "sector": "",
+   "new": true
   },
   {
    "title": "Jewellery brand Zavya raises Rs 22.6 Cr in pre-Series A round",
@@ -1905,7 +1820,7 @@
    "date": "Mon, 23 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "InPrime Finserv\u2019s founders retains 28.5% stake after Series B, valuation doubles to Rs 360 Cr",
@@ -1913,7 +1828,7 @@
    "date": "Mon, 23 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "Exclusive: Matters.AI to raise Rs 110 Cr in pre-Series A led by Tanglin Ventures",
@@ -1921,7 +1836,7 @@
    "date": "Mon, 23 Nov 2026",
    "source": "entrackr.com",
    "sector": "",
-   "new": true
+   "new": false
   },
   {
    "title": "Funding and acquisitions in Indian startups this week [Nov 16- Nov 21]",
@@ -2050,30 +1965,6 @@
    "source": "entrackr.com",
    "sector": "",
    "new": false
-  },
-  {
-   "title": "Exclusive: Xpressbees raises Rs 100 Cr debt from BlackSoil",
-   "url": "https://entrackr.com/exclusive/exclusive-xpressbees-raises-rs-100-cr-debt-from-blacksoil-12813197",
-   "date": "Mon, 16 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "Bharat Semi raises $24 Mn in seed round from Info Edge, South Park Common, others",
-   "url": "https://entrackr.com/news/bharat-semi-raises-24-mn-in-seed-round-from-info-edge-south-park-common-others-12812801",
-   "date": "Mon, 16 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
-  },
-  {
-   "title": "Funding and acquisitions in Indian startups this week [Nov 09- Nov 14]",
-   "url": "https://entrackr.com/report/funding-and-acquisitions-in-indian-startups-this-week-nov-09-nov-14-12808553",
-   "date": "Sat, 14 Nov 2026",
-   "source": "entrackr.com",
-   "sector": "",
-   "new": false
   }
  ],
  "health": [
@@ -2116,7 +2007,7 @@
   {
    "company": "Acumen",
    "ats": "greenhouse",
-   "jobs": 5,
+   "jobs": 6,
    "error": null
   },
   {
@@ -2134,37 +2025,37 @@
   {
    "company": "Adyen",
    "ats": "greenhouse",
-   "jobs": 239,
+   "jobs": 238,
    "error": null
   },
   {
    "company": "Agoda",
    "ats": "greenhouse",
-   "jobs": 331,
+   "jobs": 338,
    "error": null
   },
   {
    "company": "Airbnb",
    "ats": "greenhouse",
-   "jobs": 201,
+   "jobs": 199,
    "error": null
   },
   {
    "company": "Airpay",
    "ats": "keka",
-   "jobs": 15,
+   "jobs": 16,
    "error": null
   },
   {
    "company": "Airwallex",
    "ats": "ashby",
-   "jobs": 498,
+   "jobs": 500,
    "error": null
   },
   {
    "company": "Alloy",
    "ats": "greenhouse",
-   "jobs": 33,
+   "jobs": 34,
    "error": null
   },
   {
@@ -2188,7 +2079,7 @@
   {
    "company": "Anaplan",
    "ats": "greenhouse",
-   "jobs": 124,
+   "jobs": 128,
    "error": null
   },
   {
@@ -2200,7 +2091,7 @@
   {
    "company": "Anthropic",
    "ats": "greenhouse",
-   "jobs": 634,
+   "jobs": 630,
    "error": null
   },
   {
@@ -2224,8 +2115,8 @@
   {
    "company": "AstraZeneca",
    "ats": "workday",
-   "jobs": 31,
-   "error": null
+   "jobs": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://astrazeneca.wd3.myworkdayjobs.com/wday/cxs/astrazeneca/Careers/jobs"
   },
   {
    "company": "AT&T",
@@ -2248,7 +2139,7 @@
   {
    "company": "Atlys",
    "ats": "ashby",
-   "jobs": 34,
+   "jobs": 35,
    "error": null
   },
   {
@@ -2302,7 +2193,7 @@
   {
    "company": "Binance",
    "ats": "greenhouse",
-   "jobs": 224,
+   "jobs": 220,
    "error": null
   },
   {
@@ -2350,7 +2241,7 @@
   {
    "company": "Brex",
    "ats": "greenhouse",
-   "jobs": 248,
+   "jobs": 263,
    "error": null
   },
   {
@@ -2380,7 +2271,7 @@
   {
    "company": "Brunswick Group",
    "ats": "greenhouse",
-   "jobs": 43,
+   "jobs": 41,
    "error": null
   },
   {
@@ -2398,7 +2289,7 @@
   {
    "company": "Canva",
    "ats": "smartrecruiters",
-   "jobs": 30,
+   "jobs": 26,
    "error": null
   },
   {
@@ -2422,7 +2313,7 @@
   {
    "company": "Celonis",
    "ats": "greenhouse",
-   "jobs": 264,
+   "jobs": 262,
    "error": null
   },
   {
@@ -2434,7 +2325,7 @@
   {
    "company": "Checkout.com",
    "ats": "ashby",
-   "jobs": 165,
+   "jobs": 162,
    "error": null
   },
   {
@@ -2470,7 +2361,7 @@
   {
    "company": "Cloudflare",
    "ats": "greenhouse",
-   "jobs": 501,
+   "jobs": 502,
    "error": null
   },
   {
@@ -2494,7 +2385,7 @@
   {
    "company": "Code for America",
    "ats": "greenhouse",
-   "jobs": 10,
+   "jobs": 11,
    "error": null
   },
   {
@@ -2506,31 +2397,31 @@
   {
    "company": "Cognition",
    "ats": "ashby",
-   "jobs": 108,
+   "jobs": 110,
    "error": null
   },
   {
    "company": "Coinbase",
    "ats": "greenhouse",
-   "jobs": 251,
+   "jobs": 249,
    "error": null
   },
   {
    "company": "Colliers",
    "ats": "workday",
-   "jobs": 6,
-   "error": null
+   "jobs": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://colliers.wd3.myworkdayjobs.com/wday/cxs/colliers/Colliers-External-"
   },
   {
    "company": "Commvault",
    "ats": "greenhouse",
-   "jobs": 58,
+   "jobs": 59,
    "error": null
   },
   {
    "company": "ComplyAdvantage",
    "ats": "greenhouse",
-   "jobs": 19,
+   "jobs": 21,
    "error": null
   },
   {
@@ -2542,19 +2433,19 @@
   {
    "company": "Coupa",
    "ats": "lever",
-   "jobs": 41,
+   "jobs": 37,
    "error": null
   },
   {
    "company": "Coursera",
    "ats": "greenhouse",
-   "jobs": 35,
+   "jobs": 34,
    "error": null
   },
   {
    "company": "CRED",
    "ats": "lever",
-   "jobs": 12,
+   "jobs": 11,
    "error": null
   },
   {
@@ -2578,7 +2469,7 @@
   {
    "company": "Cursor (Anysphere)",
    "ats": "ashby",
-   "jobs": 89,
+   "jobs": 87,
    "error": null
   },
   {
@@ -2590,7 +2481,7 @@
   {
    "company": "Databricks",
    "ats": "greenhouse",
-   "jobs": 892,
+   "jobs": 888,
    "error": null
   },
   {
@@ -2608,7 +2499,7 @@
   {
    "company": "Deliveroo",
    "ats": "greenhouse",
-   "jobs": 188,
+   "jobs": 191,
    "error": null
   },
   {
@@ -2674,7 +2565,7 @@
   {
    "company": "Duolingo",
    "ats": "greenhouse",
-   "jobs": 54,
+   "jobs": 53,
    "error": null
   },
   {
@@ -2692,7 +2583,7 @@
   {
    "company": "ElevenLabs",
    "ats": "ashby",
-   "jobs": 123,
+   "jobs": 120,
    "error": null
   },
   {
@@ -2704,7 +2595,7 @@
   {
    "company": "Eloelo",
    "ats": "keka",
-   "jobs": 30,
+   "jobs": 35,
    "error": null
   },
   {
@@ -2728,25 +2619,25 @@
   {
    "company": "Experian",
    "ats": "smartrecruiters",
-   "jobs": 406,
+   "jobs": 407,
    "error": null
   },
   {
    "company": "FactSet",
    "ats": "workday",
-   "jobs": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://factset.wd108.myworkdayjobs.com/wday/cxs/factset/FactSetCareers/job"
+   "jobs": 17,
+   "error": null
   },
   {
    "company": "Fam (FamPay)",
    "ats": "lever",
-   "jobs": 14,
+   "jobs": 13,
    "error": null
   },
   {
    "company": "FGS Global",
    "ats": "greenhouse",
-   "jobs": 21,
+   "jobs": 20,
    "error": null
   },
   {
@@ -2764,7 +2655,7 @@
   {
    "company": "Figma",
    "ats": "greenhouse",
-   "jobs": 147,
+   "jobs": 145,
    "error": null
   },
   {
@@ -2788,7 +2679,7 @@
   {
    "company": "Fivetran",
    "ats": "greenhouse",
-   "jobs": 196,
+   "jobs": 206,
    "error": null
   },
   {
@@ -2800,7 +2691,7 @@
   {
    "company": "Freshworks",
    "ats": "smartrecruiters",
-   "jobs": 121,
+   "jobs": 120,
    "error": null
   },
   {
@@ -2866,13 +2757,13 @@
   {
    "company": "GitLab",
    "ats": "greenhouse",
-   "jobs": 246,
+   "jobs": 252,
    "error": null
   },
   {
    "company": "GiveDirectly",
    "ats": "greenhouse",
-   "jobs": 21,
+   "jobs": 22,
    "error": null
   },
   {
@@ -2884,7 +2775,7 @@
   {
    "company": "Glance (InMobi)",
    "ats": "greenhouse",
-   "jobs": 24,
+   "jobs": 25,
    "error": null
   },
   {
@@ -2902,7 +2793,7 @@
   {
    "company": "Globalization Partners (G-P)",
    "ats": "greenhouse",
-   "jobs": 68,
+   "jobs": 61,
    "error": null
   },
   {
@@ -2914,13 +2805,13 @@
   {
    "company": "GovTech Singapore",
    "ats": "greenhouse",
-   "jobs": 260,
+   "jobs": 261,
    "error": null
   },
   {
    "company": "Grab",
    "ats": "smartrecruiters",
-   "jobs": 439,
+   "jobs": 442,
    "error": null
   },
   {
@@ -2932,7 +2823,7 @@
   {
    "company": "Groww",
    "ats": "greenhouse",
-   "jobs": 8,
+   "jobs": 7,
    "error": null
   },
   {
@@ -2950,13 +2841,13 @@
   {
    "company": "Harness",
    "ats": "greenhouse",
-   "jobs": 66,
+   "jobs": 68,
    "error": null
   },
   {
    "company": "Harvey",
    "ats": "ashby",
-   "jobs": 390,
+   "jobs": 395,
    "error": null
   },
   {
@@ -2992,7 +2883,7 @@
   {
    "company": "ID.me",
    "ats": "greenhouse",
-   "jobs": 47,
+   "jobs": 46,
    "error": null
   },
   {
@@ -3010,13 +2901,13 @@
   {
    "company": "Inc42",
    "ats": "keka",
-   "jobs": 28,
+   "jobs": 27,
    "error": null
   },
   {
    "company": "InMobi",
    "ats": "greenhouse",
-   "jobs": 71,
+   "jobs": 66,
    "error": null
   },
   {
@@ -3070,7 +2961,7 @@
   {
    "company": "Jupiter",
    "ats": "keka",
-   "jobs": 6,
+   "jobs": 8,
    "error": null
   },
   {
@@ -3082,7 +2973,7 @@
   {
    "company": "Karya",
    "ats": "greenhouse",
-   "jobs": 18,
+   "jobs": 19,
    "error": null
   },
   {
@@ -3100,7 +2991,7 @@
   {
    "company": "Khan Academy",
    "ats": "greenhouse",
-   "jobs": 3,
+   "jobs": 4,
    "error": null
   },
   {
@@ -3112,7 +3003,7 @@
   {
    "company": "Kong",
    "ats": "ashby",
-   "jobs": 127,
+   "jobs": 128,
    "error": null
   },
   {
@@ -3154,7 +3045,7 @@
   {
    "company": "Leadership for Equity",
    "ats": "keka",
-   "jobs": 15,
+   "jobs": 13,
    "error": null
   },
   {
@@ -3190,7 +3081,7 @@
   {
    "company": "Mantra4Change",
    "ats": "keka",
-   "jobs": 3,
+   "jobs": 4,
    "error": null
   },
   {
@@ -3220,7 +3111,7 @@
   {
    "company": "Meesho (incl. Financial Services)",
    "ats": "lever",
-   "jobs": 47,
+   "jobs": 48,
    "error": null
   },
   {
@@ -3232,7 +3123,7 @@
   {
    "company": "Mindtickle",
    "ats": "lever",
-   "jobs": 19,
+   "jobs": 20,
    "error": null
   },
   {
@@ -3244,13 +3135,13 @@
   {
    "company": "MongoDB",
    "ats": "greenhouse",
-   "jobs": 418,
+   "jobs": 419,
    "error": null
   },
   {
    "company": "MoonPay",
    "ats": "lever",
-   "jobs": 19,
+   "jobs": 21,
    "error": null
   },
   {
@@ -3268,7 +3159,7 @@
   {
    "company": "Mozilla",
    "ats": "greenhouse",
-   "jobs": 138,
+   "jobs": 142,
    "error": null
   },
   {
@@ -3280,7 +3171,7 @@
   {
    "company": "Nasscom Foundation",
    "ats": "keka",
-   "jobs": 6,
+   "jobs": 3,
    "error": null
   },
   {
@@ -3292,7 +3183,7 @@
   {
    "company": "Nava PBC",
    "ats": "greenhouse",
-   "jobs": 19,
+   "jobs": 20,
    "error": null
   },
   {
@@ -3310,13 +3201,13 @@
   {
    "company": "New Relic",
    "ats": "greenhouse",
-   "jobs": 42,
+   "jobs": 43,
    "error": null
   },
   {
    "company": "NewSpace Research & Technologies",
    "ats": "keka",
-   "jobs": 250,
+   "jobs": 254,
    "error": null
   },
   {
@@ -3328,13 +3219,13 @@
   {
    "company": "Niyo",
    "ats": "keka",
-   "jobs": 9,
+   "jobs": 12,
    "error": null
   },
   {
    "company": "Notion",
    "ats": "ashby",
-   "jobs": 170,
+   "jobs": 172,
    "error": null
   },
   {
@@ -3359,7 +3250,7 @@
    "company": "NXP Semiconductors",
    "ats": "workday",
    "jobs": 0,
-   "error": "422 Client Error: Unprocessable Entity for url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs"
+   "error": "429 Client Error: Too Many Requests for url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs"
   },
   {
    "company": "Observe.AI",
@@ -3370,7 +3261,7 @@
   {
    "company": "Okta",
    "ats": "greenhouse",
-   "jobs": 376,
+   "jobs": 372,
    "error": null
   },
   {
@@ -3382,19 +3273,19 @@
   {
    "company": "One Acre Fund",
    "ats": "greenhouse",
-   "jobs": 50,
+   "jobs": 55,
    "error": null
   },
   {
    "company": "OpenAI",
    "ats": "ashby",
-   "jobs": 852,
+   "jobs": 863,
    "error": null
   },
   {
    "company": "OpenGov",
    "ats": "ashby",
-   "jobs": 87,
+   "jobs": 86,
    "error": null
   },
   {
@@ -3412,7 +3303,7 @@
   {
    "company": "Paxos",
    "ats": "ashby",
-   "jobs": 26,
+   "jobs": 25,
    "error": null
   },
   {
@@ -3472,13 +3363,13 @@
   {
    "company": "Plaid",
    "ats": "ashby",
-   "jobs": 146,
+   "jobs": 144,
    "error": null
   },
   {
    "company": "Pocket FM",
    "ats": "lever",
-   "jobs": 10,
+   "jobs": 12,
    "error": null
   },
   {
@@ -3544,7 +3435,7 @@
   {
    "company": "Razorpay",
    "ats": "greenhouse",
-   "jobs": 28,
+   "jobs": 23,
    "error": null
   },
   {
@@ -3568,25 +3459,25 @@
   {
    "company": "Ripple",
    "ats": "greenhouse",
-   "jobs": 110,
+   "jobs": 108,
    "error": null
   },
   {
    "company": "Robinhood",
    "ats": "greenhouse",
-   "jobs": 163,
+   "jobs": 159,
    "error": null
   },
   {
    "company": "Roland Berger",
    "ats": "smartrecruiters",
-   "jobs": 204,
+   "jobs": 205,
    "error": null
   },
   {
    "company": "Rubrik",
    "ats": "greenhouse",
-   "jobs": 218,
+   "jobs": 223,
    "error": null
   },
   {
@@ -3610,7 +3501,7 @@
   {
    "company": "Samsara",
    "ats": "greenhouse",
-   "jobs": 299,
+   "jobs": 291,
    "error": null
   },
   {
@@ -3628,7 +3519,7 @@
   {
    "company": "Sarvam AI",
    "ats": "ashby",
-   "jobs": 40,
+   "jobs": 39,
    "error": null
   },
   {
@@ -3646,7 +3537,7 @@
   {
    "company": "Scale AI",
    "ats": "greenhouse",
-   "jobs": 162,
+   "jobs": 159,
    "error": null
   },
   {
@@ -3658,7 +3549,7 @@
   {
    "company": "ServiceNow",
    "ats": "smartrecruiters",
-   "jobs": 999,
+   "jobs": 995,
    "error": null
   },
   {
@@ -3676,13 +3567,13 @@
   {
    "company": "Sid's Farm",
    "ats": "keka",
-   "jobs": 22,
+   "jobs": 24,
    "error": null
   },
   {
    "company": "Sigmoid",
    "ats": "greenhouse",
-   "jobs": 45,
+   "jobs": 43,
    "error": null
   },
   {
@@ -3694,7 +3585,7 @@
   {
    "company": "Skit.ai",
    "ats": "keka",
-   "jobs": 6,
+   "jobs": 7,
    "error": null
   },
   {
@@ -3712,7 +3603,7 @@
   {
    "company": "Smile Foundation",
    "ats": "keka",
-   "jobs": 35,
+   "jobs": 36,
    "error": null
   },
   {
@@ -3724,31 +3615,31 @@
   {
    "company": "Snitch",
    "ats": "keka",
-   "jobs": 36,
+   "jobs": 37,
    "error": null
   },
   {
    "company": "Snowflake",
    "ats": "ashby",
-   "jobs": 372,
+   "jobs": 374,
    "error": null
   },
   {
    "company": "Socure",
    "ats": "ashby",
-   "jobs": 84,
+   "jobs": 85,
    "error": null
   },
   {
    "company": "SpotDraft",
    "ats": "ashby",
-   "jobs": 12,
+   "jobs": 11,
    "error": null
   },
   {
    "company": "Spotify",
    "ats": "lever",
-   "jobs": 91,
+   "jobs": 88,
    "error": null
   },
   {
@@ -3778,13 +3669,13 @@
   {
    "company": "Stripe",
    "ats": "greenhouse",
-   "jobs": 776,
+   "jobs": 770,
    "error": null
   },
   {
    "company": "Sumo Logic",
    "ats": "greenhouse",
-   "jobs": 25,
+   "jobs": 24,
    "error": null
   },
   {
@@ -3802,7 +3693,7 @@
   {
    "company": "Swiggy",
    "ats": "smartrecruiters",
-   "jobs": 157,
+   "jobs": 153,
    "error": null
   },
   {
@@ -3814,13 +3705,13 @@
   {
    "company": "Tala",
    "ats": "lever",
-   "jobs": 11,
+   "jobs": 12,
    "error": null
   },
   {
    "company": "Tarento",
    "ats": "keka",
-   "jobs": 36,
+   "jobs": 37,
    "error": null
   },
   {
@@ -3838,13 +3729,13 @@
   {
    "company": "Teachmint",
    "ats": "keka",
-   "jobs": 39,
+   "jobs": 40,
    "error": null
   },
   {
    "company": "Teneo",
    "ats": "greenhouse",
-   "jobs": 51,
+   "jobs": 53,
    "error": null
   },
   {
@@ -3880,7 +3771,7 @@
   {
    "company": "The Nudge Institute",
    "ats": "keka",
-   "jobs": 41,
+   "jobs": 42,
    "error": null
   },
   {
@@ -3892,8 +3783,8 @@
   {
    "company": "Thoughtworks",
    "ats": "greenhouse",
-   "jobs": 31,
-   "error": null
+   "jobs": 0,
+   "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/thoughtworks/jobs?content=true"
   },
   {
    "company": "Thunes",
@@ -3904,19 +3795,19 @@
   {
    "company": "Tide",
    "ats": "greenhouse",
-   "jobs": 87,
+   "jobs": 90,
    "error": null
   },
   {
    "company": "Toast",
    "ats": "greenhouse",
-   "jobs": 326,
+   "jobs": 312,
    "error": null
   },
   {
    "company": "Together AI",
    "ats": "greenhouse",
-   "jobs": 76,
+   "jobs": 81,
    "error": null
   },
   {
@@ -3934,13 +3825,13 @@
   {
    "company": "TRM Labs",
    "ats": "ashby",
-   "jobs": 116,
+   "jobs": 115,
    "error": null
   },
   {
    "company": "Truecaller",
    "ats": "greenhouse",
-   "jobs": 34,
+   "jobs": 32,
    "error": null
   },
   {
@@ -3964,13 +3855,13 @@
   {
    "company": "Twilio",
    "ats": "greenhouse",
-   "jobs": 110,
+   "jobs": 114,
    "error": null
   },
   {
    "company": "UiPath",
    "ats": "ashby",
-   "jobs": 110,
+   "jobs": 107,
    "error": null
   },
   {
@@ -4042,7 +3933,7 @@
   {
    "company": "Wikimedia Foundation",
    "ats": "greenhouse",
-   "jobs": 11,
+   "jobs": 12,
    "error": null
   },
   {
@@ -4054,7 +3945,7 @@
   {
    "company": "Wise",
    "ats": "smartrecruiters",
-   "jobs": 432,
+   "jobs": 420,
    "error": null
   },
   {
@@ -4072,8 +3963,8 @@
   {
    "company": "World Economic Forum",
    "ats": "workday",
-   "jobs": 3,
-   "error": null
+   "jobs": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://weforum.wd3.myworkdayjobs.com/wday/cxs/weforum/Forum_Careers/jobs"
   },
   {
    "company": "World Food Programme",
@@ -4084,20 +3975,20 @@
   {
    "company": "World Resources Institute (WRI India)",
    "ats": "workday",
-   "jobs": 5,
-   "error": null
+   "jobs": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://wri.wd501.myworkdayjobs.com/wday/cxs/wri/WRI/jobs"
   },
   {
    "company": "Yugabyte",
    "ats": "greenhouse",
-   "jobs": 21,
+   "jobs": 19,
    "error": null
   },
   {
    "company": "Zebra Technologies",
    "ats": "workday",
-   "jobs": 27,
-   "error": null
+   "jobs": 0,
+   "error": "429 Client Error: Too Many Requests for url: https://zebra.wd501.myworkdayjobs.com/wday/cxs/zebra/Zebra_careers/jobs"
   },
   {
    "company": "Zeta",
@@ -4108,13 +3999,13 @@
   {
    "company": "Zeta Global",
    "ats": "greenhouse",
-   "jobs": 102,
+   "jobs": 100,
    "error": null
   },
   {
    "company": "Zinnov",
    "ats": "greenhouse",
-   "jobs": 27,
+   "jobs": 28,
    "error": null
   },
   {
@@ -4132,7 +4023,7 @@
   {
    "company": "Zscaler",
    "ats": "greenhouse",
-   "jobs": 386,
+   "jobs": 388,
    "error": null
   },
   {
@@ -4168,7 +4059,7 @@
   {
    "company": "Feed: devnetjobsindia",
    "ats": "feed",
-   "jobs": 174,
+   "jobs": 176,
    "error": null
   },
   {
@@ -4186,7 +4077,7 @@
   {
    "company": "Feed: reliefweb_rss_india",
    "ats": "feed",
-   "jobs": 3,
+   "jobs": 5,
    "error": null
   }
  ]
